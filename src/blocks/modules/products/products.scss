@@ -1,0 +1,243 @@
+.page__section--products {
+  // margin-bottom: 6.597vw;
+}
+
+.page-products__wrapper {
+
+}
+
+.page-products {
+
+}
+
+.page-products__title {
+  font-size: 3.333vw;
+  line-height: .9;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.528vw;
+}
+
+.page-products-toggle__wrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.page-products-toggle {
+  background: #EEF4FC;
+  border-radius: 9px;
+  display: flex;
+  padding: 2px;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 2.431vw;
+}
+
+
+.page-products-toggle__input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  &:checked + .page-products-toggle__label:first-of-type::after {
+    transform: translateX(2px);
+    width: 100%;
+  }
+}
+
+.page-products-toggle__label {
+  cursor: pointer;
+  height: 1.944vw;
+  font-family: sans-serif;
+  display: inline-block;
+  font-size: 0.903vw;
+  font-weight: 500;
+  padding: 0.417vw 0.556vw;
+  min-width: 11.806vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  box-sizing: border-box;
+
+  &:first-of-type::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 7px;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    z-index: -1;
+    transform: translateX(calc(100% + 2px));
+    width: 100%;
+    transition: all .2s ease-in-out;
+  }
+}
+
+.page-products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -5px;
+  width: calc(100% + 10px);
+}
+
+.page-product-item {
+  margin: 5px;
+  flex: 1;
+  min-width: 50%;
+  min-height: 34.306vw;
+  width: 100%;
+  padding: 1.667vw;
+  position: relative;
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  &:first-child {
+    .page-product-item__bg {
+      background: #F0F4FC;
+    }
+  }
+
+  &:nth-child(2) {
+    .page-product-item__bg {
+      background: url('../img/product-item-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .page-products-item__title,
+    .page-products-item__text {
+      color: #ffffff;
+    }
+  }
+
+  &:nth-child(3) {
+    .page-product-item__bg {
+      background: #DDFFB2;
+    }
+
+    .page-product-item__img-wrap {
+      width: 20vw;
+      right: 7.778vw;
+      bottom: -1.528vw;
+    }
+  }
+
+  &:nth-child(4) {
+    .page-product-item__bg {
+      background: #F1D2C3;
+    }
+
+    .page-products-item__text {
+      max-width: 20vw;
+    }
+
+    .page-product-item__img-wrap {
+      width: 22.778vw;
+      right: 0;
+      bottom: -1.528vw;
+    }
+  }
+}
+
+.page-product-item--s {
+  min-width: calc(39.32% - 5px);
+  width: calc(39.32% - 5px);
+  max-width: calc(39.32% - 5px);
+}
+
+
+.page-product-item__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.page-product-item__bg--corner {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4.514vw;
+    height: 6.667vw;
+    left: -1.528vw;
+    top: -3.958vw;
+    background: #ffffff;
+    transform: rotate(45deg);
+  }
+}
+
+.page-product-item__content {
+  height: 100%;
+  max-width: 23.681vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.page-product-item__ico-wrap {
+  position: absolute;
+  top: 2.083vw;
+  left: 1.667vw;
+}
+
+.page-product-item__ico {
+  width: 3.889vw;
+  height: 3.889vw;
+}
+
+.page-products-item__title {
+  font-size: 4.444vw;
+  line-height: .9;
+  font-weight: 500;
+  margin-bottom: 1.389vw;
+}
+
+.page-products-item__text {
+  font-size: 0.972vw;
+  line-height: 1.4;
+  margin-bottom: 4.236vw;
+}
+
+.page-products-item__btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3.958vw;
+}
+
+.page-products-item__btn {
+  line-height: 1.2;
+  font-size: 1.111vw;
+  font-weight: 500;
+}
+
+
+.page-product-item__img-wrap {
+  position: absolute;
+  z-index: -1;
+}
+
+.page-product-item__img {
+  width: 100%;
+}
