@@ -112,10 +112,13 @@
   left: 24.514vw;
 
   .page-compensation-people__price-bg {
-    top: calc(50% - 2.222vw);
-    left: calc(50% - 8.472vw);
+    // top: calc(50% - 2.222vw);
+    // left: calc(50% - 8.472vw);
     width: 15.486vw;
     height: 5.486vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
   
     use {
       fill: #D6E3FF;
@@ -132,11 +135,14 @@
   right: 22.708vw;
 
   .page-compensation-people__price-bg {
-    top: calc(50% - 1.6vw);
-    left: calc(50% - 4.9vw);
+    // top: calc(50% - 1.6vw);
+    // left: calc(50% - 4.9vw);
+    // transform: rotateY(180deg);
     width: 10.764vw;
     height: 3.819vw;
-    transform: rotateY(180deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%) rotateY(180deg);
   
     use {
       fill: #C0F3CA;
@@ -153,11 +159,15 @@
   left: 21.250vw;
 
   .page-compensation-people__price-bg {
-    top: calc(50% - 1vw);
-    left: calc(50% - 3.2vw);
+    // top: calc(50% - 1vw);
+    // left: calc(50% - 3.2vw);
+    // transform: rotateY(180deg);
+
     width: 7.431vw;
     height: 2.639vw;
-    transform: rotateY(180deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -36%) rotateY(180deg);
   
     use {
       fill: #FFFFAF;
@@ -175,10 +185,13 @@
   right: 20.139vw;
 
   .page-compensation-people__price-bg {
-    top: calc(50% - 1.7vw);
-    left: calc(50% - 6.5vw);
+    // top: calc(50% - 1.7vw);
+    // left: calc(50% - 6.5vw);
     width: 12.153vw;
     height: 4.306vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
   
     use {
       fill: #FFFFAF;
