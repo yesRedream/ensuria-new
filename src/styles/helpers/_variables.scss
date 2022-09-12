@@ -1,7 +1,29 @@
+// @custom-media --viewport-mobile (width >= 23.4375rem); /* 375 px*/
+// @custom-media --viewport-tablet (width >= 50.94rem); /*815 px*/
+// @custom-media --viewport-desktop (width >= 64rem); /*1024 px*/
+// @custom-media --viewport-large-desktop (width >= 77.5rem); /*1240 px*/
+
+
+@mixin viewport-phone {
+  @media (max-width: 420px) { @content; }
+}
+@mixin viewport-tablet {
+  @media (max-width: 815px) { @content; }
+}
+@mixin viewport-desktop {
+  @media (max-width: 1024px) { @content; }
+}
+
+
 :root {
 
   --color-dark: #2C2A2D;
   --color-dark-2: #7F7D84;
+  
+  --color-purple: #E0D3FF;
+  --color-yellow: #FFFFAF;
+  --color-blue: #C6F3F8;
+  --color-green: #C0F3CA;
 
 }
 

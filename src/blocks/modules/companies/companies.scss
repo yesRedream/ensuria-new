@@ -1,6 +1,9 @@
 .page__section--companies {
   margin-bottom: 4.861vw;
 
+  @include viewport-desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .page-companies__wrapper {
@@ -14,13 +17,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+
+  @include viewport-desktop {
+    padding: 35px 0 45px 0;
+  }
 }
 
 .page-companies__text {
   font-size: 1.250vw;
   line-height: 1.4;
   margin-bottom: 1.667vw;
+
+  @include viewport-desktop {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  @include viewport-phone {
+    max-width: 150px;
+  }
+}
+
+.page-companies__text--bold {
+  font-weight: 500;
+}
+
+.page-companies__content {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @include viewport-tablet {
+    padding-bottom: 52px;
+  }
+}
+
+.page-companies__list-wrap {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  @include viewport-tablet {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    right: -10px;
+    width: calc(100% + 20px);
+    max-width: calc(100% + 20px);
+    
+  }
 }
 
 .page-companies__list {
@@ -29,42 +78,120 @@
   align-items: center;
   max-width: 78.056vw;
   width: 100%;
+
+  @include viewport-desktop {
+    max-width: 100%;
+  }
+
+  @include viewport-tablet {
+    display: block;
+    white-space: nowrap;
+    overflow-y: auto;
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
 }
 
 .page-companies__item {
+  &:hover {
+    .page-companies__ico {
+      use {
+        opacity: 1;
+      }
+    }
+  }
 
+  @include viewport-tablet {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .page-companies__ico {
-  
+  max-height: 45px;
+  use {
+    fill: var(--color-dark);
+    opacity: .4;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .page-companies__ico--bolt {
-  width: 10.417vw;
-  height: 3.125vw;
+  width: 8.333vw;
+  height: 3.056vw;
+
+  @include viewport-desktop {
+    width: 120px;
+    min-width: 120px;
+    height: 44px;
+  }
 }
 
 .page-companies__ico--glovo {
-  width: 10.417vw;
-  height: 3.125vw;
+  width: 8.333vw;
+  height: 3.056vw;
+
+  @include viewport-desktop {
+    width: 120px;
+    min-width: 120px;
+    height: 44px;
+  }
+
+  @include viewport-tablet {
+    padding-right: 30px;
+  }
 }
 
 .page-companies__ico--michelin {
-  width: 10.417vw;
+  width: 7.083vw;
   height: 3.681vw;
+
+  @include viewport-desktop {
+    width: 102px;
+    height: 53px;
+  }
+
+  @include viewport-tablet {
+    padding-right: 30px;
+  }
 }
 
 .page-companies__ico--silpo {
-  width: 10.417vw;
-  height: 2.986vw;
+  width: 7.569vw;
+  height: 2.917vw;
+
+  @include viewport-desktop {
+    width: 109px;
+    height: 42px;
+  }
+
+  @include viewport-tablet {
+    padding-right: 30px;
+  }
 }
 
 .page-companies__ico--spaces {
   width: 7.639vw;
   height: 1.319vw;
+
+  @include viewport-desktop {
+    width: 110px;
+    height: 19px;
+  }
 }
 
 .page-companies__ico--mitsubishi {
-  width: 10.417vw;
-  height: 4.236vw;
+  width: 8.333vw;
+  height: 3.056vw;
+
+  @include viewport-desktop {
+    width: 120px;
+    height: 44px;
+  }
 }

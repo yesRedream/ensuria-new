@@ -16,6 +16,15 @@
   font-weight: 500;
   text-align: center;
   margin-bottom: 1.528vw;
+
+  @include viewport-desktop {
+    font-size: 48px;
+    margin-bottom: 22px;
+  }
+
+  @include viewport-tablet {
+    font-size: 36px;
+  }
 }
 
 .page-products-toggle__wrap {
@@ -33,6 +42,14 @@
   overflow: hidden;
   box-sizing: border-box;
   margin-bottom: 2.431vw;
+
+  @include viewport-desktop {
+    margin-bottom: 35px;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 17px;
+  }
 }
 
 
@@ -68,6 +85,18 @@
   z-index: 1;
   flex: 1;
   box-sizing: border-box;
+  margin-bottom: 0;
+
+  @include viewport-desktop {
+    height: 28px;
+    font-size: 13px;
+    padding: 6px 8px;
+    min-width: 170px;
+  }
+
+  @include viewport-phone {
+    min-width: 130px;
+  }
 
   &:first-of-type::after {
     content: '';
@@ -91,6 +120,12 @@
   justify-content: space-between;
   margin: -5px;
   width: calc(100% + 10px);
+
+  @include viewport-tablet {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .page-product-item {
@@ -103,6 +138,22 @@
   position: relative;
   border-radius: 6px;
   box-sizing: border-box;
+
+  @include viewport-desktop {
+    min-height: 360px;
+    padding: 24px;
+  }
+
+  @include viewport-tablet {
+    margin: 0 0 5px 0;
+    min-height: 494px;
+    padding: 25px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
 
   &:first-child {
     .page-product-item__bg {
@@ -133,6 +184,18 @@
       width: 20vw;
       right: 7.778vw;
       bottom: -1.528vw;
+
+      @include viewport-tablet {
+        width: 100%;
+        max-width: 240px;
+        right: 24px;
+        top: 31px;
+        max-height: 400px;
+      }
+
+      @media (max-width: 690px) {
+        max-width: 34.667vw;
+      }
     }
   }
 
@@ -143,12 +206,28 @@
 
     .page-products-item__text {
       max-width: 20vw;
+
+      @include viewport-tablet {
+        max-width: 210px;
+      }
     }
 
     .page-product-item__img-wrap {
       width: 22.778vw;
       right: 0;
       bottom: -1.528vw;
+
+      @include viewport-tablet {
+        width: 100%;
+        max-width: 340px;
+        bottom: auto;
+        top: 0;
+        right: -8px;
+      }
+
+      @media (max-width: 690px) {
+        max-width: 49.600vw;
+      }
     }
   }
 }
@@ -157,6 +236,12 @@
   min-width: calc(39.32% - 5px);
   width: calc(39.32% - 5px);
   max-width: calc(39.32% - 5px);
+
+  @include viewport-tablet {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 
@@ -183,6 +268,13 @@
     top: -3.958vw;
     background: #ffffff;
     transform: rotate(45deg);
+
+    @include viewport-tablet {
+      top: -70px;
+      left: -38px;
+      width: 65px;
+      height: 96px;
+    }
   }
 }
 
@@ -193,17 +285,33 @@
   flex-direction: column;
   justify-content: flex-end;
 
+  @include viewport-tablet {
+    max-width: 240px;
+    min-height: 274px;
+    justify-content: space-between;
+  }
+
 }
 
 .page-product-item__ico-wrap {
   position: absolute;
   top: 2.083vw;
   left: 1.667vw;
+
+  @include viewport-tablet {
+    top: 30px;
+    left: 24px;
+  }
 }
 
 .page-product-item__ico {
   width: 3.889vw;
   height: 3.889vw;
+
+  @include viewport-tablet {
+    width: 56px;
+    height: 56px;
+  }
 }
 
 .page-products-item__title {
@@ -211,25 +319,43 @@
   line-height: .9;
   font-weight: 500;
   margin-bottom: 1.389vw;
+
+  @include viewport-tablet {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .page-products-item__text {
   font-size: 0.972vw;
   line-height: 1.4;
   margin-bottom: 4.236vw;
+
+  @include viewport-desktop {
+    font-size: 14px;
+    margin-bottom: 61px;
+  }
 }
 
 .page-products-item__btns {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.958vw;
+  min-height: 3.958vw;
+
+  @include viewport-desktop {
+    min-height: 57px;
+  }
 }
 
 .page-products-item__btn {
   line-height: 1.2;
   font-size: 1.111vw;
   font-weight: 500;
+
+  @include viewport-desktop {
+    font-size: 16px;
+  }
 }
 
 
@@ -240,4 +366,6 @@
 
 .page-product-item__img {
   width: 100%;
+  // height: 100%;
+  // object-fit: contain;
 }

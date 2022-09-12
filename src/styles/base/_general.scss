@@ -15,17 +15,24 @@ h1,h2,h3,h4,h5,h6,p {
 .wrapper {
   display: block;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 0.694vw;
+  padding: 0 0.903vw;
   box-sizing: border-box;
+
+  @include viewport-desktop { 
+    padding: 0 10px;
+  }
 }
 
 a {
   text-decoration: none;
   color: var(--color-dark);
   
-
+  &:hover {
+    text-decoration: none;
+    color: var(--color-dark);
+  }
 }
 
 .link-line {
@@ -72,19 +79,33 @@ a {
   transition: all .3s ease-in-out;
 
   &:hover {
+    color: #ffffff;
     background-color: var(--color-dark-2);
     border-color: var(--color-dark-2);
   }
 
   &:active {
+    color: #ffffff;
     background-color: var(--color-dark-2);
     border-color: var(--color-dark-2);
+  }
+
+  @include viewport-desktop { 
+    height: 48px;
+    min-width: 135px;
+    font-size: 16px;
+    border-radius: 28px;
+  }
+
+  @include viewport-tablet { 
+    height: 58px;
+    min-width: 155px;
   }
 }
 
 .btn--transparent {
   border-color: var(--color-dark-2);
-  color: var(--color-dark-1);
+  color: var(--color-dark);
 
   &:hover {
     background-color: var(--color-dark-2);
@@ -103,10 +124,13 @@ a {
 
   &:hover {
     background-color: #BDE7AB;
+    color: var(--color-dark);
+
   }
 
   &:active {
     background-color: #BDE7AB;
+    color: var(--color-dark);
   }
 }
 
@@ -114,6 +138,10 @@ a {
 .btn--android {
   border: none;
   background-color: var(--color-dark);
+
+  @include viewport-phone { 
+    min-width: auto;
+  }
 
   &:hover {
     background-color: var(--color-dark-2);
@@ -131,6 +159,16 @@ a {
   svg {
     width: 6.667vw;
     height: 1.736vw;
+
+    @include viewport-desktop { 
+      width: 96px;
+      height: 25px;
+    }
+
+    @include viewport-phone { 
+      width: 100%;
+      max-height: 25px;
+    }
   }
 }
 
@@ -138,6 +176,15 @@ a {
   img {
     width: 100%;
     max-width: 7.639vw;
+
+    @include viewport-desktop { 
+      max-width: 110px;
+    }
+
+    @include viewport-phone { 
+      width: 100%;
+      max-height: 27px;
+    }
   }
 }
 
@@ -147,6 +194,14 @@ a {
 
   .btn {
     margin: 0 0.278vw;
+
+    @include viewport-desktop { 
+      margin: 0 4px;
+    }
+  }
+
+  @include viewport-desktop { 
+    margin: 0 -4px;
   }
 }
 
@@ -160,5 +215,12 @@ a {
     top: -3.958vw;
     background: #ffffff;
     transform: rotate(45deg);
+
+    @include viewport-desktop { 
+      // width: 65px;
+      // height: 96px;
+      // top: 10%;
+      // left: 10%;
+    }
   }
 }

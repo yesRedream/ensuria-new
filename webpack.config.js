@@ -37,14 +37,19 @@ module.exports = {
                         ]
                     }
                 }
+            },
+            {
+              test: /\.css$/,
+              use: ['style-loader', 'css-loader']
             }
+            
         ]
     },
 
     resolve: {
         alias: {
             "%modules%": path.resolve(__dirname, "src/blocks/modules"),
-            "%components%": path.resolve(__dirname, "src/blocks/components")
+            "%components%": path.resolve(__dirname, "src/blocks/components"),
         }
     }
 };

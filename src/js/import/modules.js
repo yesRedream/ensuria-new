@@ -9,4 +9,6 @@ import "%modules%/rating/rating";
 import "%modules%/reviews/reviews";
 import "%modules%/talk/talk";
 import "%modules%/download/download";
+import "%modules%/faq/faq";
+import "%modules%/ceo/ceo";
 

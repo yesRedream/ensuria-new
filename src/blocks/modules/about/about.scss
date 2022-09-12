@@ -7,19 +7,19 @@
 .about {}
 
 .about-blue {
-  background: #C6F3F8;
+  background: var(--color-blue);
 }
 
 .about-green {
-  background: #C0F3CA;
+  background: var(--color-green);
 }
 
 .about-purple {
-  background: #E0D3FF;
+  background: var(--color-purple);
 }
 
 .about-yellow {
-  background: #FFFFAF;
+  background: var(--color-yellow);
 }
 
 .about-top__list {
