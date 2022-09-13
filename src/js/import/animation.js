@@ -12,70 +12,7 @@ ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 const controller2 = new ScrollMagic.Controller();
 
 
-// SLICK FIRST SLIDER
-
-
-$(".page-reviews__slider-js").slick({
-  infinite: true,
-  arrows: false,
-  dots: false,
-  autoplay: false,
-  speed: 800,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
-
-var percentTime;
-var tick;
-var time = .1;
-var progressBarIndex = 0;
-
-$('.page-reviews-progress__bar-js').each(function(index) {
-    var progress = "<div class='inProgress inProgress" + index + "'></div>";
-    $(this).html(progress);
-});
-
-function startProgressbar() {
-    resetProgressbar();
-    percentTime = 0;
-    tick = setInterval(interval, 40);
-}
-
-function interval() {
-    if (($('.page-reviews__slider-js .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
-        progressBarIndex = $('.page-reviews__slider-js .slick-track div[aria-hidden="false"]').data("slickIndex");
-        startProgressbar();
-    } else {
-        percentTime += 1 / (time + 5);
-        $('.inProgress' + progressBarIndex).css({
-            width: percentTime + "%"
-        });
-        if (percentTime >= 100) {
-            $('.page-reviews__single-item').slick('slickNext');
-            progressBarIndex++;
-            if (progressBarIndex > 2) {
-                progressBarIndex = 0;
-            }
-            startProgressbar();
-        }
-    }
-}
-
-function resetProgressbar() {
-    $('.inProgress').css({
-        width: 0 + '%'
-    });
-    clearInterval(tick);
-}
-// startProgressbar();
-// End ticking machine
-
-$('.page-reviews-progress__item-js').click(function () {
-  clearInterval(tick);
-  var goToThisIndex = $(this).find("span").data("slickIndex");
-  $('.page-reviews__single-item').slick('slickGoTo', goToThisIndex, false);
-  startProgressbar();
-});
+// HAMBURGER
 
 
 
@@ -89,96 +26,6 @@ $('.header-menu__close').click(function(){
   $('.header__hamburger').removeClass('header-hamburger--active');
 });
 
-new ScrollMagic.Scene({
-  triggerElement: '.page__section--reviews',
-  triggerHook: 0.5,
-  offset: 0,
-  
-})
-  .on('start', function (event) {
-    startProgressbar();
-  })
-  // .addIndicators() 
-  .addTo(controller2);
-
-
-// SLICK SECOND SLIDER
-
-
-$(".page-talk__slider-js").slick({
-  infinite: true,
-  arrows: false,
-  dots: false,
-  autoplay: false,
-  speed: 800,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
-
-var percentTime;
-var tick;
-var time = .1;
-var progressBarIndex = 0;
-
-$('.page-talk-progress__bar-js').each(function(index) {
-    var progress = "<div class='inProgressTalk inProgressTalk" + index + "'></div>";
-    $(this).html(progress);
-});
-
-function startProgressbar2() {
-    resetProgressbar2();
-    percentTime = 0;
-    tick = setInterval(interval2, 20);
-}
-
-function interval2() {
-    if (($('.page-talk__slider-js .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
-        progressBarIndex = $('.page-talk__slider-js .slick-track div[aria-hidden="false"]').data("slickIndex");
-        startProgressbar2();
-    } else {
-        percentTime += 1 / (time + 5);
-        $('.inProgressTalk' + progressBarIndex).css({
-            width: percentTime + "%"
-        });
-        if (percentTime >= 100) {
-            $('.page-talk__single-item').slick('slickNext');
-            progressBarIndex++;
-            if (progressBarIndex > 2) {
-                progressBarIndex = 0;
-            }
-            startProgressbar2();
-        }
-    }
-}
-
-function resetProgressbar2() {
-    $('.inProgressTalk').css({
-        width: 0 + '%'
-    });
-    clearInterval(tick);
-}
-// startProgressbar2();
-// End ticking machine
-
-$('.page-talk-progress__item-js').click(function () {
-  clearInterval(tick);
-  var goToThisIndex = $(this).find("span").data("slickIndex");
-  $('.page-talk__single-item').slick('slickGoTo', goToThisIndex, false);
-  startProgressbar2();
-});
-
-
-new ScrollMagic.Scene({
-  triggerElement: '.page__section--talk',
-  triggerHook: 0.5,
-  offset: 0,
-  
-})
-  .on('start', function (event) {
-    startProgressbar2();
-  })
-  // .addIndicators() 
-  .addTo(controller2);
 
 
 // IPHONE ANIMATIONS
@@ -392,37 +239,37 @@ new ScrollMagic.Scene({
   // .addIndicators() 
   .addTo(controller2);
   
-  new ScrollMagic.Scene({
-    triggerElement: '.page__section--compensation',
-    duration: 300,
-    triggerHook: 0.5,
-    offset: 20,
-    
-  })
-    .setTween(text2)
-    // .addIndicators() 
-    .addTo(controller2);
+new ScrollMagic.Scene({
+  triggerElement: '.page__section--compensation',
+  duration: 300,
+  triggerHook: 0.5,
+  offset: 20,
+  
+})
+  .setTween(text2)
+  // .addIndicators() 
+  .addTo(controller2);
 
-  new ScrollMagic.Scene({
-    triggerElement: '.page-compensation-people__price--3',
-    duration: 300,
-    triggerHook: 1,
-    offset: -100,
-    
-  })
-    .setTween(text3)
-    // .addIndicators() 
-    .addTo(controller2);
+new ScrollMagic.Scene({
+  triggerElement: '.page-compensation-people__price--3',
+  duration: 300,
+  triggerHook: 1,
+  offset: -100,
+  
+})
+  .setTween(text3)
+  // .addIndicators() 
+  .addTo(controller2);
 
-  new ScrollMagic.Scene({
-    triggerElement: '.page-compensation-people__person--4',
-    duration: 300,
-    triggerHook: 1,
-    offset: -100,
-    
-  })
-    .setTween(person4)
-    // .setTween(person4)
-    // .addIndicators() 
-    .addTo(controller2);
+new ScrollMagic.Scene({
+  triggerElement: '.page-compensation-people__person--4',
+  duration: 300,
+  triggerHook: 1,
+  offset: -100,
+  
+})
+  .setTween(person4)
+  // .setTween(person4)
+  // .addIndicators() 
+  .addTo(controller2);
 
