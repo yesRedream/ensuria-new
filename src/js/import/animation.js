@@ -273,3 +273,16 @@ new ScrollMagic.Scene({
   // .addIndicators() 
   .addTo(controller2);
 
+  new ScrollMagic.Scene({
+    triggerElement: '.page-compensation-people__person--4',
+    duration: 300,
+    triggerHook: 1,
+    offset: -100,
+    
+  })
+    .setTween(text4)
+    // .setTween(person4)
+    // .addIndicators() 
+    .addTo(controller2);
+  
+  
