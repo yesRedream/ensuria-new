@@ -4,6 +4,7 @@ import * as ScrollMagic from "scrollmagic";
 import { TweenMax, TimelineMax, TweenLite } from "gsap";
 import { ScrollMagicPluginGsap, ScrollMagicPluginIndicator } from "scrollmagic-plugins";
 import 'slick-carousel';
+// import 'jquery.scrollto';
  
 ScrollMagicPluginIndicator(ScrollMagic);
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
@@ -28,6 +29,7 @@ $('.header-menu__close').click(function(){
 
 
 
+
 // IPHONE ANIMATIONS
 
 
@@ -45,11 +47,9 @@ function makeScrollMagic() {
 
   new ScrollMagic.Scene({
     triggerElement: '.page__section--get',
-    duration: 1800,
+    duration: 1600,
     triggerHook: 0
   })
-    .setClassToggle(".page-get__item--1", "active")
-    // .addIndicators()
     .setPin('.page__section--get')
     .on('start', function (event) {
       $('.page-get__bg').toggleClass('page-get__bg--active');
@@ -65,23 +65,90 @@ function makeScrollMagic() {
     triggerElement: ".page__section--get",
     offset: 900,
   })
-      .setClassToggle(".page-get__img--step-1, .page-get__item--2", "active")
+      .setClassToggle(".page-get__img--step-1", "active")
+      .on('start', function (event) {
+        if(event.scrollDirection == 'FORWARD') {
+          $('.page-get__item--1').removeClass('active');
+          $('.page-get__item--2').addClass('active');
+          $('.page-get__item--3').removeClass('active');
+        } else {
+          $('.page-get__item--1').addClass('active');
+          $('.page-get__item--2').removeClass('active');
+          $('.page-get__item--3').removeClass('active');
+
+        }
+      })
+      // .addIndicators()
       .addTo(controller);
   
+// $(".page-get__item--1").click(function (){
+//   $('html, body').animate({
+//     scrollTop: $(".page__section--get").offset().top-300
+//   }, 0);
+// });
+
+// $(".page-get__item--2").click(function (){
+//   $('body').scrollTo(3500);
+// });
+
+// $(".page-get__item--3").click(function (){
+//   $('body').scrollTo(4000);
+// });
+
+ 
+// $(".page-get__item--1").click(function (event){
+//   $('html, body').animate({
+//     scrollTop: $(".page__section--get").offset().top+300
+//   }, 0);
+// });
+
+// $(".page-get__item--2").click(function (event){
+//   $('html, body').animate({
+//     scrollTop: $(".page__section--get").offset().top+1000
+//   }, 0);
+// });
+
+// $(".page-get__item--3").click(function (event){
+//   $('html, body').animate({
+//     scrollTop: $(".page__section--get").offset().top+1600
+//   }, 0);
+// });
+
+
+// $(document).ready(function(){
+//   $( "a" ).click(function( event ) {
+//       event.preventDefault();
+//       $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+//   });
+// });
+
   
   new ScrollMagic.Scene({
     triggerElement: ".page__section--get", 
     offset: 1500,
   })
-      .setClassToggle(".page-get__img--step-2, .page-get__item--3", "active")
+      .setClassToggle(".page-get__img--step-2", "active")
+      .on('start', function (event) {
+        if(event.scrollDirection == 'FORWARD') {
+          $('.page-get__item--1').removeClass('active');
+          $('.page-get__item--2').removeClass('active');
+          $('.page-get__item--3').addClass('active');
+        } else {
+          $('.page-get__item--1').removeClass('active');
+          $('.page-get__item--2').addClass('active');
+          $('.page-get__item--3').removeClass('active');
+        }
+      })
+      // .addIndicators()
       .addTo(controller);
   
   
   new ScrollMagic.Scene({
     triggerElement: ".page__section--get", 
-    offset: 1700,
+    offset: 1550,
   })
       .setClassToggle(".page-get__img--step-5", "active")
+      // .addIndicators()
       .addTo(controller);
 }
 

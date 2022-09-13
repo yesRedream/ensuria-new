@@ -77,6 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-zopfli", "npm:7.0.0"],\
             ["imports-loader", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:4.0.1"],\
             ["jquery", "npm:3.6.1"],\
+            ["jquery.scrollto", "npm:2.1.3"],\
             ["lint-staged", "npm:12.5.0"],\
             ["postcss", "npm:8.4.16"],\
             ["postcss-scss", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:4.0.4"],\
@@ -9873,6 +9874,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["imagemin-zopfli", "npm:7.0.0"],\
             ["imports-loader", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:4.0.1"],\
             ["jquery", "npm:3.6.1"],\
+            ["jquery.scrollto", "npm:2.1.3"],\
             ["lint-staged", "npm:12.5.0"],\
             ["postcss", "npm:8.4.16"],\
             ["postcss-scss", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:4.0.4"],\
@@ -11742,6 +11744,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["npm:3.6.1", {\
           "packageLocation": "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/",\
           "packageDependencies": [\
+            ["jquery", "npm:3.6.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["jquery.scrollto", [\
+        ["npm:2.1.3", {\
+          "packageLocation": "./.yarn/cache/jquery.scrollto-npm-2.1.3-7132369a9b-97810def78.zip/node_modules/jquery.scrollto/",\
+          "packageDependencies": [\
+            ["jquery.scrollto", "npm:2.1.3"],\
             ["jquery", "npm:3.6.1"]\
           ],\
           "linkType": "HARD"\

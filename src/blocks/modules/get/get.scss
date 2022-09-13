@@ -195,7 +195,7 @@
   line-height: 1.1;
   font-weight: 500;
   font-size: 2.092vh;
-  cursor: pointer;
+  // cursor: pointer;
   transition: all .3s ease-in-out;
   opacity: .4;
 
@@ -203,12 +203,13 @@
     font-size: 1.5vh;
   }
 
-  &:hover {
-    opacity: 1;
-  }
+  // &:hover {
+  //   opacity: 1;
+  // }
 
   &.active {
     opacity: 1;
+    // cursor: default;
   }
 }
 

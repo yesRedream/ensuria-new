@@ -82,6 +82,7 @@
         "gsap": "^3.11.1",
         "imports-loader": "^4.0.1",
         "jquery": "^3.6.1",
+        "jquery.scrollto": "^2.1.3",
         "pushin": "^5.2.0",
         "sass": "^1.54.9",
         "scrollmagic": "^2.0.8",
