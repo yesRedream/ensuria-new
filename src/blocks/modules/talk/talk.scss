@@ -1,6 +1,9 @@
 .page__section--talk {
   margin-bottom: 9.861vw;
 
+  @include viewport-tablet { 
+    margin-bottom: 117px;
+  }
 }
 
 .page-talk__wrapper {
@@ -11,6 +14,14 @@
 
 .page-talk {
   max-width: 45.903vw;
+
+  @include viewport-desktop { 
+    max-width: 661px;
+  }
+
+  @include viewport-tablet { 
+    max-width: 100%;
+  }
 }
 
 .page-talk__title {
@@ -19,6 +30,19 @@
   line-height: 1.4;
   text-align: center;
   margin-bottom: 3.125vw;
+
+  @include viewport-desktop { 
+    font-size: 42px;
+  }
+
+  @include viewport-tablet { 
+    font-size: 36px;
+    margin-bottom: 31px;
+  }
+
+  @include viewport-phone { 
+    font-size: 32px;
+  }
 }
 
 .page-talk__slider {
@@ -63,6 +87,8 @@
   align-items: center;
   position: relative;
   box-sizing: border-box;
+
+
 }
 
 .talk-slider-item__img-wrap {
@@ -70,6 +96,13 @@
   width: 6.667vw;
   height: 6.667vw;
   margin-bottom: 1.667vw;
+
+  @include viewport-tablet { 
+    width: 64px;
+    height: 64px;
+    margin-bottom: 18px;
+    order: -3;
+  }
 }
 
 .talk-slider-item__img {
@@ -87,6 +120,17 @@
   line-height: 1.5;
   margin-bottom: 1.667vw;
   font-weight: 500;
+  text-align: center;
+
+  @include viewport-desktop { 
+    font-size: 28px;
+  }
+
+  @include viewport-tablet { 
+    font-size: 20px;
+    margin-bottom: 28px;
+    order: -2;
+  }
 }
 
 .talk-slider-item__name {
@@ -97,6 +141,14 @@
   color: var(--color-dark-2);
   margin-bottom: 2px;
   margin-bottom: 1.667vw;
+
+  @include viewport-desktop { 
+    font-size: 16px;
+  }
+
+  @include viewport-tablet { 
+    margin-bottom: 38px;
+  }
 }
 
 .talk-slider-item__link {
@@ -118,6 +170,11 @@
   svg {
     width: 17px;
     height: 17px;
+  }
+
+  @include viewport-tablet { 
+    margin-bottom: 38px;
+    order: -1;
   }
 }
 

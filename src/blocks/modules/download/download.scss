@@ -1,5 +1,10 @@
 .page__section--download {
   margin-bottom: 17.500vw;
+
+  @include viewport-tablet {
+    margin-bottom: 85px;
+  }
+
 }
 
 .page-download__wrapper {}
@@ -15,6 +20,13 @@
   padding-bottom: 19.722vw;
   position: relative;
   margin-bottom: 2.083vw;
+
+  @include viewport-desktop { 
+    width: 100%;
+    max-width: 304px;
+    padding-bottom: 284px;
+    margin-bottom: 30px;
+  }
 }
 
 .page-download__img {
@@ -30,7 +42,7 @@
 .page-download__box {
   display: flex;
   align-items: center;
-  margin-bottom: 0.972vw;
+  margin-bottom: 14px;
 }
 
 .page-download__logo-wrap {
@@ -38,6 +50,7 @@
   height: 40px;
   margin-right: 9px;
   position: relative;
+  display: flex;
 }
 
 .page-download__logo {
@@ -63,9 +76,20 @@
   margin-bottom: 2.500vw;
   max-width: 503px;
   text-align: center;
+
+  @include viewport-desktop {
+    font-size: 48px;
+    margin-bottom: 36px;
+  }
+
+  @include viewport-tablet {
+    font-size: 28px;
+    margin-bottom: 26px;
+  }
 }
 
 .page-download__title__btn {
+  flex: 1;
 
 }
 

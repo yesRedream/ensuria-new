@@ -222,5 +222,18 @@ a {
       // top: 10%;
       // left: 10%;
     }
+
+    @include viewport-desktop { 
+      width: 65px;
+      height: 96px;
+      top: -70px;
+      left: -30px;
+    }
+
+    @include viewport-tablet { 
+      top: -70px;
+      left: -38px;
+    }
+
   }
 }

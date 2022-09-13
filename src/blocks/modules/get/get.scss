@@ -1,12 +1,19 @@
 .page__section--get {
   overflow: hidden;
   margin-bottom: 6.597vw;
-  padding-top: 0.903vw;
-  padding-bottom: 0.903vw;
+  padding-top: 0.903vh;
+  padding-bottom: 0.903vh;
   box-sizing: border-box;
   height: 100vh;
   display: flex;
   flex-direction: column;
+
+  @include viewport-tablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+    height: auto;
+  }
 }
 
 .page-get__wrapper {
@@ -18,6 +25,14 @@
   box-sizing: border-box;
   height: 100%;
   padding-top: 7.741vh;
+
+  @include viewport-desktop {
+    padding-top: 5vh;
+  }
+
+  @include viewport-tablet {
+    padding-top: 39px;
+  }
 }
 
 .page-get__bg {
@@ -34,6 +49,10 @@
   transition: all .2s ease-in;
   transform: scale(1.03);
 
+  @include viewport-tablet {
+    transform: scale(1);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -43,6 +62,14 @@
     top: -3.958vw;
     background: #ffffff;
     transform: rotate(45deg);
+
+    @include viewport-tablet {
+      padding-top: 39px;
+      width: 65px;
+      height: 96px;
+      top: -70px;
+      left: -38px;
+    }
   }
 }
 
@@ -59,6 +86,23 @@
   margin-bottom: 2.615vh;
   margin-left: auto;
   margin-right: auto;
+
+  @include viewport-desktop {
+    font-size: 5vh;
+  }
+
+  @include viewport-tablet {
+    max-width: 100%;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-size: 36px;
+    margin-bottom: 52px;
+  }
+
+  @include viewport-phone {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .page-get__content {
@@ -66,6 +110,10 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+
+  @include viewport-tablet {
+    display: none;
+  }
 }
 
 .page-get__img {
@@ -114,9 +162,18 @@
   z-index: 3;
   opacity: 0;
 
+  @include viewport-desktop {
+    top: 6%;
+    transform: translate(-50%, 0) scale(0.5);
+  }
+
   &.active {
     opacity: 1;
     transform: translateX(-132%) scale(1);
+
+    @include viewport-desktop {
+      transform: translate(-50%, 0) scale(0.87);
+    }
   }
 }
 
@@ -125,6 +182,10 @@
   top: 50%;
   left: 50%;
   transform: translate(160%, -50%);
+
+  @include viewport-desktop {
+    transform: translate(172%, -50%);
+  }
 }
 
 .page-get__item {
@@ -137,6 +198,10 @@
   cursor: pointer;
   transition: all .3s ease-in-out;
   opacity: .4;
+
+  @include viewport-desktop {
+    font-size: 1.5vh;
+  }
 
   &:hover {
     opacity: 1;
@@ -156,4 +221,100 @@
   width: 1.674vh;
   height: 1.674vh;
   margin-bottom: 1.674vh;
+}
+
+.page-get-mobile {
+  display: none;
+
+  @include viewport-tablet {
+    display: block;
+    padding-bottom: 150.667vw;
+    position: relative;
+  }
+}
+
+.page-get-mobile__list-wrap {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  right: -10px;
+  width: calc(100% + 20px);
+  max-width: calc(100% + 20px);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page-get-mobile__list {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.page-get-mobile__item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -4vw;
+  position: relative;
+  
+
+  &:first-child {
+    padding-left: 12vw;
+  }
+
+  &:last-child {
+    :after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -24vw;
+      width: 24vw;
+      height: 1px;
+    }
+  }
+}
+
+.page-get-mobile__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-get-mobile__img-wrap {
+  width: 66.667vw;
+}
+
+.page-get-mobile__img {
+  width: 100%;
+}
+
+.page-get-mobile__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: 5.333vw;
+  cursor: pointer;
+  margin-top: -4vw;
+  margin-left: 25vw;
+}
+
+.page-get-mobile__ico-wrap {}
+
+.page-get-mobile__ico {
+  width: 4.267vw;
+  height: 4.267vw;
+  margin-bottom: 4.267vw;
 }

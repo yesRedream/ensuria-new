@@ -1,6 +1,10 @@
 .page__section--faq {
   overflow: hidden;
   margin-bottom: 4.306vw;
+
+  @include viewport-tablet {
+    margin-bottom: 26px;
+  }
 }
 
 .page-faq__wrapper {
@@ -10,6 +14,10 @@
 .page-faq {
   position: relative;
   padding-top: 5.139vw;
+
+  @include viewport-tablet {
+    padding-top: 52px;
+  }
 }
 
 .page-faq__bg {
@@ -45,6 +53,18 @@
   margin-bottom: 2.917vw;
   margin-left: auto;
   margin-right: auto;
+
+  @include viewport-desktop {
+    font-size: 54px;
+    max-width: 718px;
+  }
+
+  @include viewport-tablet {
+    font-size: 32px;
+    margin-bottom: 36px;
+    max-width: 100%;
+    padding: 0 30px;
+  }
 }
 
 .page-faq__content {
@@ -53,6 +73,10 @@
   flex-direction: column;
   position: relative;
   padding-bottom: 7.778vw;
+
+  @include viewport-tablet {
+    padding-bottom: 61px;
+  }
 }
 
 .faq {
@@ -61,6 +85,15 @@
   list-style: none;
   width: 100%;
   max-width: 64.167vw;
+
+  @include viewport-desktop {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+
+  @include viewport-tablet {
+    padding: 0 24px;
+  }
 }
 
 .faq__item {
@@ -82,24 +115,45 @@
   justify-content: space-between;
   text-decoration: none;
   transition: all .3s ease;
+
+  @include viewport-desktop {
+    font-size: 24px;
+  }
+
+  @include viewport-tablet {
+    font-size: 16px;
+    padding: 10px 60px 10px 0;
+  }
 }
 
-.faq__ico {
+.faq__ico-wrap {
   display: inline-block;
   position: absolute;
   top: 2.15vw;
   right: 0;
+
+  @include viewport-tablet {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.faq__ico {
+  display: flex;
   width: 1.389vw;
   height: 1.389vw;
   transition: transform 0.2s ease-in-out;
   transform: rotate(135deg);
 
+  @include viewport-desktop {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .collapsed {
   .faq__ico {
     transform: rotate(0);
-
   }
 }
 
@@ -107,4 +161,14 @@
   font-size: 1.111vw;
   line-height: 1.5;
   max-width: 52.292vw;
+
+  @include viewport-desktop {
+    font-size: 16px;
+    max-width: 753px;
+    
+  }
+
+  @include viewport-tablet {
+    font-size: 14px;
+  }
 }

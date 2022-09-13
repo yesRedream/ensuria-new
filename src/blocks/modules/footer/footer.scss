@@ -1,6 +1,11 @@
 .footer__section {
   overflow: hidden;
-  margin-bottom: 4.306vw;
+  padding-bottom: 0.903vw;
+
+  @include viewport-tablet {
+    padding-bottom: 18px;
+  }
+
 }
 
 .footer__wrapper {
@@ -10,6 +15,14 @@
 .footer {
   position: relative;
   padding: 5.972vw 2.986vw 1.736vw 2.986vw;
+
+  @include viewport-desktop {
+    padding: 66px 30px 25px 30px;
+  }
+
+  @include viewport-tablet {
+    padding-bottom: 33px 26px 74px 26px;
+  }
 }
 
 .footer__bg {
@@ -33,11 +46,31 @@
     top: -3.958vw;
     background: #ffffff;
     transform: rotate(45deg);
+
+    @include viewport-desktop { 
+      width: 65px;
+      height: 96px;
+      top: -70px;
+      left: -30px;
+    }
+
+    @include viewport-tablet { 
+      top: -70px;
+      left: -38px;
+    }
   }
 }
 
 .footer__content {
   display: flex;
+
+  @include viewport-desktop {
+    justify-content: space-between;
+  }
+
+  @include viewport-tablet {
+    flex-direction: column;
+  }
 }
 
 .footer__box {
@@ -48,30 +81,72 @@
 
 .footer__box--logo {
   margin-right: 9.931vw;
+
+  @include viewport-desktop {
+    margin-right: 30px;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 21px;
+    margin-right: 0;
+  }
+  
 }
 
 .footer__box--links {
   margin-right: 7.431vw;
+
+  @include viewport-desktop {
+    margin-right: 30px;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 21px;
+    margin-right: 0;
+  }
 }
 
 .footer__box--grow {
   flex: 1;
+
+  @include viewport-desktop {
+    flex: 0;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 44px;
+  }
 }
 
 .footer__box--contact {
   flex: 1;
   max-width: 19.583vw;
+
+  @include viewport-desktop {
+    max-width: none;
+    min-width: 200px;
+    flex: 0;
+  }
 }
 
 .footer-logo {
   display: flex;
   width: 100%;
   margin-bottom: 0.833vw;
+
+  @include viewport-desktop {
+    margin-bottom: 12px;
+  }
 }
 
 .footer-logo__ico {
   width: 7.986vw;
   height: 1.667vw;
+
+  @include viewport-desktop {
+    width: 131px;
+    height: 28px;
+  }
 }
 
 .footer__desc {
@@ -79,11 +154,28 @@
   font-size: 0.903vw;
   line-height: 1.2;
   margin-bottom: 2.917vw;
+
+  @include viewport-desktop {
+    font-size: 13px;
+  }
 }
 
 .footer-location {
   display: flex;
   align-items: center;
+  position: absolute; 
+  top: 15.139vw;
+  left: 2.986vw;
+
+  @include viewport-desktop {
+    top: 160px;
+    left: 30px;
+  }
+
+  @include viewport-tablet {
+    position: static;
+    margin-bottom: 55px;
+  }
 }
 
 .footer-location__box {
@@ -94,33 +186,60 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include viewport-desktop {
+    margin-right: 26px;
+  }
 }
 
 .footer-location__ico {
   width: 1.389vw;
   height: 1.389vw;
   margin-right: 0.556vw;
+
+  @include viewport-desktop {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
 }
 
 .footer-location__text {
   text-transform: uppercase;
   font-size: 0.972vw;
   line-height: 1.5;
+
+  @include viewport-desktop {
+    font-size: 14px;
+  }
 }
 
 .footer__link {
   font-size: 1.111vw;
   line-height: 1.5;
   margin-bottom: 1.528vw;
+  white-space: nowrap;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include viewport-desktop {
+    font-size: 16px;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 22px;
   }
 }
 
 .footer__contact {
   font-size: 1.111vw;
   line-height: 1.5;
+
+  @include viewport-desktop {
+    font-size: 16px;
+  }
 }
 
 .footer__email {
@@ -128,6 +247,14 @@
   line-height: 1.5;
   font-weight: 500;
   margin-bottom: 4.514vw;
+
+  @include viewport-desktop {
+    font-size: 16px;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 65px;
+  }
 }
 
 .footer__socials {
@@ -135,6 +262,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @include viewport-tablet {
+    max-width: 228px;
+  }
 }
 
 
@@ -164,26 +295,51 @@
 .footer-socials__ico--twitter {
   width: 1.181vw;
   height: 0.972vw;
+
+  @include viewport-desktop { 
+    width: 16px;
+    height: 13px;
+  }
 }
 
 .footer-socials__ico--facebook {
   width: 1.181vw;
   height: 1.181vw;
+
+  @include viewport-desktop { 
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .footer-socials__ico--instagram {
   width: 1.250vw;
   height: 1.181vw;
+
+  @include viewport-desktop { 
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .footer-socials__ico--tiktok {
   width: 1.111vw;
   height: 1.181vw;
+
+  @include viewport-desktop { 
+    width: 14px;
+    height: 16px;
+  }
 }
 
 .footer-socials__ico--youtube {
   width: 1.389vw;
   height: 1.042vw;
+
+  @include viewport-desktop { 
+    width: 20px;
+    height: 14px;
+  }
 }
 
 .footer__copyright-wrap {
@@ -191,6 +347,12 @@
   justify-content: center;
   align-items: center;
   margin-top: 4.722vw;
+
+  @include viewport-tablet {
+    margin-top: 41px;
+    justify-content: flex-start;
+  }
+
 }
 
 .footer__copyright {
@@ -198,4 +360,24 @@
   font-size: 0.833vw;
   line-height: 1.5;
   color: var(--color-dark-2);
+
+  @include viewport-desktop {
+    font-size: 12px;
+  }
+
+  @include viewport-tablet {
+    text-align: left;
+  }
+}
+
+
+
+
+[data-aos="bg"] {
+  transform: scale(1.2);
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: scale(.4);
+  }
 }
