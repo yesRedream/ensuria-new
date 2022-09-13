@@ -1,8 +1,8 @@
 # Ensuria
 
+
+
 ## :keyboard: Команды
-* ```yarn run lint:styles``` - проверить SCSS-файлы. Для VSCode необходимо установить [плагин](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint). Для WebStorm
-или PHPStorm необходимо включить Stylelint в ```Languages & Frameworks - Style Sheets - Stylelint```
 * ```yarn run dev``` - запуск сервера для разработки проекта
 * ```yarn run build``` - собрать проект с оптимизацией без запуска сервера
 * ```yarn run build:views``` - собрать HTML-файлы
