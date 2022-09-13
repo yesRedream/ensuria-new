@@ -74,10 +74,12 @@
   font-size: 3.333vw;
   line-height: 1.1;
   margin-bottom: 2.500vw;
-  max-width: 503px;
+  max-width: 34.931vw;
   text-align: center;
 
   @include viewport-desktop {
+    max-width: 503px;
+
     font-size: 48px;
     margin-bottom: 36px;
   }
