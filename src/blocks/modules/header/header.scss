@@ -385,7 +385,7 @@
   margin-right: 8px;
 }
 
-.footer-location__text {
+.header-mobile-lang__text {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.5;
@@ -394,7 +394,7 @@
 
 .page__section--usp {
   padding-top: 0.903vw;
-  overflow: hidden;
+  // overflow: hidden;
   margin-bottom: 0.764vw;
 
   @include viewport-desktop { 
@@ -418,6 +418,7 @@
   background: var(--color-purple);
   z-index: -1;
   border-radius: 3px;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -446,6 +447,7 @@
 .page-usp__content {
   padding: 1.944vw 2.847vw 11.806vw 2.847vw;
   position: relative;
+  overflow: hidden;
 
   // @include viewport- { 
   //   padding: 47px 30px;

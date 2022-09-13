@@ -369,15 +369,3 @@
     text-align: left;
   }
 }
-
-
-
-
-[data-aos="bg"] {
-  transform: scale(1.2);
-  transition-property: transform;
-
-  &.aos-animate {
-    transform: scale(.4);
-  }
-}
