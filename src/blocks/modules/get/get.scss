@@ -25,6 +25,7 @@
   box-sizing: border-box;
   height: 100%;
   padding-top: 7.741vh;
+  overflow: hidden;
 
   @include viewport-desktop {
     padding-top: 5vh;
@@ -32,6 +33,7 @@
 
   @include viewport-tablet {
     padding-top: 39px;
+    overflow: visible;
   }
 }
 
@@ -78,7 +80,7 @@
 }
 
 .page-get__title {
-  max-width: 77.510vh;
+  max-width: 87.510vh;
   font-size: 6.695vh;
   line-height: 1;
   font-weight: 500;
@@ -150,6 +152,8 @@
   position: relative;
   top: 0;
   left: 37%;
+
+
 }
 
 .page-get__img--step-5 {
@@ -181,10 +185,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(160%, -50%);
+  transform: translate(100%, -50%);
+  max-width: 21vh;
 
   @include viewport-desktop {
-    transform: translate(172%, -50%);
+    max-width: 14.5vh;
+    transform: translate(120%, -50%);
   }
 }
 
@@ -310,6 +316,12 @@
   cursor: pointer;
   margin-top: -4vw;
   margin-left: 25vw;
+  text-align: left;
+  max-width: 53vw;
+
+  span {
+    white-space: normal;
+  }
 }
 
 .page-get-mobile__ico-wrap {}

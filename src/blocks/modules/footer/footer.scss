@@ -154,9 +154,11 @@
   font-size: 0.903vw;
   line-height: 1.2;
   margin-bottom: 2.917vw;
+  max-width: 10vw;
 
   @include viewport-desktop {
     font-size: 13px;
+    max-width: 145px;
   }
 }
 
