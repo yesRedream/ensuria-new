@@ -1,6 +1,6 @@
 # Ensuria
-
-
+DEMO:
+https://yesredream.github.io/ensuria-new/dist/index.html
 
 ## :keyboard: Команды
 * ```yarn run dev``` - запуск сервера для разработки проекта
