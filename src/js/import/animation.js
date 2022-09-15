@@ -321,7 +321,7 @@ new ScrollMagic.Scene({
   triggerElement: '.page-compensation-people__price--3',
   duration: 300,
   triggerHook: 1,
-  offset: -100,
+  offset: 0,
   
 })
   .setTween(text3)
@@ -332,7 +332,7 @@ new ScrollMagic.Scene({
   triggerElement: '.page-compensation-people__person--4',
   duration: 300,
   triggerHook: 1,
-  offset: -100,
+  offset: -30,
   
 })
   .setTween(person4)
@@ -344,7 +344,7 @@ new ScrollMagic.Scene({
     triggerElement: '.page-compensation-people__person--4',
     duration: 300,
     triggerHook: 1,
-    offset: -100,
+    offset: -30,
     
   })
     .setTween(text4)

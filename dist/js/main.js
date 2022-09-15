@@ -587,14 +587,14 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: '.page-compensation-people__price--3',
   duration: 300,
   triggerHook: 1,
-  offset: -100
+  offset: 0
 }).setTween(text3) // .addIndicators() 
 .addTo(controller2);
 new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: '.page-compensation-people__person--4',
   duration: 300,
   triggerHook: 1,
-  offset: -100
+  offset: -30
 }).setTween(person4) // .setTween(person4)
 // .addIndicators() 
 .addTo(controller2);
@@ -602,7 +602,7 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: '.page-compensation-people__person--4',
   duration: 300,
   triggerHook: 1,
-  offset: -100
+  offset: -30
 }).setTween(text4) // .setTween(person4)
 // .addIndicators() 
 .addTo(controller2);
