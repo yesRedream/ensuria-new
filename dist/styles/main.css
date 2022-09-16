@@ -8526,6 +8526,68 @@ a:hover {
   color: var(--color-dark-2);
 }
 
+.select-wrapper {
+  display: block;
+}
+
+.dropholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: var(--color-dark);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.holder {
+  font-size: 0.972vw;
+  line-height: 1.5;
+}
+
+.dropdown {
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 20;
+  text-transform: uppercase;
+  font-size: 0.972vw;
+  line-height: 1.5;
+}
+
+.dropdown.active + .dropdownOption {
+  display: block;
+}
+
+.dropdownOption {
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 70px;
+  right: 0;
+  margin: 0;
+  cursor: pointer;
+  display: none;
+  background: #ffffff;
+  border-radius: 10px;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.dropdownOption li {
+  padding: 10px 15px;
+  color: var(--color-dark);
+  list-style: none;
+}
+
+.dropdownOption li:hover:not(.current) {
+  opacity: 0.8;
+}
+
+.current {
+  color: var(--color-blue);
+}
+
 .page__section--companies {
   margin-bottom: 4.861vw;
 }
@@ -13927,6 +13989,14 @@ a:hover {
 
   .footer__copyright {
     font-size: 12px;
+  }
+
+  .holder {
+    font-size: 14px;
+  }
+
+  .dropdown {
+    font-size: 14px;
   }
 
   .page__section--companies {
