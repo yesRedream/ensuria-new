@@ -130,9 +130,21 @@ aos__WEBPACK_IMPORTED_MODULE_0___default().init({
 /*!*************************************************!*\
   !*** ./src/blocks/modules/products/products.js ***!
   \*************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--business').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').css("display", "none");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').css("display", "flex");
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--personal').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').css("display", "flex");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').css("display", "none");
+});
 
 /***/ }),
 
@@ -633,7 +645,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_companies_companies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/companies/companies */ "./src/blocks/modules/companies/companies.js");
 /* harmony import */ var _modules_companies_companies__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_companies_companies__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_products_products__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/products/products */ "./src/blocks/modules/products/products.js");
-/* harmony import */ var _modules_products_products__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_products_products__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _modules_compensation_compensation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/compensation/compensation */ "./src/blocks/modules/compensation/compensation.js");
 /* harmony import */ var _modules_compensation_compensation__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_compensation_compensation__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _modules_get_get__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/get/get */ "./src/blocks/modules/get/get.js");

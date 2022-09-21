@@ -47,7 +47,7 @@
 .header-nav {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @include viewport-desktop {   
     flex: 1;
@@ -524,34 +524,38 @@
 
 .page-usp__title--first {
   margin-left: 14.931vw;
+
+  .ru, .ua {
+    margin-left: -11.3vw;
+  }
 }
 
 .page-usp__title--second {}
 
 .page-usp__title--third {
-  .ru, .ua {
+  .ru, .ua, .en {
     opacity: 0;
   }
 }
 
 .page-usp__title--fourth {
-  margin-right: 5.208vw;
+  // margin-right: 5.208vw;
   z-index: -1;
 
-  @include viewport-tablet { 
-    margin-right: 10vw;
-  }
+  // @include viewport-tablet { 
+  //   margin-right: 10vw;
+  // }
 
-  .ru, .ua {
-    margin-right: -5.208vw;
-  }
+  // .ru, .ua {
+  //   margin-right: -5.208vw;
+  // }
 }
 
 
 .page-usp__img-wrap {
   position: absolute;
   left: 50%;
-  top: 5.161vw;
+  top: 7vw;
   width: 48.611vw;
   height: 34.514vw;
   transform: translateX(-50%);

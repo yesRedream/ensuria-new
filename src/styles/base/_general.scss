@@ -138,6 +138,42 @@ a {
   }
 }
 
+
+.btn--peach {
+  background: #F1D2C3;
+  border: none;
+  color: var(--color-dark);
+
+  &:hover {
+    background-color: #fcbb9a;
+    color: var(--color-dark);
+
+  }
+
+  &:active {
+    background-color: #fcbb9a;
+    color: var(--color-dark);
+  }
+}
+
+.btn--gray {
+  background-color: var(--color-dark-2);
+  color: #ffffff;
+  border: none;
+
+  &:hover {
+    background-color: var(--color-dark);
+    color: var(--color-dark);
+    color: #ffffff;
+
+  }
+
+  &:active {
+    background-color: var(--color-dark);
+    color: #ffffff;
+  }
+}
+
 .btn--ios,
 .btn--android {
   border: none;
