@@ -126,6 +126,16 @@ aos__WEBPACK_IMPORTED_MODULE_0___default().init({
 
 /***/ }),
 
+/***/ "./src/blocks/modules/loading/loading.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/loading/loading.js ***!
+  \***********************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./src/blocks/modules/products/products.js":
 /*!*************************************************!*\
   !*** ./src/blocks/modules/products/products.js ***!
@@ -687,6 +697,22 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("click", "a[href^='#'
     // }
   }
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.loading').remove();
+}); // var timeoutID;
+// jQuery(document).ready(function() {
+//     // start hiding the message after 2 seconds
+//     timeoutID = window.setTimeout(hideMessage, 2000);
+// });
+// function hideMessage() {
+//     jQuery('.loading').animate({
+//         opacity: 0
+//     }, 800, function() {
+//         jQuery('.loading').css({
+//             display: 'none'
+//         });
+//     });
+// }
 
 /***/ }),
 
@@ -730,6 +756,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_faq_faq__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_faq_faq__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _modules_ceo_ceo__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/ceo/ceo */ "./src/blocks/modules/ceo/ceo.js");
 /* harmony import */ var _modules_ceo_ceo__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_ceo_ceo__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_loading_loading__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/loading/loading */ "./src/blocks/modules/loading/loading.js");
+/* harmony import */ var _modules_loading_loading__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_modules_loading_loading__WEBPACK_IMPORTED_MODULE_13__);
+
 
 
 

@@ -436,3 +436,24 @@ $(document).on("click", "a[href^='#']", function (e) {
     // }
   }
 });
+
+$(document).ready(function(){
+  $('.loading').remove();
+});
+
+// var timeoutID;
+
+// jQuery(document).ready(function() {
+//     // start hiding the message after 2 seconds
+//     timeoutID = window.setTimeout(hideMessage, 2000);
+// });
+
+// function hideMessage() {
+//     jQuery('.loading').animate({
+//         opacity: 0
+//     }, 800, function() {
+//         jQuery('.loading').css({
+//             display: 'none'
+//         });
+//     });
+// }

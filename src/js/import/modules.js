@@ -11,4 +11,5 @@ import "%modules%/talk/talk";
 import "%modules%/download/download";
 import "%modules%/faq/faq";
 import "%modules%/ceo/ceo";
+import "%modules%/loading/loading";
 

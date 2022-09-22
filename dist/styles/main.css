@@ -10363,6 +10363,63 @@ a:hover {
   cursor: pointer;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading__logo-wrap {
+  margin-bottom: 30px;
+}
+
+.loading__logo {
+  width: 20vw;
+  height: 4.2vw;
+}
+
+.loading__loader {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  color: var(--color-purple);
+  animation: animloader 2s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+
+  25% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 2px;
+  }
+
+  50% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 2px, -38px 0 0 -2px;
+  }
+
+  75% {
+    box-shadow: 14px 0 0 2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+
+  100% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -14460,6 +14517,11 @@ a:hover {
   .page-ceo__link {
     font-size: 16px;
   }
+
+  .loading__logo {
+    width: 170px;
+    height: 36px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -15098,6 +15160,7 @@ a:hover {
     padding-top: 40px !important;
     align-items: center;
     padding: 0 10px;
+    justify-content: flex-start;
   }
 
   .reviews-slider-item__content {
@@ -15125,6 +15188,13 @@ a:hover {
   .reviews-slider-item-tag__text {
     font-size: 21px;
     padding: 8px 1px 8px 13px;
+    height: 42px;
+  }
+
+  .reviews-slider-item-tag__text::before {
+    height: 53px;
+    width: 36px;
+    right: -35px;
   }
 
   .reviews-slider-item__ico-wrap {

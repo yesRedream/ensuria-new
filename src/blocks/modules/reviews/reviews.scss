@@ -70,6 +70,8 @@
     padding-top: 40px !important;
     align-items: center;
     padding: 0 10px;
+    // justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 
@@ -161,6 +163,7 @@
   @include viewport-tablet {
     font-size: 21px;
     padding: 8px 1px 8px 13px;
+    height: 42px;
   }
 
   &::before {
@@ -168,12 +171,17 @@
     position: absolute;
     right: -2.4vw;
     top: 0;
-    width: 2.5vw;
-    height: 3.69vw;
+    width: 2.5vw; //36px
+    height: 3.69vw; 
     background: url('../img/review-tag-bg.png');
     background-size: contain;
     background-repeat: no-repeat;
 
+    @include viewport-tablet {
+      height: 53px;
+      width: 36px;
+      right: -35px;
+    }
   }
 }
 
