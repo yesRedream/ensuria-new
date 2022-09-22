@@ -87,7 +87,7 @@ $('.footer-ua-js').each(function(index) {
 
 var navigationSelect = document.querySelector('.select-wrapper');
 var navigationSelect2 = document.querySelector('.select-wrapper2');
-var navigationSelect2 = document.querySelector('.select-wrapper--header');
+var navigationSelect3 = document.querySelector('.select-wrapper--header');
 
 function initSelect(elem){
   var selectHolder = elem.querySelector('.holder');
@@ -114,3 +114,4 @@ function initSelect(elem){
 
 initSelect(navigationSelect);
 initSelect(navigationSelect2);
+initSelect(navigationSelect3);

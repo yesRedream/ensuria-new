@@ -8151,14 +8151,64 @@ a:hover {
   display: none;
 }
 
-.header-hamburger--active {
-  transform: rotate(-360deg);
+.header-hamburger--active .hamRotate {
+  transform: rotate(45deg);
+}
+
+.header-hamburger--active .hamRotate180 {
+  transform: rotate(180deg);
+}
+
+.header-hamburger--active .ham8 .top {
+  stroke-dashoffset: -64px;
+}
+
+.header-hamburger--active .ham8 .middle {
+  transform: rotate(90deg);
+}
+
+.header-hamburger--active .ham8 .bottom {
+  stroke-dashoffset: -64px;
 }
 
 .header-hamburger__line {
   width: 100%;
   height: 3px;
   background-color: var(--color-dark);
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
 }
 
 .header-menu__wrap {
@@ -8374,60 +8424,6 @@ a:hover {
 
 .select-wrapper2 {
   display: block;
-}
-
-.ham {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.hamRotate.active {
-  transform: rotate(45deg);
-}
-
-.hamRotate180.active {
-  transform: rotate(180deg);
-}
-
-.line {
-  fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #000;
-  stroke-width: 5.5;
-  stroke-linecap: round;
-}
-
-.ham8 .top {
-  stroke-dasharray: 40 160;
-}
-
-.ham8 .middle {
-  stroke-dasharray: 40 142;
-  transform-origin: 50%;
-  transition: transform 400ms;
-}
-
-.ham8 .bottom {
-  stroke-dasharray: 40 85;
-  transform-origin: 50%;
-  transition: transform 400ms, stroke-dashoffset 400ms;
-}
-
-.ham8.active .top {
-  stroke-dashoffset: -64px;
-}
-
-.ham8.active .middle {
-  transform: rotate(90deg);
-}
-
-.ham8.active .bottom {
-  stroke-dashoffset: -64px;
 }
 
 .footer__section {
