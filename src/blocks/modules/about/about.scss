@@ -200,7 +200,7 @@
   @include viewport-tablet {
     font-size: 36px;
     margin-bottom: 28px;
-    max-width: 160px;
+    // max-width: 160px;
   }
 }
 
@@ -306,27 +306,37 @@
 
 
 .about-bottom-item__title {
-  font-size: 4.444vw;
+  // font-size: 4.444vw;
+  font-size: 3.264vw;
   font-weight: 500;
   line-height: .9;
   margin-bottom: 20px;
 
-  @include viewport-tablet {
-    font-size: 64px;
-  } 
+  // @include viewport-tablet {
+  //   font-size: 64px;
+  // } 
+
+  @include viewport-desktop {
+    font-size: 36px;
+  }
 
   @include viewport-phone {
-    font-size: 48px;
+    font-size: 47px;
   } 
 }
 
 .about-bottom-item__text {
-  font-size: 1.667vw;
+  font-size: 1.111vw;
   line-height: 1.2;
 
+  
+  @include viewport-desktop {
+    font-size: 14px;
+  }
+
   @include viewport-tablet {
-    font-size: 24px;
-  } 
+    font-size: 16px;
+  }
 }
 
 .about-bottom-item__img-man {

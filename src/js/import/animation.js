@@ -104,7 +104,7 @@ const controller = new ScrollMagic.Controller();
     triggerElement: ".page__section--get", 
     offset: 2000,
   })
-      .setClassToggle(".page-get__img--step-5", "active")
+      .setClassToggle(".page-get-success", "active")
       // .addIndicators()
       .addTo(controller);
 
@@ -419,3 +419,20 @@ new ScrollMagic.Scene({
     .addTo(controller2);
   
   
+
+
+
+$(document).on("click", "a[href^='#']", function (e) {
+  var id = $(this).attr("href");
+  if ($(id).length > 0) {
+    e.preventDefault();
+
+    // trigger scroll
+    controller.scrollTo(id);
+
+      // if supported by the browser we can even update the URL.
+    // if (window.history && window.history.pushState) {
+    //   history.pushState("", document.title, id);
+    // }
+  }
+});

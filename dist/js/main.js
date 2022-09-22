@@ -137,11 +137,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--business').click(function () {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--business, .link-js--business, .link-footer-js--business').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').css("display", "none");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').css("display", "flex");
+  console.log('aboba');
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--personal').click(function () {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--personal, .link-js--personal, .link-footer-js--personal').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').css("display", "flex");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').css("display", "none");
 });
@@ -446,7 +447,7 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
 new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: ".page__section--get",
   offset: 2000
-}).setClassToggle(".page-get__img--step-5", "active") // .addIndicators()
+}).setClassToggle(".page-get-success", "active") // .addIndicators()
 .addTo(controller); // function makeScrollMagic() {
 //   const controller = new ScrollMagic.Controller();
 //   new ScrollMagic.Scene({
@@ -674,6 +675,18 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
 }).setTween(text4) // .setTween(person4)
 // .addIndicators() 
 .addTo(controller2);
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("click", "a[href^='#']", function (e) {
+  var id = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr("href");
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(id).length > 0) {
+    e.preventDefault(); // trigger scroll
+
+    controller.scrollTo(id); // if supported by the browser we can even update the URL.
+    // if (window.history && window.history.pushState) {
+    //   history.pushState("", document.title, id);
+    // }
+  }
+});
 
 /***/ }),
 

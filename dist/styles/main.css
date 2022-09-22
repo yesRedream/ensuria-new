@@ -9253,6 +9253,7 @@ a:hover {
   margin-bottom: 2.615vh;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 }
 
 .page-get__content {
@@ -9300,20 +9301,71 @@ a:hover {
   left: 37%;
 }
 
-.page-get__img--step-5 {
+.page-get-success {
   height: 6.276vh;
-  width: 31.381vh;
+  min-width: 31.381vh;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translateX(-132%) scale(0.5);
   z-index: 3;
   opacity: 0;
+  padding: 1.183vh 1.505vh;
+  box-sizing: border-box;
+  background: rgba(37, 37, 37, 0.5);
+  backdrop-filter: blur(32px);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in;
 }
 
-.page-get__img--step-5.active {
+.page-get-success.active {
   opacity: 1;
   transform: translateX(-132%) scale(1);
+}
+
+.page-get-success__ico-wrap {
+  width: 3.226vh;
+  height: 3.226vh;
+  margin-right: 0.86vh;
+}
+
+.page-get-success__ico {
+  width: 100%;
+}
+
+.page-get-success__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.page-get-success__box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.page-get-success__title {
+  margin-right: 1vw;
+  font-size: 1.398vh;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.page-get-success__date {
+  font-size: 1.398vh;
+  line-height: 1.2;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.page-get-success__text {
+  font-size: 1.398vh;
+  color: #ffffff;
+  line-height: 1.2;
 }
 
 .page-get__nav {
@@ -9621,14 +9673,14 @@ a:hover {
 }
 
 .about-bottom-item__title {
-  font-size: 4.444vw;
+  font-size: 3.264vw;
   font-weight: 500;
   line-height: 0.9;
   margin-bottom: 20px;
 }
 
 .about-bottom-item__text {
-  font-size: 1.667vw;
+  font-size: 1.111vw;
   line-height: 1.2;
 }
 
@@ -14269,14 +14321,15 @@ a:hover {
 
   .page-get__title {
     font-size: 5vh;
+    max-width: 75.51vh;
   }
 
-  .page-get__img--step-5 {
+  .page-get-success {
     top: 6%;
     transform: translate(-50%, 0) scale(0.5);
   }
 
-  .page-get__img--step-5.active {
+  .page-get-success.active {
     transform: translate(-50%, 0) scale(0.87);
   }
 
@@ -14311,6 +14364,14 @@ a:hover {
 
   .about__text {
     font-size: 16px;
+  }
+
+  .about-bottom-item__title {
+    font-size: 36px;
+  }
+
+  .about-bottom-item__text {
+    font-size: 14px;
   }
 
   .reviews-slider-item__name {
@@ -14767,6 +14828,10 @@ a:hover {
     overflow: hidden;
   }
 
+  .page-compensation {
+    padding-top: 20px;
+  }
+
   .page-compensation__content {
     max-width: 100%;
     padding: 0 22px;
@@ -14877,15 +14942,17 @@ a:hover {
   }
 
   .page-get__title {
-    max-width: 100%;
-    margin-right: 60px;
-    margin-left: 60px;
+    max-width: 69vh;
     font-size: 4.523vh;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .page-get__nav {
-    max-width: none;
+    max-width: 30.51vh;
     width: auto;
     display: flex;
     position: relative;
@@ -14964,7 +15031,6 @@ a:hover {
   .about__title {
     font-size: 36px;
     margin-bottom: 28px;
-    max-width: 160px;
   }
 
   .about__text {
@@ -15001,12 +15067,8 @@ a:hover {
     min-height: 500px;
   }
 
-  .about-bottom-item__title {
-    font-size: 64px;
-  }
-
   .about-bottom-item__text {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .about-bottom-item__img-man {
@@ -15294,13 +15356,8 @@ a:hover {
     min-width: 130px;
   }
 
-  .page-get__title {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
   .about-bottom-item__title {
-    font-size: 48px;
+    font-size: 47px;
   }
 
   .page-talk__title {
