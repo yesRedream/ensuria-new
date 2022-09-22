@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/register", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:7.18.9"],\
             ["@cru/px2vw-loader", "npm:1.0.4"],\
             ["@popperjs/core", "npm:2.11.6"],\
+            ["animate.css", "npm:4.1.1"],\
             ["aos", "npm:3.0.0-beta.6"],\
             ["babel-loader", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:8.2.5"],\
             ["bem-tools-core", "https://github.com/bem-tools/bem-tools-core.git#commit=9a5c91b198a7ce1f2a6b6e64c505aefead27fc8f"],\
@@ -86,6 +87,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sass", "npm:1.54.9"],\
             ["scrollmagic", "npm:2.0.8"],\
             ["scrollmagic-plugins", "npm:1.0.8"],\
+            ["slick-animation", "npm:0.3.3"],\
             ["slick-carousel", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:1.8.1"],\
             ["style-loader", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:3.3.1"],\
             ["stylelint", "npm:14.11.0"],\
@@ -4042,6 +4044,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/ajv",\
             "ajv"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["animate.css", [\
+        ["npm:3.5.2", {\
+          "packageLocation": "./.yarn/cache/animate.css-npm-3.5.2-112150ed54-95acbe720a.zip/node_modules/animate.css/",\
+          "packageDependencies": [\
+            ["animate.css", "npm:3.5.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/animate.css-npm-4.1.1-5c526dcd84-c7eb915404.zip/node_modules/animate.css/",\
+          "packageDependencies": [\
+            ["animate.css", "npm:4.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9836,6 +9854,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/register", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:7.18.9"],\
             ["@cru/px2vw-loader", "npm:1.0.4"],\
             ["@popperjs/core", "npm:2.11.6"],\
+            ["animate.css", "npm:4.1.1"],\
             ["aos", "npm:3.0.0-beta.6"],\
             ["babel-loader", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:8.2.5"],\
             ["bem-tools-core", "https://github.com/bem-tools/bem-tools-core.git#commit=9a5c91b198a7ce1f2a6b6e64c505aefead27fc8f"],\
@@ -9883,6 +9902,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sass", "npm:1.54.9"],\
             ["scrollmagic", "npm:2.0.8"],\
             ["scrollmagic-plugins", "npm:1.0.8"],\
+            ["slick-animation", "npm:0.3.3"],\
             ["slick-carousel", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:1.8.1"],\
             ["style-loader", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:3.3.1"],\
             ["stylelint", "npm:14.11.0"],\
@@ -16339,7 +16359,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["slick-animation", [\
+        ["npm:0.3.3", {\
+          "packageLocation": "./.yarn/cache/slick-animation-npm-0.3.3-609069550d-f4ec588bc1.zip/node_modules/slick-animation/",\
+          "packageDependencies": [\
+            ["slick-animation", "npm:0.3.3"],\
+            ["animate.css", "npm:3.5.2"],\
+            ["slick-carousel", "npm:1.5.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["slick-carousel", [\
+        ["npm:1.5.9", {\
+          "packageLocation": "./.yarn/cache/slick-carousel-npm-1.5.9-ae37c34f26-3764eae54d.zip/node_modules/slick-carousel/",\
+          "packageDependencies": [\
+            ["slick-carousel", "npm:1.5.9"],\
+            ["jquery", "npm:3.6.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:1.8.1", {\
           "packageLocation": "./.yarn/cache/slick-carousel-npm-1.8.1-8382d373c2-acaad391e4.zip/node_modules/slick-carousel/",\
           "packageDependencies": [\

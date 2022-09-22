@@ -430,6 +430,10 @@
   @include viewport-desktop {
     font-size: 14px;
     margin-bottom: 61px;
+
+    br {
+      display: none;
+    }
   }
 }
 

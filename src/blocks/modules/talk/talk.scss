@@ -211,3 +211,40 @@
     height: 6px;
   }
 }
+
+
+
+
+
+@keyframes zoomInImage {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+.zoomInImage {
+  animation-name: zoomInImage;
+}
+
+@keyframes zoomOutImage {
+  from {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.zoomOutImage {
+  animation-name: zoomOutImage;
+}
+
+.page-talk__slider-js [data-animation-in] {
+  opacity: 0;
+  animation-duration: .4s;
+  transition: opacity .4s ease 0.3s;
+
+}

@@ -9524,7 +9524,7 @@ a:hover {
 }
 
 .about__content {
-  max-width: 46.597vw;
+  max-width: 53.397vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -9553,7 +9553,7 @@ a:hover {
 
 .about__title {
   font-size: 6.667vw;
-  line-height: 0.9;
+  line-height: 1.1;
   font-weight: 500;
   margin-bottom: 2.361vw;
   text-align: center;
@@ -9764,31 +9764,31 @@ a:hover {
   position: absolute;
   top: 3.819vw;
   left: 3.819vw;
+}
+
+.reviews-slider-item-tag__text {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.556vw 0.1vw 0.556vw 0.972vw;
+  height: 2.917vw;
+  background: #F8DDE7;
+  border-radius: 5px 0 0 5px;
   font-size: 1.389vw;
   line-height: 1.2;
 }
 
-.reviews-slider-item-tag__text {
-  padding: 0.556vw 2.014vw 1.389vw 0.972vw;
-  z-index: 2;
-  position: relative;
-  display: flex;
-}
-
-.reviews-slider-item-tag__bg {
+.reviews-slider-item-tag__text::before {
+  content: "";
   position: absolute;
+  right: -2.4vw;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  z-index: -1;
-}
-
-.reviews-slider-item-tag__bg use {
-  fill: #F8DDE7;
+  width: 2.5vw;
+  height: 3.69vw;
+  background: url("../img/review-tag-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .reviews-slider-item__ico-wrap {
@@ -10021,8 +10021,46 @@ a:hover {
   height: 6px;
 }
 
+@keyframes zoomInImage {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+.zoomInImage {
+  animation-name: zoomInImage;
+}
+
+@keyframes zoomOutImage {
+  from {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.zoomOutImage {
+  animation-name: zoomOutImage;
+}
+
+.page-talk__slider-js [data-animation-in] {
+  opacity: 0;
+  animation-duration: 0.4s;
+  transition: opacity 0.4s ease 0.3s;
+}
+
 .page__section--download {
   margin-bottom: 17.5vw;
+}
+
+.page-download__wrapper {
+  overflow: hidden;
 }
 
 .page-download {
@@ -10036,6 +10074,7 @@ a:hover {
   padding-bottom: 19.722vw;
   position: relative;
   margin-bottom: 2.083vw;
+  margin-left: -2.2vw;
 }
 
 .page-download__img {
@@ -10083,7 +10122,7 @@ a:hover {
   font-size: 3.333vw;
   line-height: 1.1;
   margin-bottom: 2.5vw;
-  max-width: 34.931vw;
+  max-width: 43.333vw;
   text-align: center;
 }
 
@@ -14167,6 +14206,10 @@ a:hover {
     margin-bottom: 61px;
   }
 
+  .page-products-item__text br {
+    display: none;
+  }
+
   .page-products-item__btns {
     min-height: 57px;
   }
@@ -14299,6 +14342,7 @@ a:hover {
     max-width: 304px;
     padding-bottom: 284px;
     margin-bottom: 30px;
+    margin-left: -38px;
   }
 
   .page-download__title {
@@ -14816,16 +14860,12 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 60px;
-    height: auto;
+    min-height: 100vh;
   }
 
   .page-get {
     padding-top: 39px;
     overflow: visible;
-  }
-
-  .page-get__bg {
-    transform: scale(1);
   }
 
   .page-get__bg::after {
@@ -14840,12 +14880,30 @@ a:hover {
     max-width: 100%;
     margin-right: 60px;
     margin-left: 60px;
-    font-size: 36px;
-    margin-bottom: 52px;
+    font-size: 4.523vh;
+    margin-bottom: 20px;
   }
 
-  .page-get__content {
+  .page-get__nav {
+    max-width: none;
+    width: auto;
+    display: flex;
+    position: relative;
+    transform: none;
+    left: auto;
+    top: -6vh;
+  }
+
+  .page-get__item {
     display: none;
+    font-size: 2.513vh;
+  }
+
+  .page-get__item.active {
+    display: flex;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .page-get-mobile {
@@ -15000,11 +15058,11 @@ a:hover {
   .reviews-slider-item__tag {
     top: 12px;
     left: 60px;
-    font-size: 21px;
   }
 
   .reviews-slider-item-tag__text {
-    padding: 8px 29px 20px 13px;
+    font-size: 21px;
+    padding: 8px 1px 8px 13px;
   }
 
   .reviews-slider-item__ico-wrap {

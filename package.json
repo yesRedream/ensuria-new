@@ -75,6 +75,7 @@
     },
     "dependencies": {
         "@popperjs/core": "^2.11.6",
+        "animate.css": "^4.1.1",
         "aos": "next",
         "bootstrap": "4",
         "css-loader": "^6.7.1",
@@ -87,6 +88,7 @@
         "sass": "^1.54.9",
         "scrollmagic": "^2.0.8",
         "scrollmagic-plugins": "^1.0.8",
+        "slick-animation": "^0.3.3",
         "slick-carousel": "^1.8.1",
         "style-loader": "^3.3.1",
         "webpack": "^5.70.0",

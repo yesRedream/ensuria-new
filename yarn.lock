@@ -2497,6 +2497,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"animate.css@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "animate.css@npm:4.1.1"
+  checksum: c7eb91540423532c549725a6dedea993735a05eadaa49ed4d1965ce166a6db36459adcc9667c1dfe13657fab92a2875bbee34ad0d942444a731badab69f762c8
+  languageName: node
+  linkType: hard
+
+"animate.css@npm:~3.5.0":
+  version: 3.5.2
+  resolution: "animate.css@npm:3.5.2"
+  checksum: 95acbe720ae331002b20f1ed20b96677f47a2b8e67c5f5506751a28d15c83e9c242577b3276437cbc4a1500110cd3dc718aed543f1f74e4986d896257292a614
+  languageName: node
+  linkType: hard
+
 "ansi-colors@npm:1.1.0, ansi-colors@npm:^1.0.1":
   version: 1.1.0
   resolution: "ansi-colors@npm:1.1.0"
@@ -7694,6 +7708,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     "@babel/register": ^7.17.0
     "@cru/px2vw-loader": ^1.0.4
     "@popperjs/core": ^2.11.6
+    animate.css: ^4.1.1
     aos: next
     babel-loader: ^8.2.3
     bem-tools-core: bem-tools/bem-tools-core
@@ -7741,6 +7756,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     sass: ^1.54.9
     scrollmagic: ^2.0.8
     scrollmagic-plugins: ^1.0.8
+    slick-animation: ^0.3.3
     slick-carousel: ^1.8.1
     style-loader: ^3.3.1
     stylelint: ^14.5.3
@@ -9407,7 +9423,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"jquery@npm:>=1.8, jquery@npm:^3.6.1":
+"jquery@npm:>=1.7.2, jquery@npm:>=1.8, jquery@npm:^3.6.1":
   version: 3.6.1
   resolution: "jquery@npm:3.6.1"
   checksum: 6177d866a74f1137cad800f142c7cdbd5ab19cd4282546f8bdb4890c9f933b1d542ab96f2aa15d007e43c98de7315b0513e849ec5359d3ac5640f720892fe547
@@ -13486,12 +13502,31 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"slick-animation@npm:^0.3.3":
+  version: 0.3.3
+  resolution: "slick-animation@npm:0.3.3"
+  dependencies:
+    animate.css: ~3.5.0
+    slick-carousel: ~1.5.9
+  checksum: f4ec588bc130aeb1d03407ff608cf85a1b39ce970bf92c6b403415d8e40ae7b2870633515b086fe673c386418ca967370421f690e4b9f4fdf5b22492bffc3a72
+  languageName: node
+  linkType: hard
+
 "slick-carousel@npm:^1.8.1":
   version: 1.8.1
   resolution: "slick-carousel@npm:1.8.1"
   peerDependencies:
     jquery: ">=1.8.0"
   checksum: acaad391e4d8bc1c7fdb8d361faa1f1d60829b31d618b54bc38c0550a59b26de36537e0ab4bc0364176ec11d1a61d0cf11e99d8d5b1285d656673c9a1a719257
+  languageName: node
+  linkType: hard
+
+"slick-carousel@npm:~1.5.9":
+  version: 1.5.9
+  resolution: "slick-carousel@npm:1.5.9"
+  dependencies:
+    jquery: ">=1.7.2"
+  checksum: 3764eae54d7a04389043d08c453a379d5accbeb86ae1459e70cceaf75772994a74404ae2bf6d1a6ff20a1ee4e96bcb4bc331e3e51cd8b981b0833c6c9c45a9e1
   languageName: node
   linkType: hard
 
