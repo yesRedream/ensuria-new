@@ -13,10 +13,14 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  &.local {
+    display: none !important;
+  }
 }
 
 .loading__logo-wrap {
-
+  transform: scale(1.5);
   margin-bottom: 30px;
 }
 

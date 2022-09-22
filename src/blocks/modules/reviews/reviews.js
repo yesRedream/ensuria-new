@@ -2,6 +2,9 @@ import $ from 'jquery';
 window.$ = window.jQuery = $;
 import 'slick-carousel';
 import * as ScrollMagic from "scrollmagic";
+import 'animate.css';
+
+import 'slick-animation';
 
 const controller = new ScrollMagic.Controller();
  
@@ -10,10 +13,11 @@ $(".page-reviews__slider-js").slick({
   arrows: false,
   dots: false,
   autoplay: false,
-  speed: 800,
+  speed: 200,
   slidesToShow: 1,
   slidesToScroll: 1,
-});
+  lazyLoad: 'progressive',
+}).slickAnimation();
 
 var percentTime;
 var tick;
@@ -67,17 +71,6 @@ $('.page-reviews-progress__item-js').click(function () {
   startProgressbar();
 });
 
-
-
-$('.header__hamburger').click(function(){
-  $('.header-menu__wrap').addClass('header-menu__wrap--active');
-  $(this).addClass('header-hamburger--active');
-});
-
-$('.header-menu__close').click(function(){
-  $('.header-menu__wrap').removeClass('header-menu__wrap--active');
-  $('.header__hamburger').removeClass('header-hamburger--active');
-});
 
 new ScrollMagic.Scene({
   triggerElement: '.page__section--reviews',

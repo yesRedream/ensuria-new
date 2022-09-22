@@ -66,22 +66,28 @@ $('.header-lang__link--ru').click(function(){
   $(this).addClass('header-lang__link--active');
 });
 
-$('.footer-en-js').click(function(){
-  changeLang('en');
+$('.footer-en-js').each(function(index) {
+  $(this).on("click", function(){
+    changeLang('en');
+  });
 });
 
-$('.footer-ru-js').click(function(){
-  changeLang('ru');
+$('.footer-ru-js').each(function(index) {
+  $(this).on("click", function(){
+    changeLang('ru');
+  });
 });
 
-$('.footer-ua-js').click(function(){
-  changeLang('ua');
+$('.footer-ua-js').each(function(index) {
+  $(this).on("click", function(){
+    changeLang('ua');
+  });
 });
-
 
 
 var navigationSelect = document.querySelector('.select-wrapper');
 var navigationSelect2 = document.querySelector('.select-wrapper2');
+var navigationSelect2 = document.querySelector('.select-wrapper--header');
 
 function initSelect(elem){
   var selectHolder = elem.querySelector('.holder');

@@ -15,17 +15,19 @@ const controller2 = new ScrollMagic.Controller();
 
 // HAMBURGER
 
-
-
-$('.header__hamburger').click(function(){
-  $('.header-menu__wrap').addClass('header-menu__wrap--active');
-  $(this).addClass('header-hamburger--active');
+$(document).ready(function(){
+  $('.header__hamburger').click(function(){
+    $('.header-menu__wrap').toggleClass('header-menu__wrap--active');
+    $(this).toggleClass('header-hamburger--active');
+  });
 });
 
-$('.header-menu__close').click(function(){
-  $('.header-menu__wrap').removeClass('header-menu__wrap--active');
-  $('.header__hamburger').removeClass('header-hamburger--active');
-});
+
+
+// $('.header-menu__close').click(function(){
+//   $('.header-menu__wrap').removeClass('header-menu__wrap--active');
+//   $('.header__hamburger').removeClass('header-hamburger--active');
+// });
 
 
 
@@ -313,6 +315,19 @@ var text3 = TweenMax.from(".page-compensation-people__price--3",
   }
 );
 
+var person3 = TweenMax.from(".page-compensation-people__person--3", 
+  {
+    scale: 0,
+    rotation: 45,
+    opacity: 0
+  },
+  {
+    scale: 1,
+    rotation: 0,
+    opacity: 1
+  }
+);
+
 var person4 = TweenMax.from(".page-compensation-people__person--4", 
   {
     scale: 0,
@@ -339,10 +354,28 @@ var text4 = TweenMax.from(".page-compensation-people__price--4",
   }
 );
 
+// new ScrollMagic.Scene({
+//   triggerElement: '.page__section--compensation',
+//   duration: 300,
+//   triggerHook: 0,
+
+// })
+// .setPin('.page__section--compensation')
+// // .addIndicators() 
+// .on('start', function (event) {
+//   // $('.page-get__bg').toggleClass('page-get__bg--active');
+
+//   // if(event.scrollDirection == 'FORWARD') {
+//   //   $('.page-get__bg').addClass('page-get__bg--active');
+//   //   console.log("av")
+//   // }
+// })
+// .addTo(controller);
+
 
 new ScrollMagic.Scene({
   triggerElement: '.page__section--compensation',
-  duration: 300,
+  duration: 500,
   triggerHook: 0.5
 })
   .setTween(person1)
@@ -351,7 +384,7 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
   triggerElement: '.page__section--compensation',
-  duration: 300,
+  duration: 500,
   triggerHook: 0.5,
   offset: 10,
 
@@ -363,7 +396,7 @@ new ScrollMagic.Scene({
   
 new ScrollMagic.Scene({
   triggerElement: '.page__section--compensation',
-  duration: 300,
+  duration: 500,
   triggerHook: 0.5,
   offset: -50,
   
@@ -374,7 +407,7 @@ new ScrollMagic.Scene({
   
 new ScrollMagic.Scene({
   triggerElement: '.page__section--compensation',
-  duration: 300,
+  duration: 500,
   triggerHook: 0.5,
   offset: 20,
   
@@ -385,7 +418,18 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
   triggerElement: '.page-compensation-people__price--3',
-  duration: 300,
+  duration: 500,
+  triggerHook: 1,
+  offset: 0,
+  
+})
+  .setTween(person3)
+  // .addIndicators() 
+  .addTo(controller2);
+
+new ScrollMagic.Scene({
+  triggerElement: '.page-compensation-people__price--3',
+  duration: 500,
   triggerHook: 1,
   offset: 0,
   
@@ -396,9 +440,9 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
   triggerElement: '.page-compensation-people__person--4',
-  duration: 300,
+  duration: 500,
   triggerHook: 1,
-  offset: -30,
+  offset: -250,
   
 })
   .setTween(person4)
@@ -406,21 +450,20 @@ new ScrollMagic.Scene({
   // .addIndicators() 
   .addTo(controller2);
 
-  new ScrollMagic.Scene({
-    triggerElement: '.page-compensation-people__person--4',
-    duration: 300,
-    triggerHook: 1,
-    offset: -30,
-    
-  })
-    .setTween(text4)
-    // .setTween(person4)
-    // .addIndicators() 
-    .addTo(controller2);
+new ScrollMagic.Scene({
+  triggerElement: '.page-compensation-people__person--4',
+  duration: 500,
+  triggerHook: 1,
+  offset: -250,
   
-  
+})
+  .setTween(text4)
+  // .setTween(person4)
+  // .addIndicators() 
+  .addTo(controller2);
 
 
+// anchor
 
 $(document).on("click", "a[href^='#']", function (e) {
   var id = $(this).attr("href");
@@ -437,23 +480,21 @@ $(document).on("click", "a[href^='#']", function (e) {
   }
 });
 
+
+
+
+
+// LOADER
+
 $(document).ready(function(){
   $('.loading').remove();
+  // if (localStorage.getItem('loading-screen') != null) {
+
+  //     //show loading
+  //     $('.loading').addClass('local');
+
+  //     //Set info to localStorage that it has been seen
+  //     localStorage.setItem('loading', 'seen');
+  // }
 });
 
-// var timeoutID;
-
-// jQuery(document).ready(function() {
-//     // start hiding the message after 2 seconds
-//     timeoutID = window.setTimeout(hideMessage, 2000);
-// });
-
-// function hideMessage() {
-//     jQuery('.loading').animate({
-//         opacity: 0
-//     }, 800, function() {
-//         jQuery('.loading').css({
-//             display: 'none'
-//         });
-//     });
-// }

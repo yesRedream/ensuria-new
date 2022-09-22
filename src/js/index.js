@@ -2,7 +2,6 @@
 
 // import 'pushin/dist/pushin.css';
 
-
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 import "./import/modules";
