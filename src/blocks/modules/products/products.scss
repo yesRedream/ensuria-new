@@ -225,10 +225,17 @@
       right: 24px;
       top: 31px;
       max-height: 400px;
+
+ 
     }
 
     @media (max-width: 690px) {
       max-width: 34.667vw;
+    }
+
+    @media (max-width: 360px) {
+      right: 18px;
+      max-width: 30.667vw;
     }
   }
 }
@@ -339,8 +346,13 @@
     background-color: var(--color-blue);
     background: url('../img/product-item-bg-3.png');
     background-repeat: no-repeat;
-    background-size: 93vw;
+    background-size: 84vw;
     background-position: left -16vh;
+
+    @include viewport-desktop {
+      background-size: 95vw;
+
+    }
 
     @include viewport-tablet {
       background-size: cover;
@@ -457,7 +469,8 @@
 
   @include viewport-desktop {
     font-size: 14px;
-    margin-bottom: 61px;
+    // margin-bottom: 61px;
+    margin-bottom: 20px;
 
     br {
       display: none;

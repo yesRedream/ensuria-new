@@ -126,6 +126,7 @@
   left: calc(50%);
   top: 2.3vh;
   height: 59.519vh;
+  
   width: 27.510vh;
   transform: translateX(-50%);
   transition: all .2s ease-in;
@@ -134,6 +135,10 @@
   &.active {
     opacity: 0;
     transform: translateX(-50%) scale(1.5);
+  }
+
+  @include viewport-tablet {
+    height: 57.519vh;
   }
 }
 
@@ -156,6 +161,10 @@
   top: 0;
   left: 37%;
 
+  @include viewport-tablet {
+    width: 40.574vh;
+    height: 69.862vh;
+  }
 
 }
 
@@ -250,13 +259,13 @@
   }
 
   @include viewport-tablet {
+    min-width: 30.51vh;
     max-width: 30.51vh;
-    width: auto;
     display: flex;
     position: relative;
     transform: none;
     left: auto;
-    top: -6vh;
+    top: -6.2vh;
   }
 }
 
@@ -307,6 +316,10 @@
   width: 1.674vh;
   height: 1.674vh;
   margin-bottom: 1.674vh;
+
+  @include viewport-tablet {
+    margin-bottom: .8vh;
+  }
 }
 
 .page-get-mobile {

@@ -19,7 +19,10 @@ $(document).ready(function(){
   $('.header__hamburger').click(function(){
     $('.header-menu__wrap').toggleClass('header-menu__wrap--active');
     $(this).toggleClass('header-hamburger--active');
+
+    $('body').toggleClass("fixed-position");
   });
+
 });
 
 
