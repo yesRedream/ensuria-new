@@ -2,9 +2,10 @@ import $ from 'jquery';
 window.$ = window.jQuery = $;
 import * as ScrollMagic from "scrollmagic";
 import 'slick-carousel';
-// import 'animate.css';
+import 'animate.css';
 
-import 'slick-animation';
+import '../../../js/import/slick-animate';
+
  
 
 
@@ -16,7 +17,7 @@ $(".page-talk__slider-js").slick({
   arrows: false,
   dots: false,
   autoplay: false,
-  speed: 800,
+  speed: 400,
   fade: true,
   slidesToShow: 1,
   slidesToScroll: 1,

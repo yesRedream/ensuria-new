@@ -129,10 +129,18 @@
   visibility: hidden;
   z-index: -999;
 
+  .page-products-item__btns {
+    display: none;
+  }
+
   &.active {
     position: static;
     visibility: visible;
-    z-index: 1;
+    z-index: 2;
+
+    .page-products-item__btns {
+      display: flex;
+    }
   }
 
   @include viewport-tablet {
@@ -185,6 +193,8 @@
 }
 
 .page-product-item--2 {
+  z-index: 2;
+  position: relative;
   .page-product-item__bg {
     background-color: var(--color-green);
     background: url('../img/product-item-bg.jpg');

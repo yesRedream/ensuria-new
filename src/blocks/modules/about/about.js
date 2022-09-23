@@ -1,3 +1,3 @@
 import $ from 'jquery';
 window.$ = window.jQuery = $;
-import 'animate.css';
+// import 'animate.css';

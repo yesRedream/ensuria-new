@@ -141,10 +141,6 @@
   top: 3.819vw;
   left: 3.819vw;
 
-  
-
-
-
   @include viewport-tablet { 
     top: 12px;
     left: 60px;
@@ -353,7 +349,7 @@
 
 
 .page-reviews__slider-js [data-animation-in] {
-  opacity: 0;
+  opacity: 1;
   animation-duration: 1s;
     transition: opacity 0.5s ease 0.3s;
 
@@ -362,9 +358,11 @@
 
 @keyframes zoomInImage {
   from {
+    opacity: 0;
     transform: translateY(-50%) translateX(-50%) scale3d(1, 1, 1);
   }
   to {
+    opacity: 1;
     transform: translateY(-50%) translateX(-50%) scale3d(1.1, 1.1, 1.1);
   }
 }
@@ -385,3 +383,19 @@
 .zoomOutImage {
   animation-name: zoomOutImage;
 }
+
+@keyframes slideUpBlock {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUpBlock {
+  animation-name: slideUpBlock;
+}
+

@@ -491,30 +491,73 @@
   width: 100%;
   height: 100%;
   background: var(--color-purple);
-  z-index: -1;
+  z-index: -2;
   border-radius: 3px;
   overflow: hidden;
 
   &::after {
     content: "";
-    position: absolute;
-    width: 4.514vw;
-    height: 6.667vw;
-    left: -1.528vw;
-    top: -3.958vw;
+    width: 40px;
+    height: 40px;
     background: #ffffff;
-    transform: rotate(45deg);
-
-    @include viewport-desktop { 
-      width: 65px;
-      height: 96px;
-      top: -70px;
-      left: -30px;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
 
     @include viewport-tablet { 
-      top: -70px;
-      left: -38px;
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 4.514vw;
+  //   height: 6.667vw;
+  //   left: -1.528vw;
+  //   top: -3.958vw;
+  //   background: #ffffff;
+  //   transform: rotate(45deg);
+
+  //   @include viewport-desktop { 
+  //     width: 65px;
+  //     height: 96px;
+  //     top: -70px;
+  //     left: -30px;
+  //   }
+
+  //   @include viewport-tablet { 
+  //     top: -70px;
+  //     left: -38px;
+  //   }
+  // }
+
+  svg {
+    fill: var(--color-purple);
+    position: relative;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+
+    &.mobile {
+      display: none;
+    }
+
+
+    @include viewport-tablet { 
+      width: 21px;
+      height: 21px;
+
+      &.desktop {
+        display: none;
+      }
+
+      &.mobile {
+        display: block;
+      }
+
+
     }
   }
 }
