@@ -8348,7 +8348,7 @@ a:hover {
 }
 
 .page-usp__title {
-  font-size: 7.917vw;
+  font-size: 7.717vw;
   line-height: 0.9;
   font-weight: 500;
   display: flex;
@@ -8368,6 +8368,7 @@ a:hover {
 
 .page-usp__title--first {
   margin-left: 14.931vw;
+  white-space: nowrap;
 }
 
 .page-usp__title--first .ru,
@@ -9009,7 +9010,6 @@ a:hover {
   height: 100%;
   z-index: -1;
   border-radius: 6px;
-  overflow: hidden;
 }
 
 .page-product-item__content {

@@ -557,7 +557,7 @@
 
 
 .page-usp__title {
-  font-size: 7.917vw;
+  font-size: 7.717vw;
   line-height: .9;
   font-weight: 500;
   display: flex;
@@ -608,6 +608,7 @@
 
 .page-usp__title--first {
   margin-left: 14.931vw;
+  white-space: nowrap;
 
   .ru, .ua {
     margin-left: -11.3vw;
