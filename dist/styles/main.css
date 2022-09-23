@@ -8765,8 +8765,7 @@ a:hover {
 
 .page__section--products {
   max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
 }
 
 .page-products__wrapper {
