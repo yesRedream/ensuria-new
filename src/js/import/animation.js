@@ -107,7 +107,7 @@ const controller = new ScrollMagic.Controller();
   
   new ScrollMagic.Scene({
     triggerElement: ".page__section--get", 
-    offset: 2000,
+    offset: 1850,
   })
       .setClassToggle(".page-get-success", "active")
       // .addIndicators()

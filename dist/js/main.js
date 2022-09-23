@@ -512,7 +512,7 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
 .addTo(controller);
 new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: ".page__section--get",
-  offset: 2000
+  offset: 1850
 }).setClassToggle(".page-get-success", "active") // .addIndicators()
 .addTo(controller); // function makeScrollMagic() {
 //   const controller = new ScrollMagic.Controller();
