@@ -51,7 +51,7 @@ const controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
     triggerElement: '.page__section--get',
-    duration: 2000,
+    duration: 1850,
     triggerHook: 0
   })
   .setPin('.page__section--get')
@@ -107,7 +107,7 @@ const controller = new ScrollMagic.Controller();
   
   new ScrollMagic.Scene({
     triggerElement: ".page__section--get", 
-    offset: 1850,
+    offset: 1800,
   })
       .setClassToggle(".page-get-success", "active")
       // .addIndicators()

@@ -472,7 +472,7 @@ var tween = new gsap__WEBPACK_IMPORTED_MODULE_5__.TimelineMax(); // var controll
 var controller = new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Controller();
 new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: '.page__section--get',
-  duration: 2000,
+  duration: 1850,
   triggerHook: 0
 }).setPin('.page__section--get').on('start', function (event) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-get__bg').toggleClass('page-get__bg--active'); // if(event.scrollDirection == 'FORWARD') {
@@ -512,7 +512,7 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
 .addTo(controller);
 new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: ".page__section--get",
-  offset: 1850
+  offset: 1800
 }).setClassToggle(".page-get-success", "active") // .addIndicators()
 .addTo(controller); // function makeScrollMagic() {
 //   const controller = new ScrollMagic.Controller();
