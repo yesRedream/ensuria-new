@@ -11,10 +11,8 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! animate.css */ "./.yarn/cache/animate.css-npm-4.1.1-5c526dcd84-c7eb915404.zip/node_modules/animate.css/animate.css");
 
-window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
-
+window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default()); // import 'animate.css';
 
 /***/ }),
 
@@ -128,7 +126,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_0__);
 
 aos__WEBPACK_IMPORTED_MODULE_0___default().init({
-  startEvent: 'load'
+  startEvent: 'load',
+  once: true,
+  easing: 'ease-in-out'
 });
 
 /***/ }),
@@ -153,20 +153,55 @@ aos__WEBPACK_IMPORTED_MODULE_0___default().init({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+ // var restartAos = $(".restartAos");
+// restartAos.on("click", function() {
+//   $(restartAos).removeClass('aos-animate');
+//   setTimeout(function() {
+//       $(restartAos).addClass('aos-animate');
+//   }, 400);
+// });
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--business, .link-js--business, .link-footer-js--business').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').removeClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').addClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business').prop("checked", true);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-menu__wrap').removeClass('header-menu__wrap--active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-hamburger').removeClass('header-hamburger--active');
+  setTimeout(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').removeClass("active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').addClass("active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business').prop("checked", true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-menu__wrap').removeClass('header-menu__wrap--active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-hamburger').removeClass('header-hamburger--active');
+  }, 300);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos2').each(function (index) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).removeClass('aos-animate');
+    setTimeout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos2').addClass('aos-animate');
+    }, 300);
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos').each(function (index) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).removeClass('aos-animate');
+    setTimeout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos').addClass('aos-animate');
+    }, 300);
+  });
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products-toggle__label--personal, .link-js--personal, .link-footer-js--personal').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').addClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').removeClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#personal-use').prop("checked", true);
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-menu__wrap').removeClass('header-menu__wrap--active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-hamburger').removeClass('header-hamburger--active');
+  setTimeout(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--personal').addClass("active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-products__list--business').removeClass("active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#personal-use').prop("checked", true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-menu__wrap').removeClass('header-menu__wrap--active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header-hamburger').removeClass('header-hamburger--active');
+  }, 300);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos').each(function (index) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).removeClass('aos-animate');
+    setTimeout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos').addClass('aos-animate');
+    }, 300);
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos2').each(function (index) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).removeClass('aos-animate');
+    setTimeout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restartAos2').addClass('aos-animate');
+    }, 300);
+  });
 });
 
 /***/ }),
@@ -195,14 +230,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var scrollmagic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! scrollmagic */ "./.yarn/cache/scrollmagic-npm-2.0.8-1185e5fd88-0c3925e178.zip/node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js");
 /* harmony import */ var scrollmagic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(scrollmagic__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! animate.css */ "./.yarn/cache/animate.css-npm-4.1.1-5c526dcd84-c7eb915404.zip/node_modules/animate.css/animate.css");
-/* harmony import */ var slick_animation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! slick-animation */ "./.yarn/cache/slick-animation-npm-0.3.3-609069550d-f4ec588bc1.zip/node_modules/slick-animation/slick-animation.js");
-/* harmony import */ var slick_animation__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_animation__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _js_import_slick_animate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../js/import/slick-animate */ "./src/js/import/slick-animate.js");
+/* harmony import */ var _js_import_slick_animate__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_import_slick_animate__WEBPACK_IMPORTED_MODULE_3__);
 
 window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 
 
-
+ // import 'slick-animation';
 
 var controller = new scrollmagic__WEBPACK_IMPORTED_MODULE_2__.Controller();
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-reviews__slider-js").slick({
@@ -294,12 +328,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var scrollmagic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(scrollmagic__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel */ "./.yarn/__virtual__/slick-carousel-virtual-8eb5f419a2/0/cache/slick-carousel-npm-1.8.1-8382d373c2-acaad391e4.zip/node_modules/slick-carousel/slick/slick.js");
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var slick_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-animation */ "./.yarn/cache/slick-animation-npm-0.3.3-609069550d-f4ec588bc1.zip/node_modules/slick-animation/slick-animation.js");
-/* harmony import */ var slick_animation__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_animation__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! animate.css */ "./.yarn/cache/animate.css-npm-4.1.1-5c526dcd84-c7eb915404.zip/node_modules/animate.css/animate.css");
+/* harmony import */ var _js_import_slick_animate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../js/import/slick-animate */ "./src/js/import/slick-animate.js");
+/* harmony import */ var _js_import_slick_animate__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_import_slick_animate__WEBPACK_IMPORTED_MODULE_4__);
 
 window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 
- // import 'animate.css';
+
 
 
 var controller = new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Controller();
@@ -308,7 +343,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-talk__slider-js").slick({
   arrows: false,
   dots: false,
   autoplay: false,
-  speed: 800,
+  speed: 400,
   fade: true,
   slidesToShow: 1,
   slidesToScroll: 1
@@ -918,6 +953,218 @@ function initSelect(elem) {
 initSelect(navigationSelect);
 initSelect(navigationSelect2);
 initSelect(navigationSelect3);
+
+/***/ }),
+
+/***/ "./src/js/import/slick-animate.js":
+/*!****************************************!*\
+  !*** ./src/js/import/slick-animate.js ***!
+  \****************************************/
+/***/ (() => {
+
+(function ($) {
+  $.fn.slickAnimation = function () {
+    var currentSlickSlider = $(this);
+    var slickItems = currentSlickSlider.find('.slick-list .slick-track > div');
+    var firstSlickItem = currentSlickSlider.find('[data-slick-index="0"]');
+    var animatedClass = 'animated';
+    var visible = {
+      opacity: '1'
+    };
+    var hidden = {
+      opacity: '0'
+    };
+    /**
+     * function for setting animationIn and animationOut class
+     * @param obj
+     * @param type
+     * @param animationIn
+     * @param animatedClass
+     * @param visibility
+     */
+
+    function slickSetAnimationDefault(obj, type, animationIn, animatedClass, visibility) {
+      visibility = typeof visibility !== 'undefined' ? visibility : false;
+      slickRemoveAnimation(obj, 'delay');
+      slickRemoveAnimation(obj, 'duration');
+
+      if (type['opacity'] == 1) {
+        obj.addClass(animationIn);
+        obj.addClass(animatedClass);
+      } else {
+        obj.removeClass(animationIn);
+        obj.removeClass(animatedClass);
+      }
+
+      if (visibility) obj.css(type);
+    }
+    /**
+     * get timeout when delay, duration, delay and duration is set
+     * @param delayIn
+     * @param durationIn
+     * @returns {number}
+     */
+
+
+    function getTimeout(delayIn, durationIn) {
+      if (delayIn) {
+        return delayIn * 1000 + 1000;
+      } else if (durationIn) {
+        return durationIn * 1000;
+      } else if (delayIn || durationIn) {
+        return delayIn * 1000 + durationIn * 1000;
+      }
+
+      return 1000;
+    }
+    /**
+     * add css animations for delay and duration
+     * @param obj
+     * @param animation
+     * @param value
+     */
+
+
+    function slickAddAnimation(obj, animation, value) {
+      var delayInAttr = ['animation-' + animation, '-webkit-animation-' + animation, '-moz-animation-' + animation, '-o-animation-' + animation, '-ms-animation-' + animation];
+      var delayInAttributes = {};
+      delayInAttr.forEach(function (entry) {
+        delayInAttributes[entry] = value + 's';
+      });
+      obj.css(delayInAttributes);
+    }
+    /**
+     * remove css animations for delay and duration
+     * @param obj
+     * @param animation
+     */
+
+
+    function slickRemoveAnimation(obj, animation) {
+      var delayInAttr = ['animation-' + animation, '-webkit-animation-' + animation, '-moz-animation-' + animation, '-o-animation-' + animation, '-ms-animation-' + animation];
+      var delayInAttributes = {};
+      delayInAttr.forEach(function (entry) {
+        delayInAttributes[entry] = '';
+      });
+      obj.css(delayInAttributes);
+    }
+
+    slickItems.each(function () {
+      var slickItem = $(this);
+      slickItem.find('[data-animation-in]').each(function () {
+        var self = $(this);
+        self.css(hidden);
+        var animationIn = self.attr('data-animation-in');
+        var animationOut = self.attr('data-animation-out');
+        var delayIn = self.attr('data-delay-in');
+        var durationIn = self.attr('data-duration-in');
+        var delayOut = self.attr('data-delay-out');
+        var durationOut = self.attr('data-duration-out');
+
+        if (animationOut) {
+          if (firstSlickItem.length > 0) {
+            if (slickItem.hasClass('slick-current')) {
+              slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+              if (delayIn) {
+                slickAddAnimation(self, 'delay', delayIn);
+              }
+
+              if (durationIn) {
+                slickAddAnimation(self, 'duration', durationIn);
+              }
+
+              setTimeout(function () {
+                slickSetAnimationDefault(self, hidden, animationIn, animatedClass);
+                slickSetAnimationDefault(self, visible, animationOut, animatedClass);
+
+                if (delayOut) {
+                  slickAddAnimation(self, 'delay', delayOut);
+                }
+
+                if (durationOut) {
+                  slickAddAnimation(self, 'duration', durationOut);
+                }
+
+                setTimeout(function () {
+                  slickRemoveAnimation(self, 'delay');
+                  slickRemoveAnimation(self, 'duration');
+                }, getTimeout(delayOut, durationOut));
+              }, getTimeout(delayIn, durationIn));
+            }
+          }
+
+          currentSlickSlider.on('afterChange', function (event, slick, currentSlider) {
+            if (slickItem.hasClass('slick-current')) {
+              slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+              if (delayIn) {
+                slickAddAnimation(self, 'delay', delayIn);
+              }
+
+              if (durationIn) {
+                slickAddAnimation(self, 'duration', durationIn);
+              }
+
+              setTimeout(function () {
+                slickSetAnimationDefault(self, hidden, animationIn, animatedClass);
+                slickSetAnimationDefault(self, visible, animationOut, animatedClass);
+
+                if (delayOut) {
+                  slickAddAnimation(self, 'delay', delayOut);
+                }
+
+                if (durationOut) {
+                  slickAddAnimation(self, 'duration', durationOut);
+                }
+
+                setTimeout(function () {
+                  slickRemoveAnimation(self, 'delay');
+                  slickRemoveAnimation(self, 'duration');
+                }, getTimeout(delayOut, durationOut));
+              }, getTimeout(delayIn, durationIn));
+            }
+          });
+          currentSlickSlider.on('beforeChange', function (event, slick, currentSlider) {
+            slickSetAnimationDefault(self, hidden, animationOut, animatedClass, true);
+          });
+        } else {
+          if (firstSlickItem.length > 0) {
+            if (slickItem.hasClass('slick-current')) {
+              slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+              if (delayIn) {
+                slickAddAnimation(self, 'delay', delayIn);
+              }
+
+              if (durationIn) {
+                slickAddAnimation(self, 'duration', durationIn);
+              }
+            }
+          }
+
+          currentSlickSlider.on('afterChange', function (event, slick, currentSlider) {
+            if (slickItem.hasClass('slick-current')) {
+              slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+              if (delayIn) {
+                slickAddAnimation(self, 'delay', delayIn);
+              }
+
+              if (durationIn) {
+                slickAddAnimation(self, 'duration', durationIn);
+              }
+            }
+          });
+          currentSlickSlider.on('beforeChange', function (event, slick, currentSlider) {
+            slickSetAnimationDefault(self, hidden, animationIn, animatedClass, true);
+          });
+        }
+      });
+    });
+    return this;
+  };
+})(jQuery);
 
 /***/ }),
 

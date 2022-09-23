@@ -304,7 +304,7 @@ a {
   opacity: 0;
   transition-property: transform, opacity;
   &.aos-animate {
-    transform: translateY(0);
+    transform: none;
     opacity: 1;
   }
 }
@@ -345,3 +345,14 @@ a {
   }
 }
 
+
+.bg-corner {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.corner-ico {
+  width: 40px;
+  height: 40px;
+}

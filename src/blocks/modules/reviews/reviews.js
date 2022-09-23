@@ -2,9 +2,9 @@ import $ from 'jquery';
 window.$ = window.jQuery = $;
 import 'slick-carousel';
 import * as ScrollMagic from "scrollmagic";
-import 'animate.css';
+import '../../../js/import/slick-animate';
 
-import 'slick-animation';
+// import 'slick-animation';
 
 const controller = new ScrollMagic.Controller();
  
