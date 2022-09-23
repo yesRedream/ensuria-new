@@ -25,18 +25,65 @@
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="styles/main.css">
-       
+        <style>
+          .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            animation: bgchange 1.4s infinite step-end;
+          }
+          .loading.local {
+            display: none !important;
+          }
+          .loading__logo-wrap {
+            transform: scale(1.5);
+            margin-bottom: 30px;
+          }
+          .loading__logo-wrap svg {
+            width: 15vw;
+            height: auto;
+          }
+          @media (max-width: 815px) {
+            .loading__logo-wrap svg {
+              width: 120px;
+            }
+          }
+          @keyframes bgchange {
+            0% {
+              background-color: var(--color-yellow);
+            }
+            33% {
+              background-color: var(--color-blue);
+            }
+            66% {
+              background-color: var(--color-green);
+            }
+            100% {
+              background-color: #f8dde7;
+            }
+          }
+        </style>
         
     </head>
     <body>
         
         <div class='loading'>
   <div class="loading__logo-wrap">
-    <svg width="115" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M92.91 23.745V4.618h-3.745v19.127h3.745Z" fill="#2C2A2D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M46.345 23.99c-6.694 0-8.92-3.423-8.92-6.262h3.786c.382 1.46 1.48 3.292 4.912 3.292 1.863 0 4.35-.302 4.35-2.96 0-.865-.575-2.073-5.527-2.617-5.87-.644-7.047-2.456-7.047-5.164 0-5.849 7.107-5.92 7.409-5.92 6.614 0 8.627 3.403 8.627 5.88H50.16c-.09-.504-.745-2.91-4.5-2.91-3.593 0-4.026 2.054-4.026 2.668v.01c0 1.762 2.255 2.104 4.348 2.316 7.339.755 8.315 3.271 8.315 5.607.01 2.255-1.51 6.06-7.952 6.06ZM104.028 23.98c-4.681 0-8.96-3.876-8.96-9.805 0-5.849 4.238-9.805 8.96-9.805 3.845 0 5.587 1.953 6.271 3.08h.634V4.612h3.584v19.116h-3.584V21.04h-.624c-1.017 1.43-3.141 2.94-6.281 2.94Zm.714-16.217c-3.281 0-5.96 2.879-5.96 6.412 0 3.483 2.669 6.322 5.96 6.322 2.457 0 5.909-1.963 5.909-6.322.011-4.42-3.452-6.412-5.909-6.412ZM0 23.738V5.004c0-.352.14-.674.383-.926L3.14 1.32c.251-.252.574-.383.926-.383h11.758V4.41H4.59a.902.902 0 0 0-.906.906v4.39c0 .503.403.905.906.905h11.144v3.443H4.59a.902.902 0 0 0-.906.906v4.43c0 .503.403.906.906.906h11.225v3.432H0v.01Z" fill="#2C2A2D"/><path d="M92.912 2.9V0h-3.745v2.9h3.745ZM76.666 23.738V8.658c0-.352.141-.674.383-.926l2.717-2.718c.252-.251.574-.382.927-.382h6.271v3.634h-5.637a.902.902 0 0 0-.906.906v14.576h-3.755v-.01Z" fill="#2C2A2D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M31.921 23.738v-10.45c0-4.76-2.235-5.264-4.52-5.264-2.627 0-5.577 1.168-5.577 6.765v8.959H18.1V4.621h3.553V7.27h.715l.03-.04c.906-1.38 2.88-2.85 5.688-2.85 2.99 0 7.65 1.229 7.65 8.386v10.983h-3.815v-.01ZM60.036 4.632V15.09c0 4.761 2.235 5.265 4.52 5.265 2.627 0 5.577-1.168 5.577-6.765v-8.96h3.724v19.127h-3.553v-2.647h-.715l-.03.04c-.906 1.38-2.88 2.849-5.688 2.849-2.99 0-7.65-1.228-7.65-8.386V4.633h3.815Z" fill="#2C2A2D"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591.51 591.51"><defs><style>.cls-1{fill-rule:evenodd}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M504.89 86.62A295.76 295.76 0 0 0 86.62 504.89 295.76 295.76 0 0 0 504.89 86.62ZM295.76 566.51C146.46 566.51 25 445.05 25 295.76S146.46 25 295.76 25s270.75 121.46 270.75 270.76-121.46 270.75-270.75 270.75Z"/><path class="cls-1" d="M385.49 296.07c-14.5-1.84-28.36-3.53-28.36-14.75 0-1.37-.53-17.16 26.1-17.16 27.45 0 29.39 19.34 29.39 19.34H439c0-12.17-7.89-40.48-58.08-40.48-5.22 0-50 1.67-50 40 0 17.79 7.26 30.58 47.47 35 34.52 3.79 36.16 12.51 36.16 16.73 0 15.18-12.53 19-28.24 19-29.6 0-32.22-21.87-32.22-21.87h-26.34c0 7.67 2.95 43 60 43 39.95 0 53.66-22.66 53.66-40.89 0-15.85-6.71-32.61-55.92-37.92ZM105.26 250v29.22a5.34 5.34 0 0 0 5.35 5.35h74.8v24.23h-74.8a5.35 5.35 0 0 0-5.35 5.35v29.49a5.35 5.35 0 0 0 5.35 5.36H186v24.2H79.37V247.93a9.37 9.37 0 0 1 2.75-6.63l18.36-18.3a9.4 9.4 0 0 1 6.63-2.74H186v24.47h-75.39a5.35 5.35 0 0 0-5.35 5.27Z"/><path d="M520.64 244.74v25.5h-38.19a5.35 5.35 0 0 0-5.35 5.36v97.64h-26.28V272.19a9.37 9.37 0 0 1 2.75-6.63l18.07-18.07a9.37 9.37 0 0 1 6.63-2.75Z"/><path class="cls-1" d="M266.8 243c-19.73 0-32.6 10.52-38.38 19.25h-3.7v-17.56h-24.95v128.56h26.13V313c0-34 16.68-44.83 36.45-44.36 16.7.4 29.43 4.5 29.43 34.38v70.25h26.56v-73.8c-.44-18.18-5.05-56.47-51.54-56.47Z"/></g></g></svg>
   </div>
-  <div class="loading__loader-wrap">
+  <!-- <div class="loading__loader-wrap">
     <span class="loading__loader"></span>
-  </div>
+  </div> -->
 
 </div>
         <section 
@@ -47,12 +94,12 @@
   <div class="page-usp__wrapper wrapper">
     <div class="page-usp">
       <div 
-        class="page-usp__bg bg-corner"
+        class="page-usp__bg corner"
         data-aos="bg"
         data-aos-duration="800"
       >
-          <svg class="desktop" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M.879 37.927A3 3 0 0 0 0 40.05V703a3 3 0 0 0 3 3h1408c1.66 0 3-1.343 3-3V3c0-1.657-1.34-3-3-3H40.049a3 3 0 0 0-2.122.879L.88 37.927Z" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h40v40H0z"/></clipPath></defs></svg>
-          <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M.879 18.927A3 3 0 0 0 0 21.05V703a3 3 0 0 0 3 3h349a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H21.049a3 3 0 0 0-2.122.879L.88 18.928Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h21v21H0z"/></clipPath></defs></svg>
+          <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+          <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
       </div>
       <header class="header">
         <div 
@@ -393,10 +440,10 @@
             Your subscription-based insurance service. And if something comes up — we’ve got you covered.
           </span>
           <span lang="ua" class="ua">
-            Сервіс страхування у форматі підписки. Йди живи — ми прикриємо.
+            Твій сервіс страхування у форматі підписки. Йди живи — ми прикриємо.
           </span>
           <span lang="ru" class="ru">
-            Сервис страхования в формате подписки. Иди живи — мы прикроем.
+            Твой сервис страхования в формате подписки. Иди живи — мы прикроем.
           </span>
         </div>
         <div class="page-usp__btns-group btns-group"
@@ -613,7 +660,10 @@
               data-aos-offset="0"
               data-aos-delay="200"
           >
-            <div class="page-product-item__bg page-product-item__bg--corner"></div>
+            <div class="page-product-item__bg corner">
+              <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+              <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+            </div>
             <div class="page-product-item__content">
               <div class="page-product-item__ico-wrap restartAos2"
                     data-aos="simple-fade-up"
@@ -690,7 +740,10 @@
               data-aos-offset="-50"
 
           >
-            <div class="page-product-item__bg page-product-item__bg--corner"></div>
+            <div class="page-product-item__bg corner">
+              <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+              <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+            </div>
             <div class="page-product-item__content">
               <div class="page-product-item__ico-wrap restartAos2"
                     data-aos="simple-fade-up"
@@ -857,7 +910,10 @@
               data-aos-offset="0"
               data-aos-delay="100"
           >
-            <div class="page-product-item__bg page-product-item__bg--corner"></div>
+            <div class="page-product-item__bg corner">
+              <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+              <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+            </div>
             <div class="page-product-item__content">
               <div class="page-product-item__ico-wrap"
                     data-aos="simple-fade-up"
@@ -1086,7 +1142,10 @@
               data-aos-duration="300"
               data-aos-delay="300"
           >
-            <div class="page-product-item__bg page-product-item__bg--corner"></div>
+            <div class="page-product-item__bg corner">
+              <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+              <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+            </div>
             <div class="page-product-item__content">
               <div class="page-product-item__ico-wrap"
                     data-aos="simple-fade-up"
@@ -1225,7 +1284,7 @@
                 + ₴18 500
               </span>
               <span lang="ru" class="ru">
-                + $2300
+                + ₴18 500
               </span>
             </span>
             <svg class="page-compensation-people__price-bg">
@@ -1245,7 +1304,7 @@
                 + ₴15 000
               </span>
               <span lang="ru" class="ru">
-                + $1400
+                + ₴15 000
               </span>
             </span>
             <svg class="page-compensation-people__price-bg">
@@ -1265,7 +1324,7 @@
                 + ₴15 000
               </span>
               <span lang="ru" class="ru">
-                + $750
+                + ₴15 000
               </span>
             </span>
             <svg class="page-compensation-people__price-bg">
@@ -1285,7 +1344,7 @@
                 + ₴6 500
               </span>
               <span lang="ru" class="ru">
-                + $320
+                + ₴6 500
               </span>
             </span>
             <svg class="page-compensation-people__price-bg">
@@ -1299,7 +1358,10 @@
         <section class="page__section page__section--get" id="get">
   <div class="page-get__wrapper wrapper">
     <div class="page-get">
-      <div class="page-get__bg"></div>
+      <div class="page-get__bg corner">
+        <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+        <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+      </div>
       <h3 class="page-get__title">
         <span lang="en" class="en">
           How to get instant compensation?
@@ -1505,10 +1567,12 @@
             data-aos="easier-fade-up"
             data-aos-duration="300"
             data-aos-delay="100"
-            
-            
         >
-          <div class="about-top-item__content corner about-top-item__content--img">
+          <div class="about-top-item__corner corner">
+            <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="about-top-item__content about-top-item__content--img">
             <div class="about-top-item__img-wrap">
               <img src="img/about-1.jpg" alt="" class="about-top-item__img">
             </div>
@@ -1517,8 +1581,6 @@
         <div class="about-top-item"
             data-aos="easier-fade-up"
             data-aos-duration="300"
-            
-            
         >
           <div class="about-top-item__content about-blue">
             <span class="about-top-item__title">
@@ -1592,10 +1654,12 @@
         <div class="about-top-item"
             data-aos="easier-fade-up"
             data-aos-duration="300"
-            
-            
         >
-          <div class="about-top-item__content about-yellow corner">
+          <div class="about-top-item__corner corner">
+            <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="about-top-item__content about-yellow">
             <span class="about-top-item__title">
               <span lang="en" class="en">
                 24/7
@@ -1728,14 +1792,16 @@
             </span>
           </div>
         </div>
-        <div class="about-bottom-item about-bottom-item--row about-bottom-item--corner"
+        <div class="about-bottom-item about-bottom-item--row"
             data-aos="easier-fade-up"
             data-aos-duration="300"
             data-aos-delay="100"
-            
-            
         >
-          <div class="about-bottom-item__content corner about-blue">
+          <div class="about-top-item__corner corner">
+            <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="about-bottom-item__content about-blue">
             <span class="about-bottom-item__title">
               <span lang="en" class="en">
                 30 000+
@@ -1766,13 +1832,17 @@
             </div>
           </div>
         </div>
-        <div class="about-bottom-item about-bottom-item--l about-bottom-item--corner"
+        <div class="about-bottom-item about-bottom-item--l"
               data-aos="easier-fade-up"
               
               data-aos-duration="300"
               
         >
-          <div class="about-bottom-item__content corner about-green">
+          <div class="about-top-item__corner corner">
+            <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="about-bottom-item__content about-green">
             <span class="about-bottom-item__title">
               <span lang="en" class="en">
                 10 000+
@@ -1830,7 +1900,7 @@
           </div>
         </div>
         <div class="about-bottom-item  about-bottom-item--empty">
-          <div class="about-bottom-item__content corner about-bottom-item__content--img">
+          <div class="about-bottom-item__content about-bottom-item__content--img">
             
           </div>
         </div>
@@ -1848,9 +1918,15 @@
         <section class="page__section page__section--reviews">
   <div class="page-reviews__wrapper wrapper">
     <div class="page-reviews ">
+      <div class="reviews-slider__corner corner">
+        <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+      </div>
       <div class="page-reviews__slider page-reviews__single-item page-reviews__slider-js">
         <div class="reviews-slider-item">
-          <div class="reviews-slider-item__img-wrap corner">
+          <div class="reviews-slider-item__corner corner">
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="reviews-slider-item__img-wrap ">
             <img src="img/review-slider-1.jpg" alt="" class="reviews-slider-item__img" data-animation-in="zoomInImage">
           </div>
           <div class="reviews-slider-item__tag" data-animation-in="slideUpBlock">
@@ -1911,7 +1987,10 @@
         </div>
         
         <div class="reviews-slider-item">
-          <div class="reviews-slider-item__img-wrap corner"  >
+          <div class="reviews-slider-item__corner corner">
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="reviews-slider-item__img-wrap "  >
             <img src="img/review-slider-1.jpg" alt="" class="reviews-slider-item__img" data-animation-in="zoomInImage">
           </div>
           <div class="reviews-slider-item__tag" data-animation-in="slideUpBlock">
@@ -1972,7 +2051,10 @@
         </div>
 
         <div class="reviews-slider-item">
-          <div class="reviews-slider-item__img-wrap corner">
+          <div class="reviews-slider-item__corner corner">
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="reviews-slider-item__img-wrap ">
             <img src="img/review-slider-1.jpg" alt="" class="reviews-slider-item__img" data-animation-in="zoomInImage">
           </div>
           <div class="reviews-slider-item__tag" data-animation-in="slideUpBlock">
@@ -2033,7 +2115,10 @@
         </div>
 
         <div class="reviews-slider-item">
-          <div class="reviews-slider-item__img-wrap corner">
+          <div class="reviews-slider-item__corner corner">
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+          </div>
+          <div class="reviews-slider-item__img-wrap ">
             <img src="img/review-slider-1.jpg" alt="" class="reviews-slider-item__img" data-animation-in="zoomInImage">
           </div>
           <div class="reviews-slider-item__tag" data-animation-in="slideUpBlock">
@@ -2281,7 +2366,10 @@
         <section class="page__section page__section--faq">
   <div class="page-faq__wrapper wrapper">
     <div class="page-faq">
-      <div class="page-faq__bg"></div>
+      <div class="page-faq__bg corner">
+        <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+        <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+      </div>
       <h3 class="page-faq__title">
         <span lang="en" class="en">
           Frequently asked questions
@@ -2400,7 +2488,10 @@
         <footer class="footer__section">
   <div class="footer__wrapper wrapper">
     <div class="footer">
-      <div class="footer__bg"></div>
+      <div class="footer__bg corner">
+        <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.4 476.4" style="enable-background:new 0 0 476.4 476.4" xml:space="preserve"><path d="M415.1 25.4C431.4 9.1 453.4 0 476.4 0H0v476.4c0-23 9.1-45 25.4-61.2L415.1 25.4z" style="fill:#fff"/></svg>
+        <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.3 335.3" style="enable-background:new 0 0 335.3 335.3" xml:space="preserve"><path d="M275.9 24.6C291.7 8.8 313 0 335.3 0H0v335.3C0 313 8.8 291.7 24.6 276L275.9 24.6z" style="fill:#fff"/></svg>
+      </div>
       <div class="footer__content">
         <div class="footer__box footer__box--logo">
           <a href="#" class="footer-logo">

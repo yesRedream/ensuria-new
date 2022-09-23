@@ -495,20 +495,20 @@
   border-radius: 3px;
   overflow: hidden;
 
-  &::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 0;
+  // &::after {
+  //   content: "";
+  //   width: 40px;
+  //   height: 40px;
+  //   background: #ffffff;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
 
-    @include viewport-tablet { 
-      width: 21px;
-      height: 21px;
-    }
-  }
+  //   @include viewport-tablet { 
+  //     width: 21px;
+  //     height: 21px;
+  //   }
+  // }
 
   // &::after {
   //   content: "";
@@ -532,34 +532,6 @@
   //     left: -38px;
   //   }
   // }
-
-  svg {
-    fill: var(--color-purple);
-    position: relative;
-    z-index: 2;
-    width: 40px;
-    height: 40px;
-
-    &.mobile {
-      display: none;
-    }
-
-
-    @include viewport-tablet { 
-      width: 21px;
-      height: 21px;
-
-      &.desktop {
-        display: none;
-      }
-
-      &.mobile {
-        display: block;
-      }
-
-
-    }
-  }
 }
 
 .page-usp__content {

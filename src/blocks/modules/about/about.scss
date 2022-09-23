@@ -69,6 +69,18 @@
   }
 }
 
+.about-top-item__corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  z-index: 2;
+
+  @include viewport-tablet {
+    padding: 5px 0;
+  }
+}
+
 .about-top__item--l {
   flex: 1;
   min-width: 50%;
@@ -94,6 +106,7 @@
     padding: 27px;
   }
 }
+
 
 .about-top-item__content--img {
   padding: 0;
@@ -253,9 +266,9 @@
   flex: 1;
 }
 
-.about-bottom-item--corner {
-  overflow: hidden;
-}
+// .about-bottom-item--corner {
+//   overflow: hidden;
+// }
 
 .about-bottom-item__content {
   flex: 1;

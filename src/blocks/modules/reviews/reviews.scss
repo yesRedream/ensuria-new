@@ -29,6 +29,7 @@
     margin: 0;
   }
 
+
   .slick-track {
     height: 100%;
     display: flex;
@@ -52,6 +53,18 @@
   }
 }
 
+
+.reviews-slider__corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  @include viewport-tablet {
+    padding: 5px 0;
+  }
+}
+
 .reviews-slider-item {
   width: 100%;
   height: 100%;
@@ -72,6 +85,15 @@
     padding: 0 10px;
     // justify-content: space-between;
     justify-content: flex-start;
+  }
+}
+
+.reviews-slider-item__corner {
+  
+
+  @include viewport-tablet {
+    position: absolute;
+    left: 10px;
   }
 }
 

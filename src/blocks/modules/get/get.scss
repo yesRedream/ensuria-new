@@ -54,24 +54,24 @@
     // transform: scale(1);
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 4.514vw;
-    height: 6.667vw;
-    left: -1.528vw;
-    top: -3.958vw;
-    background: #ffffff;
-    transform: rotate(45deg);
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 4.514vw;
+  //   height: 6.667vw;
+  //   left: -1.528vw;
+  //   top: -3.958vw;
+  //   background: #ffffff;
+  //   transform: rotate(45deg);
 
-    @include viewport-tablet {
-      padding-top: 39px;
-      width: 65px;
-      height: 96px;
-      top: -70px;
-      left: -38px;
-    }
-  }
+  //   @include viewport-tablet {
+  //     padding-top: 39px;
+  //     width: 65px;
+  //     height: 96px;
+  //     top: -70px;
+  //     left: -38px;
+  //   }
+  // }
 }
 
 .page-get__bg--active {

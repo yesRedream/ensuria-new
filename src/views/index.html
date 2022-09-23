@@ -25,7 +25,54 @@
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="styles/main.css">
-       
+        <style>
+          .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            animation: bgchange 1.4s infinite step-end;
+          }
+          .loading.local {
+            display: none !important;
+          }
+          .loading__logo-wrap {
+            transform: scale(1.5);
+            margin-bottom: 30px;
+          }
+          .loading__logo-wrap svg {
+            width: 15vw;
+            height: auto;
+          }
+          @media (max-width: 815px) {
+            .loading__logo-wrap svg {
+              width: 120px;
+            }
+          }
+          @keyframes bgchange {
+            0% {
+              background-color: var(--color-yellow);
+            }
+            33% {
+              background-color: var(--color-blue);
+            }
+            66% {
+              background-color: var(--color-green);
+            }
+            100% {
+              background-color: #f8dde7;
+            }
+          }
+        </style>
         
     </head>
     <body>

@@ -18,7 +18,7 @@ $(".page-talk__slider-js").slick({
   dots: false,
   autoplay: false,
   speed: 400,
-  fade: true,
+  // fade: true,
   slidesToShow: 1,
   slidesToScroll: 1,
 }).slickAnimation();

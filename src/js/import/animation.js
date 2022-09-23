@@ -5,6 +5,7 @@ import { TweenMax, TimelineMax, TweenLite } from "gsap";
 import { ScrollMagicPluginGsap, ScrollMagicPluginIndicator } from "scrollmagic-plugins";
 import 'slick-carousel';
 // import 'jquery.scrollto';
+import AOS from 'aos';
 
 ScrollMagicPluginIndicator(ScrollMagic);
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
@@ -24,6 +25,7 @@ $(document).ready(function(){
   });
 
 });
+
 
 
 
@@ -489,15 +491,54 @@ $(document).on("click", "a[href^='#']", function (e) {
 
 // LOADER
 
-$(document).ready(function(){
-  $('.loading').remove();
-  // if (localStorage.getItem('loading-screen') != null) {
+// $(document).ready(function(){
+//   // $('.loading').remove();
 
-  //     //show loading
-  //     $('.loading').addClass('local');
+//   // $('body').toggleClass("fixed-position");
+  
+//   // if (localStorage.getItem('loading-screen') != null) {
 
-  //     //Set info to localStorage that it has been seen
-  //     localStorage.setItem('loading', 'seen');
-  // }
+//   //     //show loading
+//   //     $('.loading').addClass('local');
+
+//   //     //Set info to localStorage that it has been seen
+//   //     localStorage.setItem('loading', 'seen');
+//   // }
+// });
+
+
+// $(document).on({
+//   ajaxStart: function() { 
+//     $('body').addClass("fixed-position");
+//   },
+//   ajaxComplete: function() { 
+//     $('body').removeClass("fixed-position");
+//     $('.loading').remove();
+//   }    
+// });
+
+// const wait = (delay = 0) =>
+//   new Promise(resolve => setTimeout(resolve, delay));
+
+// const setVisible = (elementOrSelector, visible) => 
+//   (typeof elementOrSelector === 'string'
+//     ? document.querySelector(elementOrSelector)
+//     : elementOrSelector
+//   ).style.display = visible ? 'flex' : 'none';
+
+// // setVisible('.page', false);
+// setVisible('.loading', true);
+
+// document.addEventListener('DOMContentLoaded', () =>
+//   wait(1000).then(() => {
+//     // setVisible('.page', true);
+//     setVisible('.loading', false);
+//     AOS.refresh();
+//   }));
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() { 
+    AOS.refresh(); 
+    $('.loading').remove();
+  }, 500);
 });
-

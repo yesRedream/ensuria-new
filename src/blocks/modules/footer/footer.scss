@@ -37,28 +37,28 @@
   z-index: -1;
   border-radius: 6px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 4.514vw;
-    height: 6.667vw;
-    left: -1.528vw;
-    top: -3.958vw;
-    background: #ffffff;
-    transform: rotate(45deg);
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 4.514vw;
+  //   height: 6.667vw;
+  //   left: -1.528vw;
+  //   top: -3.958vw;
+  //   background: #ffffff;
+  //   transform: rotate(45deg);
 
-    @include viewport-desktop { 
-      width: 65px;
-      height: 96px;
-      top: -70px;
-      left: -30px;
-    }
+  //   @include viewport-desktop { 
+  //     width: 65px;
+  //     height: 96px;
+  //     top: -70px;
+  //     left: -30px;
+  //   }
 
-    @include viewport-tablet { 
-      top: -70px;
-      left: -38px;
-    }
-  }
+  //   @include viewport-tablet { 
+  //     top: -70px;
+  //     left: -38px;
+  //   }
+  // }
 }
 
 .footer__content {
