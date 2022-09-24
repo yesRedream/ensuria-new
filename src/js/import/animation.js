@@ -71,7 +71,7 @@ const controller = new ScrollMagic.Controller();
     triggerElement: ".page__section--get",
     offset: 900,
   })
-    .setClassToggle(".page-get__img--step-1", "active")
+    .setClassToggle(".page-get-slider", "item-2")
     .on('start', function (event) {
       if(event.scrollDirection == 'FORWARD') {
         $('.page-get__item--1').removeClass('active');
@@ -91,7 +91,7 @@ const controller = new ScrollMagic.Controller();
     triggerElement: ".page__section--get", 
     offset: 1500,
   })
-      .setClassToggle(".page-get__img--step-2", "active")
+      .setClassToggle(".page-get-slider", "item-3")
       .on('start', function (event) {
         if(event.scrollDirection == 'FORWARD') {
           $('.page-get__item--1').removeClass('active');

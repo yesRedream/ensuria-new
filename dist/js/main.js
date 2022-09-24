@@ -486,7 +486,7 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
 new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: ".page__section--get",
   offset: 900
-}).setClassToggle(".page-get__img--step-1", "active").on('start', function (event) {
+}).setClassToggle(".page-get-slider", "item-2").on('start', function (event) {
   if (event.scrollDirection == 'FORWARD') {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-get__item--1').removeClass('active');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-get__item--2').addClass('active');
@@ -501,7 +501,7 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
 new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   triggerElement: ".page__section--get",
   offset: 1500
-}).setClassToggle(".page-get__img--step-2", "active").on('start', function (event) {
+}).setClassToggle(".page-get-slider", "item-3").on('start', function (event) {
   if (event.scrollDirection == 'FORWARD') {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-get__item--1').removeClass('active');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.page-get__item--2').removeClass('active');
