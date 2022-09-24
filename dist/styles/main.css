@@ -10245,7 +10245,7 @@ a:hover {
 .slick-active .talk-slider-item__text,
 .slick-active .talk-slider-item__name,
 .slick-active .talk-slider-item__link {
-  animation: simpleFadeUp 0.6s both;
+  animation: simpleFadeUp 1.2s both;
 }
 
 .slick-current .talk-slider-item__text,
