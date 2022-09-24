@@ -610,6 +610,10 @@
   margin-left: 14.931vw;
   white-space: nowrap;
 
+  @include viewport-tablet {
+    white-space: normal;
+  }
+
   .ru, .ua {
     margin-left: -11.3vw;
   }

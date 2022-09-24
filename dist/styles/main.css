@@ -14703,6 +14703,10 @@ a:hover {
     margin-bottom: 60px;
   }
 
+  .page-usp__title--first {
+    white-space: normal;
+  }
+
   .page-usp__img-wrap {
     width: 102.667vw;
     height: 72.8vw;
