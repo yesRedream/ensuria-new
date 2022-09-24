@@ -10032,34 +10032,23 @@ a:hover {
   transition: opacity 0.5s ease 0.3s;
 }
 
+.slick-current .reviews-slider-item__img,
+.slick-active .reviews-slider-item__img {
+  animation: zoomInImage 0.6s both;
+}
+
 @keyframes zoomInImage {
   from {
-    opacity: 0;
     transform: translateY(-50%) translateX(-50%) scale3d(1, 1, 1);
   }
 
   to {
-    opacity: 1;
     transform: translateY(-50%) translateX(-50%) scale3d(1.1, 1.1, 1.1);
   }
 }
 
 .zoomInImage {
   animation-name: zoomInImage;
-}
-
-@keyframes zoomOutImage {
-  from {
-    transform: translateY(-50%) translateX(-50%) scale3d(1.1, 1.1, 1.1);
-  }
-
-  to {
-    transform: translateY(-50%) translateX(-50%) scale3d(1, 1, 1);
-  }
-}
-
-.zoomOutImage {
-  animation-name: zoomOutImage;
 }
 
 @keyframes slideUpBlock {
@@ -10240,6 +10229,13 @@ a:hover {
   transition: opacity 0.5s ease 0.3s;
 }
 
+.talk-slider-item__img-wrap,
+.talk-slider-item__text,
+.talk-slider-item__name,
+.talk-slider-item__link {
+  opacity: 0;
+}
+
 .slick-current .talk-slider-item__img-wrap,
 .slick-current .talk-slider-item__text,
 .slick-current .talk-slider-item__name,
@@ -10248,8 +10244,7 @@ a:hover {
 .slick-active .talk-slider-item__text,
 .slick-active .talk-slider-item__name,
 .slick-active .talk-slider-item__link {
-  animation: simpleFadeUp 0.6s;
-  animation-fill-mode: both;
+  animation: simpleFadeUp 0.6s both;
 }
 
 .slick-current .talk-slider-item__text,
@@ -10279,6 +10274,7 @@ a:hover {
 
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 

@@ -220,6 +220,13 @@
 
 }
 
+.talk-slider-item__img-wrap,
+.talk-slider-item__text,
+.talk-slider-item__name,
+.talk-slider-item__link {
+  opacity: 0;
+}
+
 .slick-current,
 .slick-active {
 
@@ -227,8 +234,7 @@
   .talk-slider-item__text,
   .talk-slider-item__name,
   .talk-slider-item__link {
-    animation: simpleFadeUp .6s;
-    animation-fill-mode: both;
+    animation: simpleFadeUp .6s both;
   }
 
   .talk-slider-item__img-wrap {}
@@ -264,5 +270,6 @@
   }
   100% {
       transform: translateY(0);
+      opacity: 1;
   }
 }
