@@ -591,10 +591,18 @@
   flex-direction: column;
 }
 
+.page-usp__title-box--first {
+  flex-direction: row;
+
+  @include viewport-tablet {
+    flex-direction: column;
+  }
+}
+
 .page-usp__title-box--second {
   position: relative;
   text-align: right;
-  margin-top: -7vw;
+  // margin-top: -7vw;
 
   @include viewport-tablet { 
     margin-top: 0;
@@ -611,20 +619,28 @@
   white-space: nowrap;
 
   @include viewport-tablet {
+    margin-left: 21vw;
     white-space: normal;
   }
 
   .ru, .ua {
     margin-left: -11.3vw;
+
+    @include viewport-tablet {
+      margin-left: 0;
+    }
   }
 }
 
 .page-usp__title--second {}
 
 .page-usp__title--third {
-  .ru, .ua, .en {
-    opacity: 0;
+  text-align: left;
+
+  @include viewport-tablet {
+    text-align: right;
   }
+
 }
 
 .page-usp__title--fourth {
@@ -638,6 +654,10 @@
   // .ru, .ua {
   //   margin-right: -5.208vw;
   // }
+
+  @include viewport-tablet {
+    margin-right: 15vw;
+  }
 }
 
 

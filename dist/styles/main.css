@@ -8360,10 +8360,13 @@ a:hover {
   flex-direction: column;
 }
 
+.page-usp__title-box--first {
+  flex-direction: row;
+}
+
 .page-usp__title-box--second {
   position: relative;
   text-align: right;
-  margin-top: -7vw;
 }
 
 .page-usp__title--first {
@@ -8376,10 +8379,8 @@ a:hover {
   margin-left: -11.3vw;
 }
 
-.page-usp__title--third .ru,
-.page-usp__title--third .ua,
-.page-usp__title--third .en {
-  opacity: 0;
+.page-usp__title--third {
+  text-align: left;
 }
 
 .page-usp__title--fourth {
@@ -14737,13 +14738,31 @@ a:hover {
     font-size: 11.2vw;
   }
 
+  .page-usp__title-box--first {
+    flex-direction: column;
+  }
+
   .page-usp__title-box--second {
     margin-top: 0;
     margin-bottom: 60px;
   }
 
   .page-usp__title--first {
+    margin-left: 21vw;
     white-space: normal;
+  }
+
+  .page-usp__title--first .ru,
+  .page-usp__title--first .ua {
+    margin-left: 0;
+  }
+
+  .page-usp__title--third {
+    text-align: right;
+  }
+
+  .page-usp__title--fourth {
+    margin-right: 15vw;
   }
 
   .page-usp__img-wrap {
