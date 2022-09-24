@@ -338,13 +338,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel */ "./.yarn/__virtual__/slick-carousel-virtual-8eb5f419a2/0/cache/slick-carousel-npm-1.8.1-8382d373c2-acaad391e4.zip/node_modules/slick-carousel/slick/slick.js");
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! animate.css */ "./.yarn/cache/animate.css-npm-4.1.1-5c526dcd84-c7eb915404.zip/node_modules/animate.css/animate.css");
-/* harmony import */ var _js_import_slick_animate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../js/import/slick-animate */ "./src/js/import/slick-animate.js");
-/* harmony import */ var _js_import_slick_animate__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_import_slick_animate__WEBPACK_IMPORTED_MODULE_4__);
 
 window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 
 
-
+ // import '../../../js/import/slick-animate';
 
 var controller = new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Controller();
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-talk__slider-js").slick({
@@ -356,7 +354,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-talk__slider-js").slick({
   // fade: true,
   slidesToShow: 1,
   slidesToScroll: 1
-}).slickAnimation();
+});
 var percentTime;
 var tick;
 var time = .1;

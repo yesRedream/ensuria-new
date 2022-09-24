@@ -4,7 +4,7 @@ import * as ScrollMagic from "scrollmagic";
 import 'slick-carousel';
 import 'animate.css';
 
-import '../../../js/import/slick-animate';
+// import '../../../js/import/slick-animate';
 
  
 
@@ -21,7 +21,7 @@ $(".page-talk__slider-js").slick({
   // fade: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-}).slickAnimation();
+});
 
     var percentTime;
     var tick;

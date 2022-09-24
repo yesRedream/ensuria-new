@@ -96,6 +96,7 @@
   width: 6.667vw;
   height: 6.667vw;
   margin-bottom: 1.667vw;
+  transition: all .3s ease-in-out;
 
   @include viewport-tablet { 
     width: 64px;
@@ -217,4 +218,51 @@
   animation-duration: .6s;
   transition: opacity 0.5s ease 0.3s;
 
+}
+
+.slick-current,
+.slick-active {
+
+  .talk-slider-item__img-wrap,
+  .talk-slider-item__text,
+  .talk-slider-item__name,
+  .talk-slider-item__link {
+    animation: simpleFadeUp .6s;
+    animation-fill-mode: both;
+  }
+
+  .talk-slider-item__img-wrap {}
+
+  .talk-slider-item__text {
+    animation-delay: .2s;
+  }
+
+  .talk-slider-item__name {
+    animation-delay: .4s;
+
+    @include viewport-tablet { 
+      animation-delay: .6s;
+    }
+  }
+
+  .talk-slider-item__link {
+    animation-delay: .6s;
+
+    @include viewport-tablet { 
+      animation-delay: .4s;
+    }
+  }
+}
+
+@keyframes simpleFadeUp {
+  0% {
+    transform: translateY(50%);
+    opacity:0;
+  }
+  70% {
+    opacity:1;
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
