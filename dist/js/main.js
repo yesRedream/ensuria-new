@@ -354,7 +354,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-talk__slider-js").slick({
   // fade: true,
   slidesToShow: 1,
   slidesToScroll: 1
-});
+}).slickAnimation();
 var percentTime;
 var tick;
 var time = .1;

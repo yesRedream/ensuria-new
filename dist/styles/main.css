@@ -10225,42 +10225,9 @@ a:hover {
 }
 
 .page-talk__slider-js [data-animation-in] {
-  opacity: 0;
-  animation-duration: 0.6s;
+  opacity: 1;
+  animation-duration: 1s;
   transition: opacity 0.5s ease 0.3s;
-}
-
-.talk-slider-item__img-wrap,
-.talk-slider-item__text,
-.talk-slider-item__name,
-.talk-slider-item__link {
-  opacity: 0;
-}
-
-.slick-current .talk-slider-item__img-wrap,
-.slick-current .talk-slider-item__text,
-.slick-current .talk-slider-item__name,
-.slick-current .talk-slider-item__link,
-.slick-active .talk-slider-item__img-wrap,
-.slick-active .talk-slider-item__text,
-.slick-active .talk-slider-item__name,
-.slick-active .talk-slider-item__link {
-  animation: simpleFadeUp 1.2s both;
-}
-
-.slick-current .talk-slider-item__text,
-.slick-active .talk-slider-item__text {
-  animation-delay: 0.2s;
-}
-
-.slick-current .talk-slider-item__name,
-.slick-active .talk-slider-item__name {
-  animation-delay: 0.4s;
-}
-
-.slick-current .talk-slider-item__link,
-.slick-active .talk-slider-item__link {
-  animation-delay: 0.6s;
 }
 
 @keyframes simpleFadeUp {
@@ -15380,16 +15347,6 @@ a:hover {
   .talk-slider-item__link {
     margin-bottom: 38px;
     order: -1;
-  }
-
-  .slick-current .talk-slider-item__name,
-  .slick-active .talk-slider-item__name {
-    animation-delay: 0.6s;
-  }
-
-  .slick-current .talk-slider-item__link,
-  .slick-active .talk-slider-item__link {
-    animation-delay: 0.4s;
   }
 
   .page__section--download {

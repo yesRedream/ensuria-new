@@ -21,7 +21,7 @@ $(".page-talk__slider-js").slick({
   // fade: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-});
+}).slickAnimation();
 
     var percentTime;
     var tick;
