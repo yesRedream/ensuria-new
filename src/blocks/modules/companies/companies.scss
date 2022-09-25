@@ -27,14 +27,27 @@
   font-size: 1.250vw;
   line-height: 1.4;
   margin-bottom: 1.667vw;
+  
+  br {
+    display: none;
+  }
 
   @include viewport-desktop {
     font-size: 18px;
     margin-bottom: 24px;
   }
 
+  @include viewport-tablet {
+    text-align: center;
+    br {
+      display: block;
+    }
+  }
+
   @include viewport-phone {
-    max-width: 150px;
+    br {
+      display: block;
+    }
   }
 }
 

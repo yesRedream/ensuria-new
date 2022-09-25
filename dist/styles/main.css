@@ -8693,6 +8693,10 @@ a:hover {
   margin-bottom: 1.667vw;
 }
 
+.page-companies__text br {
+  display: none;
+}
+
 .page-companies__text--bold {
   font-weight: 500;
 }
@@ -14804,6 +14808,14 @@ a:hover {
     text-align: left;
   }
 
+  .page-companies__text {
+    text-align: center;
+  }
+
+  .page-companies__text br {
+    display: block;
+  }
+
   .page-companies__content {
     padding-bottom: 52px;
   }
@@ -15508,8 +15520,8 @@ a:hover {
     flex: 1;
   }
 
-  .page-companies__text {
-    max-width: 150px;
+  .page-companies__text br {
+    display: block;
   }
 
   .page-products-toggle__label {
