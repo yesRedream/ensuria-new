@@ -221,45 +221,45 @@
 }
 
 
-// .talk-slider-item__img-wrap,
-// .talk-slider-item__text,
-// .talk-slider-item__name,
-// .talk-slider-item__link {
-//   opacity: 0;
-// }
+.talk-slider-item__img-wrap,
+.talk-slider-item__text,
+.talk-slider-item__name,
+.talk-slider-item__link {
+  opacity: 0;
+}
 
-// .slick-current,
-// .slick-active {
+.slick-current,
+.slick-active {
 
-//   .talk-slider-item__img-wrap,
-//   .talk-slider-item__text,
-//   .talk-slider-item__name,
-//   .talk-slider-item__link {
-//     animation: simpleFadeUp 1.2s both;
-//   }
+  .talk-slider-item__img-wrap,
+  .talk-slider-item__text,
+  .talk-slider-item__name,
+  .talk-slider-item__link {
+    animation: simpleFadeUp 1.2s both;
+  }
 
-//   .talk-slider-item__img-wrap {}
+  .talk-slider-item__img-wrap {}
 
-//   .talk-slider-item__text {
-//     animation-delay: .2s;
-//   }
+  .talk-slider-item__text {
+    animation-delay: .2s;
+  }
 
-//   .talk-slider-item__name {
-//     animation-delay: .4s;
+  .talk-slider-item__name {
+    animation-delay: .4s;
 
-//     @include viewport-tablet { 
-//       animation-delay: .6s;
-//     }
-//   }
+    @include viewport-tablet { 
+      animation-delay: .6s;
+    }
+  }
 
-//   .talk-slider-item__link {
-//     animation-delay: .6s;
+  .talk-slider-item__link {
+    animation-delay: .6s;
 
-//     @include viewport-tablet { 
-//       animation-delay: .4s;
-//     }
-//   }
-// }
+    @include viewport-tablet { 
+      animation-delay: .4s;
+    }
+  }
+}
 
 @keyframes simpleFadeUp {
   0% {
