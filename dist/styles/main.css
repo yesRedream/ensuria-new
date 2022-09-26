@@ -8012,7 +8012,7 @@ a:hover {
   align-items: flex-start;
 }
 
-.corner img {
+.corner svg {
   position: relative;
   width: 41px;
   height: 41px;
@@ -8020,7 +8020,7 @@ a:hover {
   top: -1px;
 }
 
-.corner img.mobile {
+.corner svg.mobile {
   display: none;
 }
 
@@ -14642,16 +14642,16 @@ a:hover {
     transform: translateX(0) translateY(0) !important;
   }
 
-  .corner img {
+  .corner svg {
     width: 21px;
     height: 21px;
   }
 
-  .corner img.desktop {
+  .corner svg.desktop {
     display: none;
   }
 
-  .corner img.mobile {
+  .corner svg.mobile {
     display: block;
   }
 
