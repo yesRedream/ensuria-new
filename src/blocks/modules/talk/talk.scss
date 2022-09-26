@@ -221,16 +221,22 @@
 }
 
 
-.talk-slider-item__img-wrap,
-.talk-slider-item__text,
-.talk-slider-item__name,
-.talk-slider-item__link {
-  opacity: 0;
+
+.slick-slide {
+  .talk-slider-item__img-wrap,
+  .talk-slider-item__text,
+  .talk-slider-item__name,
+  .talk-slider-item__link {
+    opacity: 0;
+    // transform: scale(.8);
+    // transition: .5s all;
+  }
+    
 }
 
+/* Current slide */
 .slick-current,
-.slick-active {
-
+.slick-target {
   .talk-slider-item__img-wrap,
   .talk-slider-item__text,
   .talk-slider-item__name,
@@ -259,6 +265,12 @@
       animation-delay: .4s;
     }
   }
+}
+
+.slick-current,
+.slick-active {
+
+ 
 }
 
 @keyframes simpleFadeUp {

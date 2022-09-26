@@ -10234,36 +10234,38 @@ a:hover {
   transition: opacity 0.5s ease 0.3s;
 }
 
-.talk-slider-item__img-wrap,
-.talk-slider-item__text,
-.talk-slider-item__name,
-.talk-slider-item__link {
+.slick-slide .talk-slider-item__img-wrap,
+.slick-slide .talk-slider-item__text,
+.slick-slide .talk-slider-item__name,
+.slick-slide .talk-slider-item__link {
   opacity: 0;
 }
+
+/* Current slide */
 
 .slick-current .talk-slider-item__img-wrap,
 .slick-current .talk-slider-item__text,
 .slick-current .talk-slider-item__name,
 .slick-current .talk-slider-item__link,
-.slick-active .talk-slider-item__img-wrap,
-.slick-active .talk-slider-item__text,
-.slick-active .talk-slider-item__name,
-.slick-active .talk-slider-item__link {
+.slick-target .talk-slider-item__img-wrap,
+.slick-target .talk-slider-item__text,
+.slick-target .talk-slider-item__name,
+.slick-target .talk-slider-item__link {
   animation: simpleFadeUp 1.2s both;
 }
 
 .slick-current .talk-slider-item__text,
-.slick-active .talk-slider-item__text {
+.slick-target .talk-slider-item__text {
   animation-delay: 0.2s;
 }
 
 .slick-current .talk-slider-item__name,
-.slick-active .talk-slider-item__name {
+.slick-target .talk-slider-item__name {
   animation-delay: 0.4s;
 }
 
 .slick-current .talk-slider-item__link,
-.slick-active .talk-slider-item__link {
+.slick-target .talk-slider-item__link {
   animation-delay: 0.6s;
 }
 
@@ -15395,12 +15397,12 @@ a:hover {
   }
 
   .slick-current .talk-slider-item__name,
-  .slick-active .talk-slider-item__name {
+  .slick-target .talk-slider-item__name {
     animation-delay: 0.6s;
   }
 
   .slick-current .talk-slider-item__link,
-  .slick-active .talk-slider-item__link {
+  .slick-target .talk-slider-item__link {
     animation-delay: 0.4s;
   }
 

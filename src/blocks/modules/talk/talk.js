@@ -12,7 +12,7 @@ import 'animate.css';
 const controller = new ScrollMagic.Controller();
 
 
-$(".page-talk__slider-js").slick({
+let talkSlider = $(".page-talk__slider-js").slick({
   infinite: true,
   arrows: false,
   dots: false,
@@ -87,4 +87,18 @@ $(".page-talk__slider-js").slick({
       })
       // .addIndicators() 
       .addTo(controller);
+    
+
+      talkSlider.on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+        let nextIndex = currentSlide + 1; // assume moving right
+        if(currentSlide-1 == nextSlide || (nextSlide+1 == slick.slideCount && currentSlide < nextSlide)) {
+            nextIndex = currentSlide - 1; // nope, moving left
+        }
+        $(`[data-slick-index="${nextIndex}"]`).addClass('slick-target');
+    });
+    
+    // clear custom class after transition
+    talkSlider.on('afterChange', () => {
+        $('.slick-slide').removeClass('slick-target');
+    });
     

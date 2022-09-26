@@ -345,7 +345,7 @@ window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
  // import '../../../js/import/slick-animate';
 
 var controller = new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Controller();
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-talk__slider-js").slick({
+var talkSlider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-talk__slider-js").slick({
   infinite: true,
   arrows: false,
   dots: false,
@@ -417,6 +417,19 @@ new scrollmagic__WEBPACK_IMPORTED_MODULE_1__.Scene({
   startProgressbar2();
 }) // .addIndicators() 
 .addTo(controller);
+talkSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+  var nextIndex = currentSlide + 1; // assume moving right
+
+  if (currentSlide - 1 == nextSlide || nextSlide + 1 == slick.slideCount && currentSlide < nextSlide) {
+    nextIndex = currentSlide - 1; // nope, moving left
+  }
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-slick-index=\"".concat(nextIndex, "\"]")).addClass('slick-target');
+}); // clear custom class after transition
+
+talkSlider.on('afterChange', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slick-slide').removeClass('slick-target');
+});
 
 /***/ }),
 
