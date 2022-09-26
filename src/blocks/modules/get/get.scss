@@ -282,24 +282,36 @@
 
 .page-get-success__title {
   margin-right: 1vw;
-  font-size: 1.098vh;
+  font-size: 1.02vh;
   color: #ffffff;
   font-weight: 600;
   line-height: 1.2;
+
+  @media (min-height: 962px) {
+    font-size: .9vh;
+  }
 }
 
 .page-get-success__date {
-  font-size: 1.098vh;
+  font-size: 1.02vh;
   line-height: 1.2;
   color: #ffffff;
   opacity: .8;
 
+  @media (min-height: 962px) {
+    font-size: .9vh;
+  }
+
 }
 
 .page-get-success__text {
-  font-size: 1.098vh;
+  font-size: 1.02vh;
   color: #ffffff;
   line-height: 1.2;
+
+  @media (min-height: 962px) {
+    font-size: .9vh;
+  }
 }
 
 .page-get__nav {
