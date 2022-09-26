@@ -8012,13 +8012,15 @@ a:hover {
   align-items: flex-start;
 }
 
-.corner svg {
+.corner img {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
+  left: -1px;
+  top: -1px;
 }
 
-.corner svg.mobile {
+.corner img.mobile {
   display: none;
 }
 
@@ -8338,7 +8340,6 @@ a:hover {
   background: var(--color-purple);
   z-index: -2;
   border-radius: 3px;
-  overflow: hidden;
 }
 
 .page-usp__content {
@@ -14641,16 +14642,16 @@ a:hover {
     transform: translateX(0) translateY(0) !important;
   }
 
-  .corner svg {
+  .corner img {
     width: 21px;
     height: 21px;
   }
 
-  .corner svg.desktop {
+  .corner img.desktop {
     display: none;
   }
 
-  .corner svg.mobile {
+  .corner img.mobile {
     display: block;
   }
 

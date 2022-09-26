@@ -352,11 +352,13 @@ a {
   justify-content: start;
   align-items: flex-start;
 
-  svg {
+  img {
     // fill: var(--color-purple);
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 41px;
+    height: 41px;
+    left: -1px;
+    top: -1px;
 
     &.mobile {
       display: none;
