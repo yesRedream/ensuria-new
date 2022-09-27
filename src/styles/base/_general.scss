@@ -48,7 +48,7 @@ a {
     width: 100%;
     transform: scaleX(0);
     border-radius: 5px;
-    height: 0.05em;
+    height: 1px;
     bottom: 0;
     left: 0;
     background: currentcolor;
@@ -62,6 +62,15 @@ a {
       transform-origin: bottom left;
     }
   }
+}
+
+.link-line-shown {
+  white-space: nowrap;
+  &::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
 }
 
 .btn {
@@ -82,17 +91,23 @@ a {
   border-radius: 2.014vw;
   transition: all .3s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: #ffffff;
     background-color: var(--color-dark-2);
     border-color: var(--color-dark-2);
+    outline: 0;
+    box-shadow: none;
   }
 
-  &:active {
-    color: #ffffff;
-    background-color: var(--color-dark-2);
-    border-color: var(--color-dark-2);
-  }
+  // &:active {
+  //   color: #ffffff;
+  //   background-color: var(--color-dark-2);
+  //   border-color: var(--color-dark-2);
+  // }
+
+
 
   @include viewport-desktop { 
     height: 48px;
@@ -111,14 +126,15 @@ a {
   border-color: var(--color-dark-2);
   color: var(--color-dark);
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: var(--color-dark-2);
     color: #ffffff;
+    outline: 0;
   }
 
-  &:active {
-    background-color: var(--color-dark-2);
-  }
+  
 }
 
 .btn--green {
@@ -126,16 +142,16 @@ a {
   border: none;
   color: var(--color-dark);
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: #BDE7AB;
     color: var(--color-dark);
+    outline: 0;
 
   }
 
-  &:active {
-    background-color: #BDE7AB;
-    color: var(--color-dark);
-  }
+
 }
 
 
@@ -144,15 +160,25 @@ a {
   border: none;
   color: var(--color-dark);
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: #fcbb9a;
     color: var(--color-dark);
+    outline: 0;
 
   }
 
   &:active {
     background-color: #fcbb9a;
     color: var(--color-dark);
+    outline: 0;
+
+  }
+
+  &:focus {
+    outline: 0;
+    border: none;
   }
 }
 
@@ -161,10 +187,13 @@ a {
   color: #ffffff;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: var(--color-dark);
     color: var(--color-dark);
     color: #ffffff;
+    outline: 0;
 
   }
 
@@ -381,6 +410,6 @@ a {
 }
 
 .fixed-position {
-  position: fixed;
+  // position: fixed;
   overflow: hidden !important;
 }

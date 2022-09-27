@@ -58,7 +58,7 @@ const controller = new ScrollMagic.Controller();
   })
   .setPin('.page__section--get')
   .on('start', function (event) {
-    $('.page-get__bg').toggleClass('page-get__bg--active');
+    // $('.page-get__bg').toggleClass('page-get__bg--active');
   
     // if(event.scrollDirection == 'FORWARD') {
     //   $('.page-get__bg').addClass('page-get__bg--active');
@@ -89,7 +89,7 @@ const controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
     triggerElement: ".page__section--get", 
-    offset: 1500,
+    offset: 1350,
   })
       .setClassToggle(".page-get-slider", "item-3")
       .on('start', function (event) {
@@ -378,48 +378,7 @@ var text4 = TweenMax.from(".page-compensation-people__price--4",
 // .addTo(controller);
 
 
-new ScrollMagic.Scene({
-  triggerElement: '.page__section--compensation',
-  duration: 500,
-  triggerHook: 0.5
-})
-  .setTween(person1)
-  // .addIndicators() 
-  .addTo(controller2);
 
-new ScrollMagic.Scene({
-  triggerElement: '.page__section--compensation',
-  duration: 500,
-  triggerHook: 0.5,
-  offset: 10,
-
-})
-  .setTween(text1)
-  // .addIndicators() 
-  .addTo(controller2);
-
-  
-new ScrollMagic.Scene({
-  triggerElement: '.page__section--compensation',
-  duration: 500,
-  triggerHook: 0.5,
-  offset: -50,
-  
-})
-  .setTween(person2)
-  // .addIndicators() 
-  .addTo(controller2);
-  
-new ScrollMagic.Scene({
-  triggerElement: '.page__section--compensation',
-  duration: 500,
-  triggerHook: 0.5,
-  offset: 20,
-  
-})
-  .setTween(text2)
-  // .addIndicators() 
-  .addTo(controller2);
 
 new ScrollMagic.Scene({
   triggerElement: '.page-compensation-people__price--3',
@@ -467,6 +426,108 @@ new ScrollMagic.Scene({
   // .addIndicators() 
   .addTo(controller2);
 
+
+  $(document).ready(function () {
+    $(window).on("resize", function (e) {
+        checkScreenSize();
+    });
+
+    checkScreenSize();
+    
+    function checkScreenSize(){
+        var newWindowWidth = $(window).width();
+        if (newWindowWidth < 481) {
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 1,
+            offset: 0,
+          })
+            .setTween(person1)
+            // .addIndicators() 
+            .addTo(controller2);
+          
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 1,
+            offset: 0,
+          
+          })
+            .setTween(text1)
+            // .addIndicators() 
+            .addTo(controller2);
+          
+            
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 1,
+            offset: 0,
+            
+          })
+            .setTween(person2)
+            // .addIndicators() 
+            .addTo(controller2);
+            
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 1,
+            offset: 0,
+            
+          })
+            .setTween(text2)
+            // .addIndicators() 
+            .addTo(controller2);
+        }
+        else
+        {
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 0.5
+          })
+            .setTween(person1)
+            // .addIndicators() 
+            .addTo(controller2);
+          
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 0.5,
+            offset: 10,
+          
+          })
+            .setTween(text1)
+            // .addIndicators() 
+            .addTo(controller2);
+          
+            
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 0.5,
+            offset: -50,
+            
+          })
+            .setTween(person2)
+            // .addIndicators() 
+            .addTo(controller2);
+            
+          new ScrollMagic.Scene({
+            triggerElement: '.page__section--compensation',
+            duration: 500,
+            triggerHook: 0.5,
+            offset: 20,
+            
+          })
+            .setTween(text2)
+            // .addIndicators() 
+            .addTo(controller2);
+        }
+    }
+});
 
 // anchor
 
