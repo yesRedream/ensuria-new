@@ -6,6 +6,10 @@
   min-height: 796px;
   display: flex;
   flex-direction: column;
+
+  @include viewport-tablet {
+    min-height: auto;
+  }
 }
 
 .modal__content {
@@ -22,6 +26,10 @@
   &.active {
     opacity: 1;
   }
+
+  @include viewport-tablet {
+    padding: 60px 20px 20px 20px;
+  }
 }
 
 .modal__close-wrap {
@@ -32,6 +40,11 @@
   z-index: 10;
   width: 20px;
   height: 20px;
+
+  @include viewport-tablet {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .modal__close {
@@ -52,6 +65,10 @@
   margin-bottom: 16px;
   text-align: center;
   color: var(--color-dark);
+
+  @include viewport-tablet {
+    font-size: 32px;
+  }
 }
 
 .modal__text {
@@ -62,6 +79,11 @@
   color: var(--color-dark-2);
   display: flex;
   max-width: 524px;
+
+  @include viewport-tablet {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
 }
 
 .modal__form {
@@ -75,12 +97,20 @@
   .modal__input {
     &:last-child {
       margin-bottom: 36px;
+
+      @include viewport-tablet {
+        margin-bottom: 24px;
+      }
     }
   }
 }
 
 .modal__input {
   margin-bottom: 21px;
+
+  @include viewport-tablet {
+    margin-bottom: 14px;
+  }
 }
 
 .modal__btn {
@@ -104,6 +134,10 @@
 
   &:hover {
     background: #ccbaf4;
+  }
+
+  @include viewport-tablet {
+    height: 48px;
   }
 }
 

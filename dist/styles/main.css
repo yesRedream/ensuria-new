@@ -14914,6 +14914,25 @@ a:hover {
 }
 
 @media (max-width: 815px) {
+  .input__value {
+    height: 48px;
+    padding: 18px 26px 5px 22px;
+    font-size: 16px;
+  }
+
+  .input__value:focus + .input__data .input__label,
+  .input__value:not(:placeholder-shown) + .input__data .input__label {
+    height: 23px;
+    padding: 7px 4px 4px 22px;
+    font-size: 11px;
+  }
+
+  .input__label {
+    height: 48px;
+    padding: 14px 22px;
+    font-size: 16px;
+  }
+
   .btn {
     height: 58px;
     min-width: 155px;
@@ -15753,6 +15772,40 @@ a:hover {
 
   .page-ceo {
     padding: 0 24px;
+  }
+
+  .modal-content {
+    min-height: auto;
+  }
+
+  .modal__content {
+    padding: 60px 20px 20px 20px;
+  }
+
+  .modal__close-wrap {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal__title {
+    font-size: 32px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .modal__inputs-wrap .modal__input:last-child {
+    margin-bottom: 24px;
+  }
+
+  .modal__input {
+    margin-bottom: 14px;
+  }
+
+  .modal__btn {
+    height: 48px;
   }
 }
 
