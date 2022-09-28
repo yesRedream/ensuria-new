@@ -182,6 +182,33 @@ a {
   }
 }
 
+.btn--light-peach {
+  background: #FBE6DA;
+  border: none;
+  color: var(--color-dark);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #fbddcf;
+    color: var(--color-dark);
+    outline: 0;
+
+  }
+
+  &:active {
+    background-color: #fbddcf;
+    color: var(--color-dark);
+    outline: 0;
+
+  }
+
+  &:focus {
+    outline: 0;
+    border: none;
+  }
+}
+
 .btn--gray {
   background-color: var(--color-dark-2);
   color: #ffffff;
@@ -191,7 +218,6 @@ a {
   &:active,
   &:focus {
     background-color: var(--color-dark);
-    color: var(--color-dark);
     color: #ffffff;
     outline: 0;
 
@@ -200,6 +226,27 @@ a {
   &:active {
     background-color: var(--color-dark);
     color: #ffffff;
+  }
+}
+
+.btn--blue {
+  background-color: #D6E3FF;
+  color: var(--color-dark);
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #b1c9ff;
+    color: var(--color-dark);
+    outline: 0;
+
+  }
+
+  &:active {
+    background-color: #b1c9ff;
+    color: var(--color-dark);
+
   }
 }
 

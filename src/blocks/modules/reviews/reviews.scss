@@ -88,8 +88,16 @@
   }
 }
 
-.reviews-slider-item--1 {}
-.reviews-slider-item--2 {}
+.reviews-slider-item--1 {
+
+}
+.reviews-slider-item--2 {
+  .reviews-slider-item__img {
+    width: 126%;
+    height: 126%;
+    left: 62%;
+  }
+}
 .reviews-slider-item--3 {
   .reviews-slider-item__img {
     width: 150%;

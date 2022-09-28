@@ -7998,6 +7998,31 @@ a:hover {
   border: none;
 }
 
+.btn--light-peach {
+  background: #FBE6DA;
+  border: none;
+  color: var(--color-dark);
+}
+
+.btn--light-peach:hover,
+.btn--light-peach:active,
+.btn--light-peach:focus {
+  background-color: #fbddcf;
+  color: var(--color-dark);
+  outline: 0;
+}
+
+.btn--light-peach:active {
+  background-color: #fbddcf;
+  color: var(--color-dark);
+  outline: 0;
+}
+
+.btn--light-peach:focus {
+  outline: 0;
+  border: none;
+}
+
 .btn--gray {
   background-color: var(--color-dark-2);
   color: #ffffff;
@@ -8008,7 +8033,6 @@ a:hover {
 .btn--gray:active,
 .btn--gray:focus {
   background-color: var(--color-dark);
-  color: var(--color-dark);
   color: #ffffff;
   outline: 0;
 }
@@ -8016,6 +8040,25 @@ a:hover {
 .btn--gray:active {
   background-color: var(--color-dark);
   color: #ffffff;
+}
+
+.btn--blue {
+  background-color: #D6E3FF;
+  color: var(--color-dark);
+  border: none;
+}
+
+.btn--blue:hover,
+.btn--blue:active,
+.btn--blue:focus {
+  background-color: #b1c9ff;
+  color: var(--color-dark);
+  outline: 0;
+}
+
+.btn--blue:active {
+  background-color: #b1c9ff;
+  color: var(--color-dark);
 }
 
 .btn--ios,
@@ -9986,6 +10029,12 @@ a:hover {
   box-sizing: border-box;
 }
 
+.reviews-slider-item--2 .reviews-slider-item__img {
+  width: 126%;
+  height: 126%;
+  left: 62%;
+}
+
 .reviews-slider-item--3 .reviews-slider-item__img {
   width: 150%;
   height: 150%;
@@ -10668,6 +10717,7 @@ a:hover {
   transition: all 0.3s ease-in;
   background-color: #ffffff;
   flex: 1;
+  border-radius: 6px;
 }
 
 .modal__content.active {
