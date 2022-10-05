@@ -152,6 +152,7 @@
   z-index: -1;
   overflow: hidden;
   opacity: 1 !important;
+  border-radius: 6px;
   
 
   @include viewport-tablet { 
