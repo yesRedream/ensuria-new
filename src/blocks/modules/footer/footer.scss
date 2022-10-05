@@ -262,7 +262,7 @@
 .footer__socials {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
 
   @include viewport-tablet {
@@ -284,6 +284,14 @@
         fill: #7F7D84;
       }
     }
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
   }
 }
 
