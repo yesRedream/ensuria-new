@@ -238,3 +238,41 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'PangeaTextTrial';
+  src: url('../fonts/PangeaTextTrial-MediumWeb.woff2') format('woff2'),
+      url('../fonts/PangeaTextTrial-MediumWeb.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PangeaTextTrial';
+  src: url('../fonts/PangeaTextTrial-RegularWeb.woff2') format('woff2'),
+      url('../fonts/PangeaTextTrial-RegularWeb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PangeaTextTrial';
+  src: url('../fonts/PangeaTextTrial-RegularWeb.woff2') format('woff2'),
+      url('../fonts/PangeaTextTrial-RegularWeb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PangeaTextTrial';
+  src: url('../fonts/PangeaTextTrial-MediumWeb.woff2') format('woff2'),
+      url('../fonts/PangeaTextTrial-MediumWeb.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
