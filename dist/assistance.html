@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ensuria</title>
+        <meta name="theme-color" content="#E0D3FF">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#E0D3FF">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <style>
+          .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            animation: bgchange 1.4s infinite step-end;
+          }
+          .loading.local {
+            display: none !important;
+          }
+          .loading__logo-wrap {
+            transform: scale(1.5);
+            margin-bottom: 30px;
+          }
+          .loading__logo-wrap svg {
+            width: 15vw;
+            height: auto;
+          }
+          @media (max-width: 815px) {
+            .loading__logo-wrap svg {
+              width: 120px;
+            }
+          }
+          @keyframes bgchange {
+            0% {
+              background-color: var(--color-yellow);
+            }
+            33% {
+              background-color: var(--color-blue);
+            }
+            66% {
+              background-color: var(--color-green);
+            }
+            100% {
+              background-color: #f8dde7;
+            }
+          }
+        </style>
+        
+    </head>
+    <body>
+      <section 
+  class="page__section page__section--usp" 
+  data-aos="bg-helper"
+  data-aos-duration="1000"
+>
+  <div class="page-usp__wrapper wrapper">
+    <div class="page-usp">
+      <div 
+        class="page-usp__bg corner"
+        data-aos="bg"
+        data-aos-duration="800"
+      >
+          <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" style="enable-background:new 0 0 41 41" xml:space="preserve"><path d="M35.9 3.1C37.2 1.8 39.1 1 41 1V0H0v41h1c0-1.9.8-3.8 2.1-5.1L35.9 3.1z" style="fill:#fff"/></svg>
+          <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22" xml:space="preserve"><path d="M18.3 2.5c1-1 2.3-1.5 3.7-1.5V0H0v22h1c0-1.4.6-2.7 1.5-3.7L18.3 2.5z" style="fill:#fff"/></svg>
+      </div>
+      <header class="header">
+        <div 
+          class="header-logo__wrap" 
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-delay="100"
+        >
+          <a href="#" class="header-logo">
+            <svg class="header-logo__ico">
+              <use xlink:href="img/sprites/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav 
+          class="header-nav" 
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-delay="150"
+        >
+          <a href="#page-products" class="header-nav__link link-line link-js--personal">
+            <span lang="en" class="en">
+              For you
+            </span>
+            <span lang="ua" class="ua">
+              Тобі
+            </span>
+            <span lang="ru" class="ru">
+              Тебе
+            </span>
+          </a>
+          <a href="#page-products" class="header-nav__link link-line link-js--business">
+            <span lang="en" class="en">
+              For business
+            </span>
+            <span lang="ua" class="ua">
+              Бізнесу
+            </span>
+            <span lang="ru" class="ru">
+              Бизнесу
+            </span>
+          </a>
+          <a href="#get" class="header-nav__link link-line link-js--get">
+            <span lang="en" class="en">
+              App
+            </span>
+            <span lang="ua" class="ua">
+              Апка
+            </span>
+            <span lang="ru" class="ru">
+              Апка
+            </span>
+          </a>
+          <!-- <a href="" class="header-nav__link link-line">Blog</a> -->
+        </nav>
+        <div 
+          class="header__box"
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-delay="250"
+          data-aos-easing="ease-in-out-cubic"
+        >
+          <div class="header-socials">
+            <a href="https://twitter.com/ensuriacom" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--twitter">
+                <use xlink:href="img/sprites/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/ensuria.ukraine/" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--instagram">
+                <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@ensuriacom" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--tiktok">
+                <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCqYnShqOL3eXXWlZYpD9MHg" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--youtube">
+                <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/ensuria.ukraine" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--facebook">
+                <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="header-lang">
+            <!-- <button class="header-lang__link header-lang__link--en header-lang__link--active link-line">En</button>
+            <button class="header-lang__link header-lang__link--ua link-line">Ua</button>
+            <button class="header-lang__link header-lang__link--ru link-line">Ru</button> -->
+
+            <div class="select-wrapper--header">
+              <div class="dropholder">
+                <div class="dropdown">
+                  <p class="holder link-line">En</p>
+                </div>
+                <ul class="dropdownOption">
+                  <li class="footer-en-js">En</li>
+                  <li class="footer-ru-js">Ru</li>
+                  <li class="footer-ua-js">Ua</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__hamburger header-hamburger">
+          <!-- <span class="header-hamburger__line"></span>
+          <span class="header-hamburger__line"></span>
+          <span class="header-hamburger__line"></span> -->
+          <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80">
+            <path
+                  class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+          </svg>
+          
+        </div>
+        <div class="header-menu__wrap">
+          <div class="header__menu header-menu">
+            <div 
+              class="header-logo__wrap" 
+              data-aos="fade"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            
+            data-aos-easing="ease-in-out-cubic"
+            >
+              <a href="#" class="header-logo">
+                <svg class="header-logo__ico">
+                  <use xlink:href="img/sprites/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header-menu__close">
+              <div class="header-menu__line"></div>
+              <div class="header-menu__line"></div>
+            </div>
+            <div class="header-menu__content">
+              <div class="header-mobile-nav">
+                <a href="#page-products" class="header-nav__link link-line link-js--personal" >
+                  <span lang="en" class="en">
+                    For you
+                  </span>
+                  <span lang="ua" class="ua">
+                    Тобі
+                  </span>
+                  <span lang="ru" class="ru">
+                    Тебе
+                  </span>
+                </a>
+                <a href="#page-products" class="header-nav__link link-line link-js--business" >
+                  <span lang="en" class="en">
+                    For business
+                  </span>
+                  <span lang="ua" class="ua">
+                    Бізнесу
+                  </span>
+                  <span lang="ru" class="ru">
+                    Бизнесу
+                  </span>
+                </a>
+                <a href="#get" class="header-nav__link link-line link-js--get">
+                  <span lang="en" class="en">
+                    App
+                  </span>
+                  <span lang="ua" class="ua">
+                    Апка
+                  </span>
+                  <span lang="ru" class="ru">
+                    Апка
+                  </span>
+                </a>
+                <!-- <a href="" class="header-nav__link link-line">Blog</a> -->
+              </div>
+              <div class="header-mobile-socials">
+                <a href="https://twitter.com/ensuriacom" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--twitter">
+                    <use xlink:href="img/sprites/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/ensuria.ukraine/" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--instagram">
+                    <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a href="https://www.tiktok.com/@ensuriacom" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--tiktok">
+                    <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+                  </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCqYnShqOL3eXXWlZYpD9MHg" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--youtube">
+                    <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/ensuria.ukraine" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--facebook">
+                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="header-mobile-lang">
+                <div class="header-mobile-lang__box">
+                  <svg class="header-mobile-lang__ico">
+                    <use xlink:href="img/sprites/sprite.svg#globe"></use>
+                  </svg>
+                  <!-- <span class="header-mobile-lang__text">En</span> -->
+                  <div class="select-wrapper2">
+                    <div class="dropholder">
+                      <div class="dropdown">
+                        <p class="holder">En</p>
+                      </div>
+                      <ul class="dropdownOption">
+                        <li class="footer-en-js">En</li>
+                        <li class="footer-ru-js">Ru</li>
+                        <li class="footer-ua-js">Ua</li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="header-mobile-lang__box">
+                  <svg class="header-mobile-lang__ico">
+                    <use xlink:href="img/sprites/sprite.svg#uk"></use>
+                  </svg>
+                  <span class="header-mobile-lang__text">Uk</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page-usp__content">
+        <div class="page-usp__title">
+          <span class="page-usp__title-box page-usp__title-box--first">
+            <span 
+              class="page-usp__title--first"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="400"
+            >
+              <span lang="en" class="en">
+                Digital&nbsp;
+              </span>
+              <span lang="ua" class="ua">
+                Диджитал-
+              </span>
+              <span lang="ru" class="ru">
+                Диджитал-
+              </span>
+            </span>
+            <span 
+              class="page-usp__title--second"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="500"
+            
+            
+            >
+              <span lang="en" class="en">
+                insurance
+              </span>
+              <span lang="ua" class="ua">
+                страхування
+              </span>
+              <span lang="ru" class="ru">
+                страхование,
+              </span>
+            </span>
+          </span>
+          <div 
+            class="page-usp__img-wrap"
+            data-aos="home-img-fade-up"
+            data-aos-duration="500"
+            data-aos-delay="600"
+            
+            
+          >
+            <img src="img/page-usp-img.png" alt="" class="page-usp__img">
+          </div>
+          <span class="page-usp__title-box page-usp__title-box--second">
+            <span 
+              class="page-usp__title--third"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="700"
+            
+            
+            >
+              <span lang="en" class="en">
+                designed
+              </span>
+              <span lang="ua" class="ua">
+                створене
+              </span>
+              <span lang="ru" class="ru">
+                созданное
+              </span>
+            </span>
+            <span 
+              class="page-usp__title--fourth"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="600"
+            
+            
+            >
+              <span lang="en" class="en">
+                for real life
+              </span>
+              <span lang="ua" class="ua">
+                для життя
+              </span>
+              <span lang="ru" class="ru">
+                для жизни
+              </span>
+            </span>
+          </span>
+        </div>
+        
+        <div class="page-usp__text"
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-offset="-50"
+          data-aos-delay="800"
+          
+          
+        >
+          <span lang="en" class="en">
+            Your subscription-based insurance service. And if something comes up — we’ve got you covered.
+          </span>
+          <span lang="ua" class="ua">
+            Твій сервіс страхування у форматі підписки. Йди живи — ми прикриємо.
+          </span>
+          <span lang="ru" class="ru">
+            Твой сервис страхования в формате подписки. Иди живи — мы прикроем.
+          </span>
+        </div>
+        <div class="page-usp__btns-group btns-group"
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-offset="-50"
+          data-aos-delay="800"
+          
+          
+        >
+          <a href="" class="page-usp__btn btn btn--ios">
+            <svg class="page-usp__btn-ico">
+              <use xlink:href="img/sprites/sprite.svg#app-store"></use>
+            </svg>
+          </a>
+          <a href="" class="page-usp__btn btn btn--android">
+            <img src="img/google-play.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+        <div class='loading'>
+  <div class="loading__logo-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591.51 591.51"><defs><style>.cls-1{fill-rule:evenodd}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M504.89 86.62A295.76 295.76 0 0 0 86.62 504.89 295.76 295.76 0 0 0 504.89 86.62ZM295.76 566.51C146.46 566.51 25 445.05 25 295.76S146.46 25 295.76 25s270.75 121.46 270.75 270.76-121.46 270.75-270.75 270.75Z"/><path class="cls-1" d="M385.49 296.07c-14.5-1.84-28.36-3.53-28.36-14.75 0-1.37-.53-17.16 26.1-17.16 27.45 0 29.39 19.34 29.39 19.34H439c0-12.17-7.89-40.48-58.08-40.48-5.22 0-50 1.67-50 40 0 17.79 7.26 30.58 47.47 35 34.52 3.79 36.16 12.51 36.16 16.73 0 15.18-12.53 19-28.24 19-29.6 0-32.22-21.87-32.22-21.87h-26.34c0 7.67 2.95 43 60 43 39.95 0 53.66-22.66 53.66-40.89 0-15.85-6.71-32.61-55.92-37.92ZM105.26 250v29.22a5.34 5.34 0 0 0 5.35 5.35h74.8v24.23h-74.8a5.35 5.35 0 0 0-5.35 5.35v29.49a5.35 5.35 0 0 0 5.35 5.36H186v24.2H79.37V247.93a9.37 9.37 0 0 1 2.75-6.63l18.36-18.3a9.4 9.4 0 0 1 6.63-2.74H186v24.47h-75.39a5.35 5.35 0 0 0-5.35 5.27Z"/><path d="M520.64 244.74v25.5h-38.19a5.35 5.35 0 0 0-5.35 5.36v97.64h-26.28V272.19a9.37 9.37 0 0 1 2.75-6.63l18.07-18.07a9.37 9.37 0 0 1 6.63-2.75Z"/><path class="cls-1" d="M266.8 243c-19.73 0-32.6 10.52-38.38 19.25h-3.7v-17.56h-24.95v128.56h26.13V313c0-34 16.68-44.83 36.45-44.36 16.7.4 29.43 4.5 29.43 34.38v70.25h26.56v-73.8c-.44-18.18-5.05-56.47-51.54-56.47Z"/></g></g></svg>
+  </div>
+  <!-- <div class="loading__loader-wrap">
+    <span class="loading__loader"></span>
+  </div> -->
+
+</div>
+        <section 
+  class="page__section page__section--usp" 
+  data-aos="bg-helper"
+  data-aos-duration="1000"
+>
+  <div class="page-usp__wrapper wrapper">
+    <div class="page-usp">
+      <div 
+        class="page-usp__bg corner"
+        data-aos="bg"
+        data-aos-duration="800"
+      >
+          <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" style="enable-background:new 0 0 41 41" xml:space="preserve"><path d="M35.9 3.1C37.2 1.8 39.1 1 41 1V0H0v41h1c0-1.9.8-3.8 2.1-5.1L35.9 3.1z" style="fill:#fff"/></svg>
+          <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22" xml:space="preserve"><path d="M18.3 2.5c1-1 2.3-1.5 3.7-1.5V0H0v22h1c0-1.4.6-2.7 1.5-3.7L18.3 2.5z" style="fill:#fff"/></svg>
+      </div>
+      <header class="header">
+        <div 
+          class="header-logo__wrap" 
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-delay="100"
+        >
+          <a href="#" class="header-logo">
+            <svg class="header-logo__ico">
+              <use xlink:href="img/sprites/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav 
+          class="header-nav" 
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-delay="150"
+        >
+          <a href="#page-products" class="header-nav__link link-line link-js--personal">
+            <span lang="en" class="en">
+              For you
+            </span>
+            <span lang="ua" class="ua">
+              Тобі
+            </span>
+            <span lang="ru" class="ru">
+              Тебе
+            </span>
+          </a>
+          <a href="#page-products" class="header-nav__link link-line link-js--business">
+            <span lang="en" class="en">
+              For business
+            </span>
+            <span lang="ua" class="ua">
+              Бізнесу
+            </span>
+            <span lang="ru" class="ru">
+              Бизнесу
+            </span>
+          </a>
+          <a href="#get" class="header-nav__link link-line link-js--get">
+            <span lang="en" class="en">
+              App
+            </span>
+            <span lang="ua" class="ua">
+              Апка
+            </span>
+            <span lang="ru" class="ru">
+              Апка
+            </span>
+          </a>
+          <!-- <a href="" class="header-nav__link link-line">Blog</a> -->
+        </nav>
+        <div 
+          class="header__box"
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-delay="250"
+          data-aos-easing="ease-in-out-cubic"
+        >
+          <div class="header-socials">
+            <a href="https://twitter.com/ensuriacom" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--twitter">
+                <use xlink:href="img/sprites/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/ensuria.ukraine/" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--instagram">
+                <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@ensuriacom" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--tiktok">
+                <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCqYnShqOL3eXXWlZYpD9MHg" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--youtube">
+                <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/ensuria.ukraine" class="header-socials__link" target="_blank">
+              <svg class="header-socials__ico header-socials__ico--facebook">
+                <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="header-lang">
+            <!-- <button class="header-lang__link header-lang__link--en header-lang__link--active link-line">En</button>
+            <button class="header-lang__link header-lang__link--ua link-line">Ua</button>
+            <button class="header-lang__link header-lang__link--ru link-line">Ru</button> -->
+
+            <div class="select-wrapper--header">
+              <div class="dropholder">
+                <div class="dropdown">
+                  <p class="holder link-line">En</p>
+                </div>
+                <ul class="dropdownOption">
+                  <li class="footer-en-js">En</li>
+                  <li class="footer-ru-js">Ru</li>
+                  <li class="footer-ua-js">Ua</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__hamburger header-hamburger">
+          <!-- <span class="header-hamburger__line"></span>
+          <span class="header-hamburger__line"></span>
+          <span class="header-hamburger__line"></span> -->
+          <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80">
+            <path
+                  class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+          </svg>
+          
+        </div>
+        <div class="header-menu__wrap">
+          <div class="header__menu header-menu">
+            <div 
+              class="header-logo__wrap" 
+              data-aos="fade"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            
+            data-aos-easing="ease-in-out-cubic"
+            >
+              <a href="#" class="header-logo">
+                <svg class="header-logo__ico">
+                  <use xlink:href="img/sprites/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header-menu__close">
+              <div class="header-menu__line"></div>
+              <div class="header-menu__line"></div>
+            </div>
+            <div class="header-menu__content">
+              <div class="header-mobile-nav">
+                <a href="#page-products" class="header-nav__link link-line link-js--personal" >
+                  <span lang="en" class="en">
+                    For you
+                  </span>
+                  <span lang="ua" class="ua">
+                    Тобі
+                  </span>
+                  <span lang="ru" class="ru">
+                    Тебе
+                  </span>
+                </a>
+                <a href="#page-products" class="header-nav__link link-line link-js--business" >
+                  <span lang="en" class="en">
+                    For business
+                  </span>
+                  <span lang="ua" class="ua">
+                    Бізнесу
+                  </span>
+                  <span lang="ru" class="ru">
+                    Бизнесу
+                  </span>
+                </a>
+                <a href="#get" class="header-nav__link link-line link-js--get">
+                  <span lang="en" class="en">
+                    App
+                  </span>
+                  <span lang="ua" class="ua">
+                    Апка
+                  </span>
+                  <span lang="ru" class="ru">
+                    Апка
+                  </span>
+                </a>
+                <!-- <a href="" class="header-nav__link link-line">Blog</a> -->
+              </div>
+              <div class="header-mobile-socials">
+                <a href="https://twitter.com/ensuriacom" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--twitter">
+                    <use xlink:href="img/sprites/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/ensuria.ukraine/" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--instagram">
+                    <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a href="https://www.tiktok.com/@ensuriacom" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--tiktok">
+                    <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+                  </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCqYnShqOL3eXXWlZYpD9MHg" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--youtube">
+                    <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/ensuria.ukraine" class="header-socials__link" target="_blank">
+                  <svg class="header-socials__ico header-socials__ico--facebook">
+                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="header-mobile-lang">
+                <div class="header-mobile-lang__box">
+                  <svg class="header-mobile-lang__ico">
+                    <use xlink:href="img/sprites/sprite.svg#globe"></use>
+                  </svg>
+                  <!-- <span class="header-mobile-lang__text">En</span> -->
+                  <div class="select-wrapper2">
+                    <div class="dropholder">
+                      <div class="dropdown">
+                        <p class="holder">En</p>
+                      </div>
+                      <ul class="dropdownOption">
+                        <li class="footer-en-js">En</li>
+                        <li class="footer-ru-js">Ru</li>
+                        <li class="footer-ua-js">Ua</li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="header-mobile-lang__box">
+                  <svg class="header-mobile-lang__ico">
+                    <use xlink:href="img/sprites/sprite.svg#uk"></use>
+                  </svg>
+                  <span class="header-mobile-lang__text">Uk</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page-usp__content">
+        <div class="page-usp__title">
+          <span class="page-usp__title-box page-usp__title-box--first">
+            <span 
+              class="page-usp__title--first"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="400"
+            >
+              <span lang="en" class="en">
+                Digital&nbsp;
+              </span>
+              <span lang="ua" class="ua">
+                Диджитал-
+              </span>
+              <span lang="ru" class="ru">
+                Диджитал-
+              </span>
+            </span>
+            <span 
+              class="page-usp__title--second"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="500"
+            
+            
+            >
+              <span lang="en" class="en">
+                insurance
+              </span>
+              <span lang="ua" class="ua">
+                страхування
+              </span>
+              <span lang="ru" class="ru">
+                страхование,
+              </span>
+            </span>
+          </span>
+          <div 
+            class="page-usp__img-wrap"
+            data-aos="home-img-fade-up"
+            data-aos-duration="500"
+            data-aos-delay="600"
+            
+            
+          >
+            <img src="img/page-usp-img.png" alt="" class="page-usp__img">
+          </div>
+          <span class="page-usp__title-box page-usp__title-box--second">
+            <span 
+              class="page-usp__title--third"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="700"
+            
+            
+            >
+              <span lang="en" class="en">
+                designed
+              </span>
+              <span lang="ua" class="ua">
+                створене
+              </span>
+              <span lang="ru" class="ru">
+                созданное
+              </span>
+            </span>
+            <span 
+              class="page-usp__title--fourth"
+              data-aos="simple-fade-up"
+              data-aos-duration="300"
+              data-aos-delay="600"
+            
+            
+            >
+              <span lang="en" class="en">
+                for real life
+              </span>
+              <span lang="ua" class="ua">
+                для життя
+              </span>
+              <span lang="ru" class="ru">
+                для жизни
+              </span>
+            </span>
+          </span>
+        </div>
+        
+        <div class="page-usp__text"
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-offset="-50"
+          data-aos-delay="800"
+          
+          
+        >
+          <span lang="en" class="en">
+            Your subscription-based insurance service. And if something comes up — we’ve got you covered.
+          </span>
+          <span lang="ua" class="ua">
+            Твій сервіс страхування у форматі підписки. Йди живи — ми прикриємо.
+          </span>
+          <span lang="ru" class="ru">
+            Твой сервис страхования в формате подписки. Иди живи — мы прикроем.
+          </span>
+        </div>
+        <div class="page-usp__btns-group btns-group"
+          data-aos="simple-fade-up"
+          data-aos-duration="300"
+          data-aos-offset="-50"
+          data-aos-delay="800"
+          
+          
+        >
+          <a href="" class="page-usp__btn btn btn--ios">
+            <svg class="page-usp__btn-ico">
+              <use xlink:href="img/sprites/sprite.svg#app-store"></use>
+            </svg>
+          </a>
+          <a href="" class="page-usp__btn btn btn--android">
+            <img src="img/google-play.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="page__section page__section--companies"
+        data-aos="simple-fade-up"
+        data-aos-duration="300"
+        
+        
+        data-aos-anchor=".page__section--usp"
+
+>
+  <div class="page-companies__wrapper wrapper">
+    <div class="page-companies">
+      <p class="page-companies__text">
+        <span lang="en" class="en">
+          Side-to-side with <br> <span class="page-companies__text--bold">100+ companies</span>
+        </span>
+        <span lang="ua" class="ua">
+          З нами вже <br> <span class="page-companies__text--bold">100+ компаній</span>
+
+        </span>
+        <span lang="ru" class="ru">
+          С нами уже <br> <span class="page-companies__text--bold">100+ компаний</span>
+        </span>
+      </p>
+      <div class="page-companies__content">
+        <div class="page-companies__list-wrap">
+          <div class="page-companies__list">
+            <a href="#" class="page-companies__item">
+              <svg class="page-companies__ico page-companies__ico--bolt">
+                <use xlink:href="img/sprites/sprite.svg#companie-bolt"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-companies__item">
+              <svg class="page-companies__ico page-companies__ico--glovo">
+                <use xlink:href="img/sprites/sprite.svg#companie-glovo"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-companies__item">
+              <svg class="page-companies__ico page-companies__ico--michelin">
+                <use xlink:href="img/sprites/sprite.svg#companie-michelin"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-companies__item">
+              <svg class="page-companies__ico page-companies__ico--silpo">
+                <use xlink:href="img/sprites/sprite.svg#companie-silpo"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-companies__item">
+              <svg class="page-companies__ico page-companies__ico--spaces">
+                <use xlink:href="img/sprites/sprite.svg#companie-spaces"></use>
+              </svg>
+            </a>
+            <a href="#" class="page-companies__item">
+              <svg class="page-companies__ico page-companies__ico--mitsubishi">
+                <use xlink:href="img/sprites/sprite.svg#companie-mitsubishi"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="page__section page__section--rating">
+  <div class="page-rating__wrapper wrapper">
+    <div class="page-rating">
+      <div class="page-rating__content">
+        <h2 class="page-rating__title">
+          <span lang="en" class="en">
+            Life talks
+          </span>
+          <span lang="ua" class="ua">
+            Історії з життя
+          </span>
+          <span lang="ru" class="ru">
+            Истории из жизни
+          </span>
+        </h2>
+        <div class="page-rating__list">
+          <div class="page-rating__item">
+            <div class="page-rating__box">
+              <span class="page-rating__rating">4.9</span>
+              <div class="page-rating__ico-wrap page-rating__ico-wrap--trustpilot">
+                <img src="img/trustpilot.svg" class="page-rating__ico" alt="">
+              </div>
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <div class="page-rating__text">
+              <span lang="en" class="en">
+                <span class="page-rating__text--bold">70 </span>ratings
+              </span>
+              <span lang="ua" class="ua">
+                <span class="page-rating__text--bold">70 </span>відгуків
+              </span>
+              <span lang="ru" class="ru">
+                <span class="page-rating__text--bold">70 </span>отзывов
+              </span>
+            </div>
+          </div>
+          <div class="page-rating__item">
+            <div class="page-rating__box">
+              <span class="page-rating__rating">4.8</span>
+              <div class="page-rating__ico-wrap">
+                <img src="img/google-logo.png" class="page-rating__ico" alt="">
+              </div>
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <div class="page-rating__text">
+              <span lang="en" class="en">
+                <span class="page-rating__text--bold">156 </span>ratings
+              </span>
+              <span lang="ua" class="ua">
+                <span class="page-rating__text--bold">156 </span>відгуків
+              </span>
+              <span lang="ru" class="ru">
+                <span class="page-rating__text--bold">156 </span>отзывов
+              </span>
+            </div>
+          </div>
+          <div class="page-rating__item">
+            <div class="page-rating__box">
+              <span class="page-rating__rating">4.1</span>
+              <div class="page-rating__ico-wrap">
+                <img src="img/rating-app-store.png" class="page-rating__ico" alt="">
+              </div>
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <div class="page-rating__text">
+              <span lang="en" class="en">
+                <span class="page-rating__text--bold">39 </span>ratings
+              </span>
+              <span lang="ua" class="ua">
+                <span class="page-rating__text--bold">39 </span>відгуків
+              </span>
+              <span lang="ru" class="ru">
+                <span class="page-rating__text--bold">39 </span>отзывов
+              </span>
+            </div>
+          </div>
+          <div class="page-rating__item">
+            <div class="page-rating__box">
+              <span class="page-rating__rating">3.9</span>
+              <div class="page-rating__ico-wrap">
+                <img src="img/rating-google-store.png" class="page-rating__ico" alt="">
+              </div>
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <div class="page-rating__text">
+              <span lang="en" class="en">
+                <span class="page-rating__text--bold">65 </span>ratings
+              </span>
+              <span lang="ua" class="ua">
+                <span class="page-rating__text--bold">65 </span>відгуків
+              </span>
+              <span lang="ru" class="ru">
+                <span class="page-rating__text--bold">65 </span>отзывов
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-rating-slider">
+        
+        <div class="page-rating-slider__item">
+          <div class="page-rating-slider__content">
+            <div class="page-rating-slider__box">
+              <div class="page-rating-slider__ico-wrap">
+                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+              </div>
+              <h3 class="page-rating-slider__title">
+                Great and fast service l!
+              </h3>
+              <p class="page-rating-slider__text">
+                In the middle of our vacation in Turkey we catch some viral disease. We just lost our voices and start coughing. About 13:00 I messaged to our Insurance agent, sent all necessary docs and about 17:00-18:00 we already have doctors in our apartments, despite we live in a rural area of Izmir. Doctors examined us, Wright a prescription for medicines. All of that was free of charge for us. But the strong point is the speed. Everybody react really quick. Doctors speak English. It’s 5 of 5 stars.
+              </p>
+              
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <span class="page-rating-slider__name">
+              Саша Гажала
+            </span>
+            <span class="page-rating-slider__date">
+              August 24, 2022
+            </span>
+          </div>
+        </div>
+
+        <div class="page-rating-slider__item">
+          <div class="page-rating-slider__content">
+            <div class="page-rating-slider__box">
+              <div class="page-rating-slider__ico-wrap">
+                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+              </div>
+              <h3 class="page-rating-slider__title">
+                I need to make urgent vaccine from…
+              </h3>
+              <p class="page-rating-slider__text">
+                I need to make urgent vaccine from tetanus, because of stepping on the rusty whistle. I was in other country and insurance company very quickly organised all the help for me, that I need. Thank you.
+              </p>
+              
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <span class="page-rating-slider__name">
+              Ирина Круковская
+            </span>
+            <span class="page-rating-slider__date">
+              August 12, 2022
+            </span>
+          </div>
+        </div>
+
+        <div class="page-rating-slider__item">
+          <div class="page-rating-slider__content">
+            <div class="page-rating-slider__box">
+              <div class="page-rating-slider__ico-wrap">
+                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+              </div>
+              <h3 class="page-rating-slider__title">
+                Great service
+              </h3>
+              <p class="page-rating-slider__text">
+                Hi! I had a medical issue while abroad. The reaction to my message to Ensuria support team followed in less than a minute and within 1.5 hour or so I already had an appointment with the doctor. The visit to the hospital was fully covered. I am satisfied with the service provided.
+              </p>
+              
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <span class="page-rating-slider__name">
+              Olya Kravchuk
+            </span>
+            <span class="page-rating-slider__date">
+              September 23, 2022
+            </span>
+          </div>
+        </div>
+
+        <div class="page-rating-slider__item">
+          <div class="page-rating-slider__content">
+            <div class="page-rating-slider__box">
+              <div class="page-rating-slider__ico-wrap">
+                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+              </div>
+              <h3 class="page-rating-slider__title">
+                Great service
+              </h3>
+              <p class="page-rating-slider__text">
+                I'm amazed at how quickly I was helped! Within an hour this agency made a local Indonesian clinic get in touch with me, and the clinic these guys work with was wonderful: clean, advanced; the doctor spoke great English and was really caring and gentle and explained me all I needed to know about my symptoms.
+              </p>
+              
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <span class="page-rating-slider__name">
+              Alexandra Liubvina
+            </span>
+            <span class="page-rating-slider__date">
+              August 15, 2022
+            </span>
+          </div>
+        </div>
+
+        <div class="page-rating-slider__item">
+          <div class="page-rating-slider__content">
+            <div class="page-rating-slider__box">
+              <div class="page-rating-slider__ico-wrap">
+                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+              </div>
+              <h3 class="page-rating-slider__title">
+                Звернулась із травмою ноги
+              </h3>
+              <p class="page-rating-slider__text">
+                Звернулась із травмою ноги, того ж дня надали допомогу у гарній клініці, ніби з американських серіалів, весь персонал знав англійську, був привітний. Зробили рентген, виписали ліки, додатково платити не довелося, рекомендую)
+              </p>
+              
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <span class="page-rating-slider__name">
+              Savva Bogun
+            </span>
+            <span class="page-rating-slider__date">
+              September 14, 2022
+            </span>
+          </div>
+        </div>
+
+        <div class="page-rating-slider__item">
+          <div class="page-rating-slider__content">
+            <div class="page-rating-slider__box">
+              <div class="page-rating-slider__ico-wrap">
+                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+              </div>
+              <h3 class="page-rating-slider__title">
+                Ми задоволені
+              </h3>
+              <p class="page-rating-slider__text">
+                Нашій дитині знадобилась медична допомога в Женеві. Компанія Ensuria направила нас в дуже непоганий лікарський заклад и заздалегідь забезпечила нас гарантійним листом від ассистанса. Завдяки цьому нас дуже швидко прийняв лікар. Представник компании був на постійному звʼязку в Телеграм, що було надзвичайно зручно, коли зʼявлялись запитання. Взагалі, ми задоволені роботою компанії.
+              </p>
+            </div>
+            <div class="page-rating__stars">
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+              <svg class="page-rating__star page-rating__star--active">
+                <use xlink:href="img/sprites/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <span class="page-rating-slider__name">
+              Andrew Hak
+            </span>
+            <span class="page-rating-slider__date">
+              August 21, 2022
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="page__section page__section--talk">
+  <div class="page-talk__wrapper wrapper">
+    <div class="page-talk">
+      <h3 class="page-talk__title">
+        <span lang="en" class="en">
+          Media talks
+        </span>
+        <span lang="ua" class="ua">
+          Мамо, ми в інтернеті 
+        </span>
+        <span lang="ru" class="ru">
+          Мам, мы в интернете
+        </span>
+      </h3>
+      
+      <div class="page-talk__slider page-talk__single-item page-talk__slider-js">
+        <div class="talk-slider-item">
+          <div class="talk-slider-item__img-wrap" data-animation-in="slideUpBlock">
+            <img src="img/ain-logo.png" alt="" class="talk-slider-item__img">
+          </div>
+          
+          <p class="talk-slider-item__text" data-animation-in="slideUpBlock" data-delay-in="0.2">
+            <span lang="en" class="en">
+              «How InsurTech changes the insurance market. The case of the Ukrainian-Estonian company Ensuria»
+            </span>
+            <span lang="ua" class="ua">
+              «Як InsurTech змінює ринок страхування. Кейс українсько-естонської компанії Ensuria»
+            </span>
+            <span lang="ru" class="ru">
+              «Как InsurTech меняет рынок страхования. Кейс украино-эстонской компании Ensuria»
+            </span>
+          </p>
+          <p class="talk-slider-item__name"  data-animation-in="slideUpBlock" data-delay-in="0.4">
+            <span lang="en" class="en">
+              AIN
+            </span>
+            <span lang="ua" class="ua">
+              AIN
+            </span>
+            <span lang="ru" class="ru">
+              AIN
+            </span>
+          </p>
+          <a href="https://ain.ua/2022/07/13/yak-insurtech-zminyuye-rynok-strahuvannya-kejs-ukrayinsko-estonskoyi-kompaniyi-ensuria/" class="talk-slider-item__link"  target="_blank" data-animation-in="slideUpBlock" data-delay-in="0.6">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#link"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="talk-slider-item">
+          <div class="talk-slider-item__img-wrap"  data-animation-in="slideUpBlock">
+            <img src="img/marketer-logo.png" alt="" class="talk-slider-item__img">
+          </div>
+          
+          <p class="talk-slider-item__text" data-animation-in="slideUpBlock" data-delay-in="0.2" >
+            <span lang="en" class="en">
+              «Ukrainian-Estonian company Ensuria finds the ways how to help, even if it’s not an insurance case»
+            </span>
+            <span lang="ua" class="ua">
+              «Естонсько-українська компанія Ensuria шукає шляхи, щоб допомогти людині, навіть якщо випадок не страховий»
+            </span>
+            <span lang="ru" class="ru">
+              «Эстонско-украинская компания Ensuria ищет возможности, чтобы помочь человеку, даже если случай не страховой»
+            </span>
+          </p>
+          <p class="talk-slider-item__name" data-animation-in="slideUpBlock" data-delay-in="0.4" >
+            <span lang="en" class="en">
+              MARKETER
+            </span>
+            <span lang="ua" class="ua">
+              MARKETER
+            </span>
+            <span lang="ru" class="ru">
+              MARKETER
+            </span>
+          </p>
+          <a href="https://marketer.ua/ru/nothing-is-impossible-when-it-comes-to-help-ensuria/" class="talk-slider-item__link" target="_blank" data-animation-in="slideUpBlock" data-delay-in="0.6">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#link"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="talk-slider-item">
+          <div class="talk-slider-item__img-wrap" data-animation-in="slideUpBlock" >
+            <img src="img/mc-today-logo.png" alt="" class="talk-slider-item__img">
+          </div>
+          
+          <p class="talk-slider-item__text"  data-animation-in="slideUpBlock" data-delay-in="0.2">
+            <span lang="en" class="en">
+              «Ensuria breaks the rules on the insurance market with its all-digital service»
+            </span>
+            <span lang="ua" class="ua">
+              «Ensuria ламає стереотипи страхового ринку своїм діджитал-сервісом»
+            </span>
+            <span lang="ru" class="ru">
+              «Ensuria ломает стереотипы страхового рынка своим диджитал-сервисом»
+            </span>
+          </p>
+          <p class="talk-slider-item__name" data-animation-in="slideUpBlock" data-delay-in="0.4" >
+            <span lang="en" class="en">
+              MC TODAY
+            </span>
+            <span lang="ua" class="ua">
+              MC TODAY
+            </span>
+            <span lang="ru" class="ru">
+              MC TODAY
+            </span>
+          </p>
+          <span class="talk-slider-item__link"  data-animation-in="slideUpBlock" data-delay-in="0.6">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#link"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="page-talk__progress">
+        <div class="page-talk-progress__item page-talk-progress__item-js">
+          <span data-slick-index="0" class="page-talk-progress__bar page-talk-progress__bar-js"></span>
+        </div>
+        <div class="page-talk-progress__item page-talk-progress__item-js">
+          <span data-slick-index="1" class="page-talk-progress__bar page-talk-progress__bar-js"></span>
+        </div>
+        <div class="page-talk-progress__item page-talk-progress__item-js">
+          <span data-slick-index="2" class="page-talk-progress__bar page-talk-progress__bar-js"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="page__section page__section--faq">
+  <div class="page-faq__wrapper wrapper">
+    <div class="page-faq">
+      
+      <h3 class="page-faq__title">
+        <span lang="en" class="en">
+          Frequently asked questions
+        </span>
+        <span lang="ua" class="ua">
+          Часті питання
+        </span>
+        <span lang="ru" class="ru">
+          ЧаВо
+        </span>
+      </h3>
+
+      <div class="page-faq__content">
+        <ul class="faq">
+          <li class="faq__item">
+            <a data-toggle="collapse" class="faq__link collapsed" aria-expanded="false" data-target="#faq1">
+              The latest news, greatest tutorials and inspiration that’ll make?
+              <span class="faq__ico-wrap" aria-hidden="true">
+                <svg class="faq__ico">
+                  <use xlink:href="img/sprites/sprite.svg#accordion-ico"></use>
+                </svg>
+              </span>
+            </a>
+            <div id="faq1" class="faq__content collapse" data-parent=".faq">
+              <p class="faq__text">
+                Insurance coverage helps consumers recover financially from unexpected events, such as car accidents or the loss of an income-producing adult supporting a family. In exchange for insurance coverage, the insured person is responsible for paying premiums to the insurance company.
+
+              </p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <a data-toggle="collapse" class="faq__link collapsed" aria-expanded="false" data-target="#faq2">
+              What are the 3 most important insurance?
+
+              <span class="faq__ico-wrap" aria-hidden="true">
+                <svg class="faq__ico">
+                  <use xlink:href="img/sprites/sprite.svg#accordion-ico"></use>
+                </svg>
+              </span>
+            </a>
+            <div id="faq2" class="faq__content collapse" data-parent=".faq">
+              <p class="faq__text">
+                Insurance coverage helps consumers recover financially from unexpected events, such as car accidents or the loss of an income-producing adult supporting a family. In exchange for insurance coverage, the insured person is responsible for paying premiums to the insurance company.
+
+              </p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <a data-toggle="collapse" class="faq__link collapsed" aria-expanded="false" data-target="#faq3">
+              What does an insurance policy cover?
+
+              <span class="faq__ico-wrap" aria-hidden="true">
+                <svg class="faq__ico">
+                  <use xlink:href="img/sprites/sprite.svg#accordion-ico"></use>
+                </svg>
+              </span>
+            </a>
+            <div id="faq3" class="faq__content collapse" data-parent=".faq">
+              <p class="faq__text">
+                Insurance coverage helps consumers recover financially from unexpected events, such as car accidents or the loss of an income-producing adult supporting a family. In exchange for insurance coverage, the insured person is responsible for paying premiums to the insurance company.
+
+              </p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <a data-toggle="collapse" class="faq__link collapsed" aria-expanded="false" data-target="#faq4">
+              I am going to retire soon. What are the requirements to continue health benefits into retirement?
+              <span class="faq__ico-wrap" aria-hidden="true">
+                <svg class="faq__ico">
+                  <use xlink:href="img/sprites/sprite.svg#accordion-ico"></use>
+                </svg>
+              </span>
+            </a>
+            <div id="faq4" class="faq__content collapse" data-parent=".faq">
+              <p class="faq__text">
+                Insurance coverage helps consumers recover financially from unexpected events, such as car accidents or the loss of an income-producing adult supporting a family. In exchange for insurance coverage, the insured person is responsible for paying premiums to the insurance company.
+
+              </p>
+            </div>
+          </li>
+
+        </ul>
+    </div>
+  </div>
+</section>
+        <section class="page__section page__section--ceo">
+  <div class="page-ceo__wrapper wrapper">
+    <div class="page-ceo">
+      <h5 class="page-ceo__title">
+        Why we are best in SEO?
+      </h5>
+      <div class="page-ceo__content collapse" id="ceoText" >
+        <p class="page-ceo__text">
+          The latest news, greatest tutorials and inspiration that’ll make you say “I wish I’d done that!” From incredible things you can make with Sketch, to insights from the people who make Sketch happen. Before you start writing a text you should have a clear idea of what you want to achieve with the text. Would you like to inform people or do they have to take action? Once you have determined the goal, you can write a focused text. If you choose a specific topic, it is advisable to focus your entire text on it and determine a relevant keyword. Find out what people look for in search engines and incorporate this keyword into your text. To make it easier for search engines to index the text, it’s a good idea to focus the text on one keyword instead of trying to process all kinds of keywords in a text. Also avoid the so-called ‘keyword stuffing’ where you use the keyword in every sentence. You must also pay attention to the length of the text. Search engines appreciate longer texts better than shorter texts. So try to write texts of at least 350-400 words that can be well indexed. As long as the content is interesting, <br>
+          The latest news, greatest tutorials and inspiration that’ll make you say “I wish I’d done that!” From incredible things you can make with Sketch, to insights from the people who make Sketch happen. Before you start writing a text you should have a clear idea of what you want to achieve with the text. Would you like to inform people or do they have to take action? Once you have determined the goal, you can write a focused text. If you choose a specific topic, it is advisable to focus your entire text on it and determine a relevant keyword. Find out what people look for in search engines and incorporate this keyword into your text. To make it easier for search engines to index the text, it’s a good idea to focus the text on one keyword instead of trying to process all kinds of keywords in a text. Also avoid the so-called ‘keyword stuffing’ where you use the keyword in every sentence. You must also pay attention to the length of the text. Search engines appreciate longer texts better than shorter texts. So try to write texts of at least 350-400 words that can be well indexed. As long as the content is interesting,
+        </p>
+        <p class="page-ceo__text">
+          The latest news, greatest tutorials and inspiration that’ll make you say “I wish I’d done that!” From incredible things you can make with Sketch, to insights from the people who make Sketch happen. Before you start writing a text you should have a clear idea of what you want to achieve with the text. Would you like to inform people or do they have to take action? Once you have determined the goal, you can write a focused text. If you choose a specific topic, it is advisable to focus your entire text on it and determine a relevant keyword. Find out what people look for in search engines and incorporate this keyword into your text. To make it easier for search engines to index the text, it’s a good idea to focus the text on one keyword instead of trying to process all kinds of keywords in a text. Also avoid the so-called ‘keyword stuffing’ where you use the keyword in every sentence. You must also pay attention to the length of the text. Search engines appreciate longer texts better than shorter texts. So try to write texts of at least 350-400 words that can be well indexed. As long as the content is interesting,
+        </p>
+      </div>
+      <a data-target="#ceoText" class="page-ceo__link" data-toggle="collapse" 
+        aria-expanded="false" aria-controls="ceoText">
+        <span class="page-ceo__link--collapsed">
+          Show more
+        </span>
+        <span class="page-ceo__link--expanded">
+          Show Less
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+        <footer class="footer__section">
+  <div class="footer__wrapper wrapper">
+    <div class="footer">
+      <div class="footer__bg corner">
+        <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" style="enable-background:new 0 0 41 41" xml:space="preserve"><path d="M35.9 3.1C37.2 1.8 39.1 1 41 1V0H0v41h1c0-1.9.8-3.8 2.1-5.1L35.9 3.1z" style="fill:#fff"/></svg>
+        <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22" xml:space="preserve"><path d="M18.3 2.5c1-1 2.3-1.5 3.7-1.5V0H0v22h1c0-1.4.6-2.7 1.5-3.7L18.3 2.5z" style="fill:#fff"/></svg>
+      </div>
+      <div class="footer__content">
+        <div class="footer__box footer__box--logo">
+          <a href="#" class="footer-logo">
+            <svg class="footer-logo__ico">
+              <use xlink:href="img/sprites/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <span class="footer__desc">
+            <span lang="en" class="en">
+              Live your best, we’ve got your back
+            </span>
+            <span lang="ua" class="ua">
+              Згладжуємо кути, поки ти серфиш життя
+            </span>
+            <span lang="ru" class="ru">
+              Сглаживаем углы, пока ты серфишь жизнь
+            </span>
+          </span>
+        </div>
+        <div class="footer__box footer__box--links">
+          <a href="#page-products" class="footer__link link-line link-footer-js--personal">
+            <span lang="en" class="en">
+              For you
+            </span>
+            <span lang="ua" class="ua">
+              Для тебе
+            </span>
+            <span lang="ru" class="ru">
+              Для тебя
+            </span>
+          </a>
+          <a href="#page-products" class="footer__link link-line link-footer-js--business">
+            <span lang="en" class="en">
+              For business
+            </span>
+            <span lang="ua" class="ua">
+              Для бізнесу
+            </span>
+            <span lang="ru" class="ru">
+              Для бизнеса
+            </span>
+          </a>
+          <a href="#get" class="footer__link link-line link-js--get">
+            <span lang="en" class="en">
+              Ensuria app
+            </span>
+            <span lang="ua" class="ua">
+              Апка-канапка
+            </span>
+            <span lang="ru" class="ru">
+              Приложение
+            </span>
+          </a>
+          <!-- <a href="#" class="footer__link link-line">Blog</a> -->
+        </div>
+        <div class="footer__box footer__box--links footer__box--grow">
+          <a href="#" class="footer__link link-line">
+            <span lang="en" class="en">
+              Terms of use
+            </span>
+            <span lang="ua" class="ua">
+              Правила використання
+            </span>
+            <span lang="ru" class="ru">
+              Правила использования
+            </span>
+          </a>
+          <a href="#" class="footer__link link-line">
+            <span lang="en" class="en">
+              Privacy policy
+            </span>
+            <span lang="ua" class="ua">
+              Політика конфіденційності
+            </span>
+            <span lang="ru" class="ru">
+              Политика конфиденциальности
+            </span>
+          </a>
+          <a href="#" class="footer__link link-line">
+            <span lang="en" class="en">
+              Cookies
+            </span>
+            <span lang="ua" class="ua">
+              Реп’яшки
+            </span>
+            <span lang="ru" class="ru">
+              Куки
+            </span>
+          </a>
+          
+        </div>
+        <div class="footer__location footer-location">
+          <div class="footer-location__box">
+            <svg class="footer-location__ico">
+              <use xlink:href="img/sprites/sprite.svg#globe"></use>
+            </svg>
+            <!-- <span class="footer-location__text">En</span> -->
+            <div class="select-wrapper">
+              <div class="dropholder">
+                <div class="dropdown">
+                  <p class="holder">En</p>
+                </div>
+                <ul class="dropdownOption">
+                  <li class="footer-en-js">En</li>
+                  <li class="footer-ru-js">Ru</li>
+                  <li class="footer-ua-js">Ua</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="footer-location__box">
+            <svg class="footer-location__ico">
+              <use xlink:href="img/sprites/sprite.svg#uk"></use>
+            </svg>
+            <span class="footer-location__text">Uk</span>
+          </div>
+        </div>
+        <div class="footer__box footer__box--contact">
+          <span class="footer__contact">
+            Ensuria Technologies OU <br>
+            10145, Tornimäe tn 7-132, Tallinn, Estonia
+          </span>
+          <a href="mailto: hello@ensuria.com" class="footer__email link-line">hello@ensuria.com</a>
+          <div class="footer__socials">
+            <a href="https://twitter.com/ensuriacom" class="footer-socials__link" target="_blank">
+              <svg class="footer-socials__ico footer-socials__ico--twitter">
+                <use xlink:href="img/sprites/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/ensuria.ukraine/" class="footer-socials__link" target="_blank">
+              <svg class="footer-socials__ico footer-socials__ico--instagram">
+                <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@ensuriacom" class="footer-socials__link" target="_blank">
+              <svg class="footer-socials__ico footer-socials__ico--tiktok">
+                <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCqYnShqOL3eXXWlZYpD9MHg" class="footer-socials__link" target="_blank">
+              <svg class="footer-socials__ico footer-socials__ico--youtube">
+                <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/ensuria.ukraine" class="footer-socials__link" target="_blank">
+              <svg class="footer-socials__ico footer-socials__ico--facebook">
+                <use xlink:href="img/sprites/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright-wrap">
+        <span class="footer__copyright">
+          ©2022 Ensuria, Inc.
+        </span>
+      </div>
+  </div>
+</footer>
+        
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+       
+        
+        <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
