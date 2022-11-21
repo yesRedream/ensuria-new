@@ -1,4 +1,5 @@
 import "%modules%/header/header";
+import "%modules%/header-assistance/header-assistance";
 import "%modules%/footer/footer";
 import "%modules%/companies/companies";
 import "%modules%/products/products";
@@ -13,4 +14,8 @@ import "%modules%/faq/faq";
 import "%modules%/ceo/ceo";
 import "%modules%/loading/loading";
 import "%modules%/modal/modal";
-
+import "%modules%/about-assistance/about-assistance";
+import "%modules%/benefits-assistance/benefits-assistance";
+import "%modules%/for-who/for-who";
+import "%modules%/unite/unite";
+import "%modules%/companies-insurance/companies-insurance";

@@ -1,0 +1,150 @@
+.page__section--companies-insurance {
+  margin-bottom: 4.861vw;
+
+  @include viewport-desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.companies-insurance__wrapper {
+
+}
+
+.companies-insurance {
+  background: #EEF4FC;
+  border-radius: 6px;
+  padding: 2.708vw 0 5.472vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include viewport-desktop {
+    padding: 35px 0 45px 0;
+  }
+}
+
+.companies-insurance__text {
+  font-size: 3.333vw;
+  line-height: 1.4;
+  margin-bottom: 4.167vw;
+  text-align: center;
+  font-weight: 500;
+  max-width: 57.056vw;
+  
+  @include viewport-tablet {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+
+}
+
+.companies-insurance__text--bold {
+  font-weight: 500;
+}
+
+.companies-insurance__content {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 100px;
+
+
+  @include viewport-tablet {
+    padding-bottom: 100px;
+  }
+}
+
+.companies-insurance__list-wrap {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  position: absolute;
+  top: 0;
+  left: -0.903vw;
+  right: -0.903vw;
+  width: calc(100% + 1.806vw);
+  max-width: calc(100% + 1.806vw);
+
+  @include viewport-tablet {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    right: -10px;
+    width: calc(100% + 20px);
+    max-width: calc(100% + 20px);
+  }
+}
+
+.companies-insurance__list {
+  width: 100%;
+
+  display: block;
+  white-space: nowrap;
+  overflow-y: auto;
+  text-align: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include viewport-desktop {
+    max-width: 100%;
+  }
+
+  @include viewport-tablet {
+    display: block;
+    white-space: nowrap;
+    overflow-y: auto;
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+}
+
+.companies-insurance__item {
+  &:hover {
+    .companies-insurance__ico {
+      use {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include viewport-tablet {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:nth-child(3) {
+    svg {
+      width: 134px;
+    }
+  }
+}
+
+.companies-insurance__ico {
+  max-height: 100px;
+  padding-right: 60px;
+  use {
+    fill: var(--color-dark);
+    opacity: .4;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+}

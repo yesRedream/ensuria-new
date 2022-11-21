@@ -333,12 +333,23 @@ a {
   }
 }
 
-[data-aos="bg-helper"] {
+[data-aos="bg"] {
+  transform: scale(1.08);
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: scale(1);
+  }
+}
+
+[data-aos="bg-assistance"] {
   padding-bottom: 5vw;
-  transition-property: padding-bottom;
+  transition-property: padding-bottom, background;
+  background: #C0F3CA !important;
 
   &.aos-animate {
     padding-bottom: 0;
+    background: #FFFFAF !important;
 
   }
 }
@@ -386,6 +397,14 @@ a {
     @include viewport-tablet {
       transform: translateX(0) translateY(0) !important;
     }
+  }
+}
+
+[data-aos="header-assistance-logo"] {
+  transform: scale(2) translateY(60%);
+  transition-property: transform, opacity ;
+  &.aos-animate {
+    transform: scale(1) translateY(0);
   }
 }
 

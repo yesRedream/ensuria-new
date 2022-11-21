@@ -13,7 +13,7 @@
         <link rel="manifest" href="img/favicons/site.webmanifest">
         <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#E0D3FF">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/main.min.css">
         <style>
           .loading {
             position: fixed;
@@ -65,388 +65,6 @@
         
     </head>
     <body>
-      <section 
-  class="page__section page__section--usp" 
-  data-aos="bg-helper"
-  data-aos-duration="1000"
->
-  <div class="page-usp__wrapper wrapper">
-    <div class="page-usp">
-      <div 
-        class="page-usp__bg corner"
-        data-aos="bg"
-        data-aos-duration="800"
-      >
-          <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" style="enable-background:new 0 0 41 41" xml:space="preserve"><path d="M35.9 3.1C37.2 1.8 39.1 1 41 1V0H0v41h1c0-1.9.8-3.8 2.1-5.1L35.9 3.1z" style="fill:#fff"/></svg>
-          <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22" xml:space="preserve"><path d="M18.3 2.5c1-1 2.3-1.5 3.7-1.5V0H0v22h1c0-1.4.6-2.7 1.5-3.7L18.3 2.5z" style="fill:#fff"/></svg>
-      </div>
-      <header class="header">
-        <div 
-          class="header-logo__wrap" 
-          data-aos="simple-fade-up"
-          data-aos-duration="300"
-          data-aos-delay="100"
-        >
-          <a href="#" class="header-logo">
-            <svg class="header-logo__ico">
-              <use xlink:href="img/sprites/sprite.svg#logo"></use>
-            </svg>
-          </a>
-        </div>
-        <nav 
-          class="header-nav" 
-          data-aos="simple-fade-up"
-          data-aos-duration="300"
-          data-aos-delay="150"
-        >
-          <a href="#page-products" class="header-nav__link link-line link-js--personal">
-            <span lang="en" class="en">
-              For you
-            </span>
-            <span lang="ua" class="ua">
-              Тобі
-            </span>
-            <span lang="ru" class="ru">
-              Тебе
-            </span>
-          </a>
-          <a href="#page-products" class="header-nav__link link-line link-js--business">
-            <span lang="en" class="en">
-              For business
-            </span>
-            <span lang="ua" class="ua">
-              Бізнесу
-            </span>
-            <span lang="ru" class="ru">
-              Бизнесу
-            </span>
-          </a>
-          <a href="#get" class="header-nav__link link-line link-js--get">
-            <span lang="en" class="en">
-              App
-            </span>
-            <span lang="ua" class="ua">
-              Апка
-            </span>
-            <span lang="ru" class="ru">
-              Апка
-            </span>
-          </a>
-          <!-- <a href="" class="header-nav__link link-line">Blog</a> -->
-        </nav>
-        <div 
-          class="header__box"
-          data-aos="simple-fade-up"
-          data-aos-duration="300"
-          data-aos-delay="250"
-          data-aos-easing="ease-in-out-cubic"
-        >
-          <div class="header-socials">
-            <a href="https://twitter.com/ensuriacom" class="header-socials__link" target="_blank">
-              <svg class="header-socials__ico header-socials__ico--twitter">
-                <use xlink:href="img/sprites/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/ensuria.ukraine/" class="header-socials__link" target="_blank">
-              <svg class="header-socials__ico header-socials__ico--instagram">
-                <use xlink:href="img/sprites/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-            <a href="https://www.tiktok.com/@ensuriacom" class="header-socials__link" target="_blank">
-              <svg class="header-socials__ico header-socials__ico--tiktok">
-                <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
-              </svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UCqYnShqOL3eXXWlZYpD9MHg" class="header-socials__link" target="_blank">
-              <svg class="header-socials__ico header-socials__ico--youtube">
-                <use xlink:href="img/sprites/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/ensuria.ukraine" class="header-socials__link" target="_blank">
-              <svg class="header-socials__ico header-socials__ico--facebook">
-                <use xlink:href="img/sprites/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="header-lang">
-            <!-- <button class="header-lang__link header-lang__link--en header-lang__link--active link-line">En</button>
-            <button class="header-lang__link header-lang__link--ua link-line">Ua</button>
-            <button class="header-lang__link header-lang__link--ru link-line">Ru</button> -->
-
-            <div class="select-wrapper--header">
-              <div class="dropholder">
-                <div class="dropdown">
-                  <p class="holder link-line">En</p>
-                </div>
-                <ul class="dropdownOption">
-                  <li class="footer-en-js">En</li>
-                  <li class="footer-ru-js">Ru</li>
-                  <li class="footer-ua-js">Ua</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header__hamburger header-hamburger">
-          <!-- <span class="header-hamburger__line"></span>
-          <span class="header-hamburger__line"></span>
-          <span class="header-hamburger__line"></span> -->
-          <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80">
-            <path
-                  class="line top"
-                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-            <path
-                  class="line middle"
-                  d="m 30,50 h 40" />
-            <path
-                  class="line bottom"
-                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-          </svg>
-          
-        </div>
-        <div class="header-menu__wrap">
-          <div class="header__menu header-menu">
-            <div 
-              class="header-logo__wrap" 
-              data-aos="fade"
-              data-aos-duration="500"
-              data-aos-delay="100"
-            
-            data-aos-easing="ease-in-out-cubic"
-            >
-              <a href="#" class="header-logo">
-                <svg class="header-logo__ico">
-                  <use xlink:href="img/sprites/sprite.svg#logo"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="header-menu__close">
-              <div class="header-menu__line"></div>
-              <div class="header-menu__line"></div>
-            </div>
-            <div class="header-menu__content">
-              <div class="header-mobile-nav">
-                <a href="#page-products" class="header-nav__link link-line link-js--personal" >
-                  <span lang="en" class="en">
-                    For you
-                  </span>
-                  <span lang="ua" class="ua">
-                    Тобі
-                  </span>
-                  <span lang="ru" class="ru">
-                    Тебе
-                  </span>
-                </a>
-                <a href="#page-products" class="header-nav__link link-line link-js--business" >
-                  <span lang="en" class="en">
-                    For business
-                  </span>
-                  <span lang="ua" class="ua">
-                    Бізнесу
-                  </span>
-                  <span lang="ru" class="ru">
-                    Бизнесу
-                  </span>
-                </a>
-                <a href="#get" class="header-nav__link link-line link-js--get">
-                  <span lang="en" class="en">
-                    App
-                  </span>
-                  <span lang="ua" class="ua">
-                    Апка
-                  </span>
-                  <span lang="ru" class="ru">
-                    Апка
-                  </span>
-                </a>
-                <!-- <a href="" class="header-nav__link link-line">Blog</a> -->
-              </div>
-              <div class="header-mobile-socials">
-                <a href="https://twitter.com/ensuriacom" class="header-socials__link" target="_blank">
-                  <svg class="header-socials__ico header-socials__ico--twitter">
-                    <use xlink:href="img/sprites/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-                <a href="https://www.instagram.com/ensuria.ukraine/" class="header-socials__link" target="_blank">
-                  <svg class="header-socials__ico header-socials__ico--instagram">
-                    <use xlink:href="img/sprites/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-                <a href="https://www.tiktok.com/@ensuriacom" class="header-socials__link" target="_blank">
-                  <svg class="header-socials__ico header-socials__ico--tiktok">
-                    <use xlink:href="img/sprites/sprite.svg#tiktok"></use>
-                  </svg>
-                </a>
-                <a href="https://www.youtube.com/channel/UCqYnShqOL3eXXWlZYpD9MHg" class="header-socials__link" target="_blank">
-                  <svg class="header-socials__ico header-socials__ico--youtube">
-                    <use xlink:href="img/sprites/sprite.svg#youtube"></use>
-                  </svg>
-                </a>
-                <a href="https://www.facebook.com/ensuria.ukraine" class="header-socials__link" target="_blank">
-                  <svg class="header-socials__ico header-socials__ico--facebook">
-                    <use xlink:href="img/sprites/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="header-mobile-lang">
-                <div class="header-mobile-lang__box">
-                  <svg class="header-mobile-lang__ico">
-                    <use xlink:href="img/sprites/sprite.svg#globe"></use>
-                  </svg>
-                  <!-- <span class="header-mobile-lang__text">En</span> -->
-                  <div class="select-wrapper2">
-                    <div class="dropholder">
-                      <div class="dropdown">
-                        <p class="holder">En</p>
-                      </div>
-                      <ul class="dropdownOption">
-                        <li class="footer-en-js">En</li>
-                        <li class="footer-ru-js">Ru</li>
-                        <li class="footer-ua-js">Ua</li>
-                      </ul>
-                    </div>
-                  </div>
-    
-                </div>
-                <div class="header-mobile-lang__box">
-                  <svg class="header-mobile-lang__ico">
-                    <use xlink:href="img/sprites/sprite.svg#uk"></use>
-                  </svg>
-                  <span class="header-mobile-lang__text">Uk</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="page-usp__content">
-        <div class="page-usp__title">
-          <span class="page-usp__title-box page-usp__title-box--first">
-            <span 
-              class="page-usp__title--first"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="400"
-            >
-              <span lang="en" class="en">
-                Digital&nbsp;
-              </span>
-              <span lang="ua" class="ua">
-                Диджитал-
-              </span>
-              <span lang="ru" class="ru">
-                Диджитал-
-              </span>
-            </span>
-            <span 
-              class="page-usp__title--second"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="500"
-            
-            
-            >
-              <span lang="en" class="en">
-                insurance
-              </span>
-              <span lang="ua" class="ua">
-                страхування
-              </span>
-              <span lang="ru" class="ru">
-                страхование,
-              </span>
-            </span>
-          </span>
-          <div 
-            class="page-usp__img-wrap"
-            data-aos="home-img-fade-up"
-            data-aos-duration="500"
-            data-aos-delay="600"
-            
-            
-          >
-            <img src="img/page-usp-img.png" alt="" class="page-usp__img">
-          </div>
-          <span class="page-usp__title-box page-usp__title-box--second">
-            <span 
-              class="page-usp__title--third"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="700"
-            
-            
-            >
-              <span lang="en" class="en">
-                designed
-              </span>
-              <span lang="ua" class="ua">
-                створене
-              </span>
-              <span lang="ru" class="ru">
-                созданное
-              </span>
-            </span>
-            <span 
-              class="page-usp__title--fourth"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="600"
-            
-            
-            >
-              <span lang="en" class="en">
-                for real life
-              </span>
-              <span lang="ua" class="ua">
-                для життя
-              </span>
-              <span lang="ru" class="ru">
-                для жизни
-              </span>
-            </span>
-          </span>
-        </div>
-        
-        <div class="page-usp__text"
-          data-aos="simple-fade-up"
-          data-aos-duration="300"
-          data-aos-offset="-50"
-          data-aos-delay="800"
-          
-          
-        >
-          <span lang="en" class="en">
-            Your subscription-based insurance service. And if something comes up — we’ve got you covered.
-          </span>
-          <span lang="ua" class="ua">
-            Твій сервіс страхування у форматі підписки. Йди живи — ми прикриємо.
-          </span>
-          <span lang="ru" class="ru">
-            Твой сервис страхования в формате подписки. Иди живи — мы прикроем.
-          </span>
-        </div>
-        <div class="page-usp__btns-group btns-group"
-          data-aos="simple-fade-up"
-          data-aos-duration="300"
-          data-aos-offset="-50"
-          data-aos-delay="800"
-          
-          
-        >
-          <a href="" class="page-usp__btn btn btn--ios">
-            <svg class="page-usp__btn-ico">
-              <use xlink:href="img/sprites/sprite.svg#app-store"></use>
-            </svg>
-          </a>
-          <a href="" class="page-usp__btn btn btn--android">
-            <img src="img/google-play.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-        
         <div class='loading'>
   <div class="loading__logo-wrap">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591.51 591.51"><defs><style>.cls-1{fill-rule:evenodd}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M504.89 86.62A295.76 295.76 0 0 0 86.62 504.89 295.76 295.76 0 0 0 504.89 86.62ZM295.76 566.51C146.46 566.51 25 445.05 25 295.76S146.46 25 295.76 25s270.75 121.46 270.75 270.76-121.46 270.75-270.75 270.75Z"/><path class="cls-1" d="M385.49 296.07c-14.5-1.84-28.36-3.53-28.36-14.75 0-1.37-.53-17.16 26.1-17.16 27.45 0 29.39 19.34 29.39 19.34H439c0-12.17-7.89-40.48-58.08-40.48-5.22 0-50 1.67-50 40 0 17.79 7.26 30.58 47.47 35 34.52 3.79 36.16 12.51 36.16 16.73 0 15.18-12.53 19-28.24 19-29.6 0-32.22-21.87-32.22-21.87h-26.34c0 7.67 2.95 43 60 43 39.95 0 53.66-22.66 53.66-40.89 0-15.85-6.71-32.61-55.92-37.92ZM105.26 250v29.22a5.34 5.34 0 0 0 5.35 5.35h74.8v24.23h-74.8a5.35 5.35 0 0 0-5.35 5.35v29.49a5.35 5.35 0 0 0 5.35 5.36H186v24.2H79.37V247.93a9.37 9.37 0 0 1 2.75-6.63l18.36-18.3a9.4 9.4 0 0 1 6.63-2.74H186v24.47h-75.39a5.35 5.35 0 0 0-5.35 5.27Z"/><path d="M520.64 244.74v25.5h-38.19a5.35 5.35 0 0 0-5.35 5.36v97.64h-26.28V272.19a9.37 9.37 0 0 1 2.75-6.63l18.07-18.07a9.37 9.37 0 0 1 6.63-2.75Z"/><path class="cls-1" d="M266.8 243c-19.73 0-32.6 10.52-38.38 19.25h-3.7v-17.56h-24.95v128.56h26.13V313c0-34 16.68-44.83 36.45-44.36 16.7.4 29.43 4.5 29.43 34.38v70.25h26.56v-73.8c-.44-18.18-5.05-56.47-51.54-56.47Z"/></g></g></svg>
@@ -457,7 +75,7 @@
 
 </div>
         <section 
-  class="page__section page__section--usp" 
+  class="page__section page__section--usp page__section--hero-assistance" 
   data-aos="bg-helper"
   data-aos-duration="1000"
 >
@@ -465,8 +83,9 @@
     <div class="page-usp">
       <div 
         class="page-usp__bg corner"
-        data-aos="bg"
-        data-aos-duration="800"
+        data-aos="bg-assistance"
+        data-aos-duration="650"
+        data-aos-delay="1500"
       >
           <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" style="enable-background:new 0 0 41 41" xml:space="preserve"><path d="M35.9 3.1C37.2 1.8 39.1 1 41 1V0H0v41h1c0-1.9.8-3.8 2.1-5.1L35.9 3.1z" style="fill:#fff"/></svg>
           <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22" xml:space="preserve"><path d="M18.3 2.5c1-1 2.3-1.5 3.7-1.5V0H0v22h1c0-1.4.6-2.7 1.5-3.7L18.3 2.5z" style="fill:#fff"/></svg>
@@ -710,133 +329,58 @@
           </div>
         </div>
       </header>
-      <div class="page-usp__content">
-        <div class="page-usp__title">
-          <span class="page-usp__title-box page-usp__title-box--first">
-            <span 
-              class="page-usp__title--first"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="400"
-            >
-              <span lang="en" class="en">
-                Digital&nbsp;
-              </span>
-              <span lang="ua" class="ua">
-                Диджитал-
-              </span>
-              <span lang="ru" class="ru">
-                Диджитал-
-              </span>
-            </span>
-            <span 
-              class="page-usp__title--second"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="500"
-            
-            
-            >
-              <span lang="en" class="en">
-                insurance
-              </span>
-              <span lang="ua" class="ua">
-                страхування
-              </span>
-              <span lang="ru" class="ru">
-                страхование,
-              </span>
-            </span>
-          </span>
-          <div 
-            class="page-usp__img-wrap"
-            data-aos="home-img-fade-up"
-            data-aos-duration="500"
-            data-aos-delay="600"
-            
-            
-          >
-            <img src="img/page-usp-img.png" alt="" class="page-usp__img">
-          </div>
-          <span class="page-usp__title-box page-usp__title-box--second">
-            <span 
-              class="page-usp__title--third"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="700"
-            
-            
-            >
-              <span lang="en" class="en">
-                designed
-              </span>
-              <span lang="ua" class="ua">
-                створене
-              </span>
-              <span lang="ru" class="ru">
-                созданное
-              </span>
-            </span>
-            <span 
-              class="page-usp__title--fourth"
-              data-aos="simple-fade-up"
-              data-aos-duration="300"
-              data-aos-delay="600"
-            
-            
-            >
-              <span lang="en" class="en">
-                for real life
-              </span>
-              <span lang="ua" class="ua">
-                для життя
-              </span>
-              <span lang="ru" class="ru">
-                для жизни
-              </span>
-            </span>
-          </span>
-        </div>
-        
-        <div class="page-usp__text"
-          data-aos="simple-fade-up"
-          data-aos-duration="300"
-          data-aos-offset="-50"
+      <div class="hero-assistance">
+        <div 
+          class="hero-assistance__logo-wrapper"
+          data-aos="header-assistance-logo"
+          data-aos-duration="1000"
           data-aos-delay="800"
-          
-          
         >
-          <span lang="en" class="en">
-            Your subscription-based insurance service. And if something comes up — we’ve got you covered.
-          </span>
-          <span lang="ua" class="ua">
-            Твій сервіс страхування у форматі підписки. Йди живи — ми прикриємо.
-          </span>
-          <span lang="ru" class="ru">
-            Твой сервис страхования в формате подписки. Иди живи — мы прикроем.
-          </span>
+          <svg class="hero-assistance__logo" viewBox="0 0 325 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_933_2450)">
+            <path d="M162.607 325C72.9373 325 0 252.063 0 162.607C0 72.9373 72.9373 0 162.607 0C252.277 0 325.215 72.9373 325.215 162.607C325 252.063 252.063 325 162.607 325ZM162.607 15.0165C81.3036 15.0165 15.0165 81.3036 15.0165 162.607C15.0165 243.911 81.0891 309.984 162.393 309.984C243.696 309.984 309.769 243.911 309.769 162.607C309.983 81.3036 243.911 15.0165 162.607 15.0165Z" fill="#2C2A2D"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M207.443 162.178C199.72 161.106 192.426 160.248 192.426 154.455C192.426 153.812 192.211 145.446 206.155 145.446C220.528 145.446 221.601 155.743 221.601 155.743H228.466H235.33L235.116 153.168C234.687 149.521 231.254 134.29 204.868 134.29C202.079 134.29 178.482 135.148 178.482 155.314C178.482 164.752 182.344 171.403 203.581 173.762C221.815 175.693 222.674 180.413 222.674 182.558C222.674 190.495 216.023 192.64 207.872 192.64C196.931 192.64 192.855 187.277 191.782 183.63L190.924 181.056H176.98V182.343C176.98 184.488 178.482 203.795 208.515 203.795C229.538 203.795 236.832 191.782 236.832 182.343C237.046 173.762 233.4 164.967 207.443 162.178Z" fill="#2C2A2D"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4953 138.581V152.954C60.4953 154.67 61.7825 155.957 63.4986 155.957H102.756V168.828H63.4986C61.7825 168.828 60.4953 170.116 60.4953 171.832V186.848C60.4953 188.564 61.7825 189.852 63.4986 189.852H102.971V202.508H46.9805V136.865C46.9805 135.578 47.624 134.29 48.4821 133.218L58.1356 123.564C58.9937 122.706 60.2808 122.063 61.7824 122.063H102.971V135.363H63.4986C61.997 135.578 60.4953 137.079 60.4953 138.581Z" fill="#2C2A2D"/>
+            <path d="M277.59 135.148V148.663H258.498C256.782 148.663 255.495 149.95 255.495 151.667V202.937H241.551V149.736C241.551 148.449 242.194 147.162 243.052 146.089L252.491 136.65C253.349 135.792 254.851 135.148 256.138 135.148H277.59V135.148Z" fill="#2C2A2D"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M145.66 134.291C135.363 134.291 128.498 139.868 125.495 144.373H123.564V135.149H110.479V202.937H124.208C124.208 202.937 124.208 177.838 124.208 171.188C124.208 153.168 133.003 147.805 143.515 147.805C148.878 147.805 153.383 149.736 156.172 154.456C158.96 159.175 159.175 160.248 159.175 182.772V202.937H173.119V164.109C172.69 154.456 170.115 134.291 145.66 134.291Z" fill="#2C2A2D"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_933_2450">
+            <rect width="325" height="325" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
         </div>
-        <div class="page-usp__btns-group btns-group"
+        <h1 
+          class="hero-assistance__title"
           data-aos="simple-fade-up"
-          data-aos-duration="300"
-          data-aos-offset="-50"
-          data-aos-delay="800"
-          
-          
+          data-aos-duration="650"
+          data-aos-delay="1300"
         >
-          <a href="" class="page-usp__btn btn btn--ios">
-            <svg class="page-usp__btn-ico">
-              <use xlink:href="img/sprites/sprite.svg#app-store"></use>
-            </svg>
-          </a>
-          <a href="" class="page-usp__btn btn btn--android">
-            <img src="img/google-play.png" alt="">
-          </a>
-        </div>
+          Страховий асистент на будь-який випадок
+        </h1>
+        <p 
+          class="hero-assistance__text"
+          data-aos="simple-fade-up"
+          data-aos-duration="650"
+          data-aos-delay="1500"
+        >
+          Прослідкує, щоб усі страхові питання вирішувались, як по маслу»
+        </p>
+        <button 
+          class="hero-assistance__link btn btn--transparent"
+          data-aos="simple-fade-up"
+          data-aos-duration="650"
+          data-aos-delay="1700"
+          data-toggle="modal" data-target="#modal-company"
+        >
+          Зв’язатись з нами
+      </button>
       </div>
     </div>
   </div>
 </section>
+
         <section class="page__section page__section--companies"
         data-aos="simple-fade-up"
         data-aos-duration="300"
@@ -898,6 +442,372 @@
     </div>
   </div>
 </section>
+        <section class="page__section page__section--about-assistance">
+  <div class="about-assistance__wrapper wrapper">
+    <div class="about-assistance">
+      <div class="about-assistance__content">
+        <h2 class="about-assistance__title">
+          Що я роблю
+        </h2>
+        <p class="about-assistance__text">
+          We’re here to support your whole family with planning for the future and making the most of later life. We provide both long and short-term residential and nursing care.
+        </p>
+      </div>
+      <div class="about-assistance__list">
+        <div class="about-assistance-item about-assistance-item--row"
+            data-aos="easier-fade-up"
+            data-aos-duration="300"
+            data-aos-delay="100"
+        >
+          <div class="about-assistance-item__corner corner">
+            <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" style="enable-background:new 0 0 41 41" xml:space="preserve"><path d="M35.9 3.1C37.2 1.8 39.1 1 41 1V0H0v41h1c0-1.9.8-3.8 2.1-5.1L35.9 3.1z" style="fill:#fff"/></svg>
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22" xml:space="preserve"><path d="M18.3 2.5c1-1 2.3-1.5 3.7-1.5V0H0v22h1c0-1.4.6-2.7 1.5-3.7L18.3 2.5z" style="fill:#fff"/></svg>
+          </div>
+          <div class="about-assistance-item__content about-assistance-pink">
+            <div class="about-assistance-item__ico-wrap">
+              <svg class="about-assistance-item__ico">
+                <use xlink:href="img/sprites/sprite.svg#about-assistance-ico-1"></use>
+              </svg>
+            </div>
+            <span class="about-assistance-item__title">
+              Медичний та туристичний ассистанс
+            </span>
+          </div>
+        </div>
+        <div class="about-assistance-item about-assistance-item--l"
+            data-aos="easier-fade-up"
+            data-aos-duration="300"
+            data-aos-delay="100"
+        >
+          <div class="about-assistance-item__content about-assistance-green" >
+            <div class="about-assistance-item__ico-wrap">
+              <svg class="about-assistance-item__ico">
+                <use xlink:href="img/sprites/sprite.svg#about-assistance-ico-2"></use>
+              </svg>
+            </div>
+
+            <span class="about-assistance-item__title">
+              Технічний ассистанс
+            </span>
+          </div>
+        </div>
+        <div class="about-assistance-item about-assistance-item--bg-image"
+              data-aos="easier-fade-up"
+              data-aos-duration="300"
+        >
+          <div class="about-assistance-item__content about-assistance-yellow" style="background-image: url('img/about-assistance-1.png'); ">
+            <span class="about-assistance-item__title">
+
+              Страхове врегулювання
+            </span>
+          </div>
+        </div>
+        <div class="about-assistance-item  about-assistance-item--empty">
+          <div class="about-assistance-item__content about-assistance-item__content--img">
+            
+          </div>
+        </div>
+        <div class="about-assistance-item"
+              data-aos="easier-fade-up"
+              data-aos-duration="300"
+        >
+          <div class="about-assistance-item__content about-assistance-blue">
+            <div class="about-assistance-item__ico-wrap">
+              <svg class="about-assistance-item__ico">
+                <use xlink:href="img/sprites/sprite.svg#about-assistance-ico-3"></use>
+              </svg>
+            </div>
+            <span class="about-assistance-item__title">
+              Телемедицина
+            </span>
+          </div>
+        </div>
+        <div class="about-assistance-item about-assistance-item--l"
+            data-aos="easier-fade-up"
+            data-aos-duration="300"
+            data-aos-delay="100"
+        >
+          <div class="about-assistance-item__corner corner">
+            <svg class="desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" style="enable-background:new 0 0 41 41" xml:space="preserve"><path d="M35.9 3.1C37.2 1.8 39.1 1 41 1V0H0v41h1c0-1.9.8-3.8 2.1-5.1L35.9 3.1z" style="fill:#fff"/></svg>
+            <svg class="mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22" xml:space="preserve"><path d="M18.3 2.5c1-1 2.3-1.5 3.7-1.5V0H0v22h1c0-1.4.6-2.7 1.5-3.7L18.3 2.5z" style="fill:#fff"/></svg>
+          </div>
+          <div class="about-assistance-item__content about-assistance-purple">
+            <span class="about-assistance-item__title">
+              Home & Family assistance
+            </span>
+          </div>
+        </div>
+        <div class="about-assistance-item about-assistance-item--l about-assistance-item--bg-image"
+            data-aos="easier-fade-up"
+            data-aos-duration="300"
+            data-aos-delay="100"
+        >
+          <div class="about-assistance-item__content about-assistance-purple" style="background-image: url('img/about-assistance-2.png');">
+            <span class="about-assistance-item__title">
+              Міжнародне медичне транспортування
+            </span>
+          </div>
+        </div>
+        <div class="about-assistance-item"
+              data-aos="easier-fade-up"
+              data-aos-duration="300"
+        >
+          <div class="about-assistance-item__content about-assistance-peach">
+            <div class="about-assistance-item__ico-wrap">
+              <svg class="about-assistance-item__ico">
+                <use xlink:href="img/sprites/sprite.svg#about-assistance-ico-4"></use>
+              </svg>
+            </div>
+            <span class="about-assistance-item__title">
+              Конс’єрж сервіс
+            </span>
+          </div>
+        </div>
+        <div class="about-assistance-item about-assistance-item--text about-assistance-item--bg-image"
+              data-aos="easier-fade-up"
+              data-aos-duration="300"
+        >
+          <div class="about-assistance-item__content about-assistance-yellow" style="background-image: url('img/about-assistance-3.png');">
+            <span class="about-assistance-item__title">
+              Employee Medical Assistance
+            </span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="page__section page__section--for-who">
+  <div class="for-who__wrapper wrapper">
+    <div class="for-who">
+      <h2 class="for-who__title">Для кого роблю</h2>
+      <p class="for-who__text">We’re here to support your whole family with planning for the future and making the most of later life. We provide both long and short-term residential and nursing care.</p>
+
+      <div class="for-who__list">
+        <div class="for-who__item for-who-item for-who-item--grey">
+          <h3 class="for-who-item__title">
+            Туроператорам та туристичним агенціям
+          </h3>
+          <div class="for-who-item__ico-wrap">
+            <svg class="for-who-item__ico for-who-item__ico--1">
+              <use xlink:href="img/sprites/sprite.svg#for-who-ico-1"></use>
+            </svg>
+          </div>
+          <button 
+            class="for-who-item__link btn btn--transparent"
+            data-toggle="modal" data-target="#modal-company"
+          >
+            Зв’язатись з нами
+        </button>
+        </div>
+
+        <div class="for-who__item for-who-item for-who-item--yellow">
+          <h3 class="for-who-item__title">
+            Страховим компаніям
+          </h3>
+          <div class="for-who-item__ico-wrap">
+            <svg class="for-who-item__ico for-who-item__ico--2">
+              <use xlink:href="img/sprites/sprite.svg#for-who-ico-2"></use>
+            </svg>
+          </div>
+          <button 
+            class="for-who-item__link btn btn--transparent"
+            data-toggle="modal" data-target="#modal-company"
+          >
+            Зв’язатись з нами
+          </button>
+        </div>
+
+        <div class="for-who__item for-who-item for-who-item--pink">
+          <h3 class="for-who-item__title">
+            Автомобільним компаніям
+          </h3>
+          <div class="for-who-item__ico-wrap">
+            <svg class="for-who-item__ico for-who-item__ico--3">
+              <use xlink:href="img/sprites/sprite.svg#for-who-ico-3"></use>
+            </svg>
+          </div>
+          <button 
+            class="for-who-item__link btn btn--transparent"
+            data-toggle="modal" data-target="#modal-company"
+          >
+            Зв’язатись з нами
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="page__section page__section--benefits-assistance">
+  <div class="benefits-assistance__wrapper wrapper">
+    <div class="benefits-assistance">
+      <div class="benefits-assistance__subtitle-wrap">
+        <div class="benefits-assistance__img-wrap">
+          <img src="img/ensuria-logo.png" alt="" class="benefits-assistance__img">
+        </div>
+        <p class="benefits-assistance__subtitle">
+          Business
+        </p>
+      </div>
+      <h2 class="benefits-assistance__title">
+        Що Я роблю інакше
+      </h2>
+      <p class="benefits-assistance__text">
+        We are innovative insurance company that specializes in technological solutions and services in the field of life and health insurance.
+      </p>
+      <div class="benefits-assistance__list">
+        <div class="benefits-assistance__item benefits-assistance-item">
+          <div class="benefits-assistance-item__img-wrap">
+            <svg class="benefits-assistance-item__img">
+              <use xlink:href="img/sprites/sprite.svg#benefits-assistance-1"></use>
+            </svg>
+          </div>
+          <div class="benefits-assistance-item__content">
+            <h3 class="benefits-assistance-item__title">Найкрутіша служба турботи</h3>
+            <p class="benefits-assistance-item__text">We’re here to support your whole family with planning for the future and making the most of later life. We provide both long and short-term residential and nursing care.</p>
+          </div>
+        </div>
+        <div class="benefits-assistance__item benefits-assistance-item">
+          <div class="benefits-assistance-item__img-wrap">
+            <svg class="benefits-assistance-item__img">
+              <use xlink:href="img/sprites/sprite.svg#benefits-assistance-2"></use>
+            </svg>
+          </div>
+          <div class="benefits-assistance-item__content">
+            <h3 class="benefits-assistance-item__title">Технологічні рішення</h3>
+            <p class="benefits-assistance-item__text">We’re here to support your whole family with planning for the future and making the most of later life. We provide both long and short-term residential and nursing care.</p>
+          </div>
+        </div>
+        <div class="benefits-assistance__item benefits-assistance-item">
+          <div class="benefits-assistance-item__img-wrap">
+            <svg class="benefits-assistance-item__img">
+              <use xlink:href="img/sprites/sprite.svg#benefits-assistance-3"></use>
+            </svg>
+          </div>
+          <div class="benefits-assistance-item__content">
+            <h3 class="benefits-assistance-item__title">Власна партнерська мережа</h3>
+            <p class="benefits-assistance-item__text">We’re here to support your whole family with planning for the future and making the most of later life. We provide both long and short-term residential and nursing care.</p>
+          </div>
+        </div>
+        <div class="benefits-assistance__item benefits-assistance-item">
+          <div class="benefits-assistance-item__img-wrap">
+            <svg class="benefits-assistance-item__img">
+              <use xlink:href="img/sprites/sprite.svg#benefits-assistance-4"></use>
+            </svg>
+          </div>
+          <div class="benefits-assistance-item__content">
+            <h3 class="benefits-assistance-item__title">Розгорнута аналітика</h3>
+            <p class="benefits-assistance-item__text">We’re here to support your whole family with planning for the future and making the most of later life. We provide both long and short-term residential and nursing care.</p>
+          </div>
+        </div>
+        <div class="benefits-assistance__item benefits-assistance-item">
+          <div class="benefits-assistance-item__img-wrap">
+            <svg class="benefits-assistance-item__img">
+              <use xlink:href="img/sprites/sprite.svg#benefits-assistance-5"></use>
+            </svg>
+          </div>
+          <div class="benefits-assistance-item__content">
+            <h3 class="benefits-assistance-item__title">Телемедицина</h3>
+            <p class="benefits-assistance-item__text">Команда досвідчених лікарів проконсультує по відео, аудіо чи в чатах потрібною мовою. Тому раптом що — вашому клієнту одразу допоможе наш лікар. Так-так, прямо зі смартфону.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="page__section page__section--unite">
+  <div class="unite__wrapper wrapper">
+    <div class="unite">
+      <div class="unite__subtitle-wrap">
+        <div class="unite__subtitle-img-wrap">
+          <img src="img/ensuria-logo.png" alt="" class="unite__subtitle-img">
+        </div>
+        <p class="unite__subtitle">
+          Business
+        </p>
+      </div>
+      <p class="unite__text">Об'єднуємо 20 000 провайдерів у медичній, страховій, транспортній індустріях у 150 країнах світу</p>
+
+      <div class="unite__img-wrap" data-animation-in="slideUpBlock" >
+        <img src="img/unite.png" alt="" class="unite__img">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+        <section class="page__section page__section--companies-insurance"
+        data-aos="simple-fade-up"
+        data-aos-duration="300"
+        data-aos-anchor=".page__section--usp"
+>
+  <div class="companies-insurance__wrapper wrapper">
+    <div class="companies-insurance">
+      <p class="companies-insurance__text">
+        Працюю з 80% страхових компаній України
+      </p>
+      <div class="companies-insurance__content">
+        <div class="companies-insurance__list-wrap">
+          <div class="companies-insurance__list">
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-1"></use>
+              </svg>
+            </a>
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-2"></use>
+              </svg>
+            </a>
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-3"></use>
+              </svg>
+            </a>
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-4"></use>
+              </svg>
+            </a>
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-5"></use>
+              </svg>
+            </a>
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-6"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-7"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-8"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="companies-insurance__item">
+              <svg class="companies-insurance__ico">
+                <use xlink:href="img/sprites/sprite.svg#company-insurance-9"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         <section class="page__section page__section--rating">
   <div class="page-rating__wrapper wrapper">
     <div class="page-rating">
@@ -1722,14 +1632,381 @@
   </div>
 </footer>
         
+<div class="modal fade" id="modal-name" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal__close-wrap" data-dismiss="modal" aria-label="Close">
+        <svg class="modal__close">
+          <use xlink:href="img/sprites/sprite.svg#close"></use>
+        </svg>
+      </div>
+      <div class="modal__content modal__content--name active">
+        <span class="modal__title">
+          <span lang="en" class="en">
+            Beta-testing of our new policy
+          </span>
+          <span lang="ua" class="ua">
+            Бета-тест нового полісу
+          </span>
+          <span lang="ru" class="ru">
+            Бета-тест нового полиса
+          </span>
+        </span>
+        <span class="modal__text">
+          <span lang="en" class="en">
+            Leave your contacts here to try my brand-new product before it turns mainstream.
+          </span>
+          <span lang="ua" class="ua">
+            Залиш контакти, щоб спробувати наш новий продукт до того, як він стане мейнстримом.
+          </span>
+          <span lang="ru" class="ru">
+            Оставь контакты, чтобы попробовать наш новый продукт до того, как он станет мейнстримом.
+          </span>
+        </span>
+        <form action="#" class="modal__form modal__form--name">
+          <div class="modal__inputs-wrap">
+            <div class="input modal__input">
+              <input type="text" class="input__value" id="inputName" required placeholder="Name">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputName"
+                >
+                  <span lang="en" class="en">
+                    Name
+                  </span>
+                  <span lang="ua" class="ua">
+                    Ім’я
+                  </span>
+                  <span lang="ru" class="ru">
+                    Имя
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input modal__input">
+              <input type="text" class="input__value" id="inputLastname" required placeholder="Last Name">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputLastname"
+                >
+                  <span lang="en" class="en">
+                    Surname
+                  </span>
+                  <span lang="ua" class="ua">
+                    Прізвище
+                  </span>
+                  <span lang="ru" class="ru">
+                    Фамилия
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input modal__input">
+              <input type="text" class="input__value" id="inputEmail" required placeholder="Email">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputEmail"
+                >
+                  <span lang="en" class="en">
+                    Email
+                  </span>
+                  <span lang="ua" class="ua">
+                    Імейл
+                  </span>
+                  <span lang="ru" class="ru">
+                    Мейл
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input modal__input">
+              <input type="phone" class="input__value" id="inputPhone" required placeholder="Phone">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputPhone"
+                >
+                  <span lang="en" class="en">
+                    Phone number
+                  </span>
+                  <span lang="ua" class="ua">
+                    Телефон
+                  </span>
+                  <span lang="ru" class="ru">
+                    Телефон
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="modal__btn">
+            <span lang="en" class="en">
+              Send
+            </span>
+            <span lang="ua" class="ua">
+              Надіслати
+            </span>
+            <span lang="ru" class="ru">
+              Отправить
+            </span>
+          </button>
+
+          <p class="modal-form__text">
+            <span lang="en" class="en">
+              By registering and hitting the Send button, you agree to the <a href="#" class="link-line link-line-shown">terms of use</a> and the <a href="#" class="link-line link-line-shown">privacy policy.</a>
+            </span>
+            <span lang="ua" class="ua">
+              Реєструючись та натискаючи кнопку «Надіслати», ти погоджуєшся з <a href="#" class="link-line link-line-shown">умовами договору-оферти</a> та <a href="#" class="link-line link-line-shown">політикою конфіденційності.</a>
+            </span>
+            <span lang="ru" class="ru">
+              Регистрируясь и нажимая кнопку «отправить», ты соглашаешься с условиями 
+              <a href="#" class="link-line link-line-shown">договора-оферты</a> и <a href="#" class="link-line link-line-shown">политикой конфиденциальности.</a>
+            </span> 
+          </p>
+        </form>
+      </div>
+      <div class="modal__success modal__success--name">
+        <div class="modal-success__ico-wrap">
+          <svg class="modal-success__ico">
+            <use xlink:href="img/sprites/sprite.svg#success-form"></use>
+          </svg>
+        </div>
+        <span class="modal__title">
+          <span lang="en" class="en">
+            Thanks! I’ve got your letter
+          </span>
+          <span lang="ua" class="ua">
+            Дякую! Твій лист вже прилетів
+          </span>
+          <span lang="ru" class="ru">
+            Спасибо! Твое письмо уже прилетело
+          </span>
+        </span>
+        <span class="modal__text">
+          <span lang="en" class="en">
+            I'll get in touch with you when the policy is ready for testing. 
+            Now it’s time for you to live to the fullest!
+          </span>
+          <span lang="ua" class="ua">
+            Напишу тобі, щойно послуга буде готова до тесту. 
+            Все, біжи жити життя)
+          </span>
+          <span lang="ru" class="ru">
+            Напишу тебе, как только услуга будет готова к тесту. 
+            Все, беги жить жизнь)
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
         
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<div class="modal fade" id="modal-company" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal__close-wrap" data-dismiss="modal" aria-label="Close">
+        <svg class="modal__close">
+          <use xlink:href="img/sprites/sprite.svg#close"></use>
+        </svg>
+      </div>
+      <div class="modal__content modal__content--company active">
+        <span class="modal__title">
+          <span lang="en" class="en">
+            Receive an offer
+          </span>
+          <span lang="ua" class="ua">
+            Отримати пропозицію
+          </span>
+          <span lang="ru" class="ru">
+            Получить предложение
+          </span>
+        </span>
+        <span class="modal__text">
+          <span lang="en" class="en">
+            We will contact you to get all the details and create a custom solution for your needs.
+          </span>
+          <span lang="ua" class="ua">
+            Зв’яжемося з вами, щоб врахувати всі деталі та сформувати рішення саме для ваших потреб.
+          </span>
+          <span lang="ru" class="ru">
+            Свяжемся с вами, чтобы учесть все детали и сформировать решение для именно ваших нужд.
+          </span>
+        </span>
+        <form action="#" class="modal__form modal__form--company">
+          <div class="modal__inputs-wrap">
+            <div class="input modal__input">
+              <input type="text" class="input__value" id="inputName" required placeholder="Name">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputName"
+                >
+                  <span lang="en" class="en">
+                    Name
+                  </span>
+                  <span lang="ua" class="ua">
+                    Ім’я
+                  </span>
+                  <span lang="ru" class="ru">
+                    Имя
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input modal__input">
+              <input type="text" class="input__value" id="inputLastname" required placeholder="Last Name">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputLastname"
+                >
+                  <span lang="en" class="en">
+                    Surname
+                  </span>
+                  <span lang="ua" class="ua">
+                    Прізвище
+                  </span>
+                  <span lang="ru" class="ru">
+                    Фамилия
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input modal__input">
+              <input type="text" class="input__value" id="inputLastname" required placeholder="Last Name">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputLastname"
+                >
+                  <span lang="en" class="en">
+                    Company name
+                  </span>
+                  <span lang="ua" class="ua">
+                    Компанія
+                  </span>
+                  <span lang="ru" class="ru">
+                    Компания
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input modal__input">
+              <input type="text" class="input__value" id="inputEmail" required placeholder="Email">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputEmail"
+                >
+                  <span lang="en" class="en">
+                    Email
+                  </span>
+                  <span lang="ua" class="ua">
+                    Імейл
+                  </span>
+                  <span lang="ru" class="ru">
+                    Мейл
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input modal__input">
+              <input type="phone" class="input__value" id="inputPhone" required placeholder="Phone">
+              <div class="input__data">
+                <label
+                  class="input__label"
+                  for="inputPhone"
+                >
+                  <span lang="en" class="en">
+                    Phone number
+                  </span>
+                  <span lang="ua" class="ua">
+                    Телефон
+                  </span>
+                  <span lang="ru" class="ru">
+                    Телефон
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="modal__btn">
+            <span lang="en" class="en">
+              Send
+            </span>
+            <span lang="ua" class="ua">
+              Надіслати
+            </span>
+            <span lang="ru" class="ru">
+              Отправить
+            </span>
+          </button>
+
+          <p class="modal-form__text">
+            <span lang="en" class="en">
+              By registering and hitting the Send button, you agree to the <a href="#" class="link-line link-line-shown">terms of use</a> and the <a href="#" class="link-line link-line-shown">privacy policy.</a>
+            </span>
+            <span lang="ua" class="ua">
+              Реєструючись та натискаючи кнопку «Надіслати», ти погоджуєшся з <a href="#" class="link-line link-line-shown">умовами договору-оферти</a> та <a href="#" class="link-line link-line-shown">політикою конфіденційності.</a>
+            </span>
+            <span lang="ru" class="ru">
+              Регистрируясь и нажимая кнопку «отправить», ты соглашаешься с условиями 
+              <a href="#" class="link-line link-line-shown">договора-оферты</a> и <a href="#" class="link-line link-line-shown">политикой конфиденциальности.</a>
+            </span> 
+          </p>
+        </form>
+      </div>
+      <div class="modal__success modal__success--company">
+        <div class="modal-success__ico-wrap">
+          <svg class="modal-success__ico">
+            <use xlink:href="img/sprites/sprite.svg#success-form"></use>
+          </svg>
+        </div>
+        <span class="modal__title">
+          <span lang="en" class="en">
+            Thank you! Your letter has been sent
+          </span>
+          <span lang="ua" class="ua">
+            Дякуємо! Ваш лист вже прилетів до нас
+          </span>
+          <span lang="ru" class="ru">
+            Спасибо! Ваше письмо уже прилетело к нам
+          </span>
+        </span>
+        <span class="modal__text">
+          <span lang="en" class="en">
+            We will call you back as soon as we get it. It’s quite fast, really
+          </span>
+          <span lang="ua" class="ua">
+            Передзвонимо, щойно побачимо його. Це швиденько, правда.
+          </span>
+          <span lang="ru" class="ru">
+            Перезвоним, как только увидим его. Это быстро, правда.
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
        
         
-        <script src="js/vendor.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>

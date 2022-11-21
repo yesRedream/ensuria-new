@@ -1,0 +1,132 @@
+.page__section--unite {
+  margin-bottom: 0.764vw;
+
+  @include viewport-tablet {
+    margin-bottom: 10px;
+  }
+}
+
+.unite__wrapper {
+  @include viewport-tablet {
+    padding: 0;
+  }
+}
+
+.unite {
+  background: #D6E6FD;
+  border-radius: 6px;
+  padding: 6.250vw 3.333vw 3.333vw 3.333vw;
+  overflow: hidden;
+
+  @include viewport-tablet {
+    border-radius: 0;
+    padding: 60px 0 0 0;
+  }
+}
+
+.unite__subtitle-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.083vw;
+  position: relative;
+  z-index: 3;
+
+  @include viewport-desktop {
+    margin-bottom: 30px;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 21px;
+  }
+}
+
+.unite__subtitle-img-wrap  {
+  margin-right: 8px;
+  position: relative;
+  width: 2.778vw;
+  height: 2.778vw;
+
+  @include viewport-desktop {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include viewport-tablet {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.unite__subtitle-img  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.unite__subtitle {
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: 1.250vw;
+
+  @include viewport-desktop {
+    font-size: 18px;
+  }
+
+  @include viewport-tablet {
+    font-size: 16px;
+  }
+}
+
+.unite__text {
+  max-width: 60.069vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.333vw;
+  line-height: 1.3;
+  // margin-bottom: 7.153vw;
+  text-align: center;
+  color: var(--color-dark);
+  font-weight: 500;
+  line-height: 1;
+
+
+  @include viewport-tablet {
+    font-size: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+}
+
+.unite__img-wrap {
+  width: 100%;
+  margin-top: -4vw;
+  margin-bottom: -11vw;
+  position: relative;
+
+  @include viewport-phone {
+    padding-bottom: 100%;
+    margin: 0;
+  }
+}
+
+.unite__img {
+  width: 100%;
+
+
+  @include viewport-phone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 25%;
+  }
+}
