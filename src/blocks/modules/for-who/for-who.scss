@@ -6,6 +6,7 @@
   }
 }
 
+
 .for-who__title {
   text-align: center;
   font-size: 4.444vw;
@@ -76,6 +77,22 @@
 
 .for-who-item--pink {
   background: #F8DDE7;
+}
+
+.for-who-item--purple {
+  background: var(--color-purple);
+}
+
+.for-who-item--green {
+  background: var(--color-green);
+}
+
+.for-who-item--blue {
+  background: var(--color-blue);
+}
+
+.for-who-item--peach {
+  background: #F1D2C3;
 }
 
 .for-who-item__title {
