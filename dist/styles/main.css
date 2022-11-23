@@ -11292,6 +11292,24 @@ a:hover {
   max-width: 21.306vw;
 }
 
+.about-assistance-item__img-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20.833vw;
+  height: 13.889vw;
+}
+
+.about-assistance-img__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .about-assistance-item__img-man {
   width: 16.111vw;
   height: 17.569vw;
@@ -16037,7 +16055,7 @@ a:hover {
   }
 
   .footer {
-    padding-bottom: 33px 26px 74px 26px;
+    padding: 33px 26px 74px 26px;
   }
 
   .footer__content {
@@ -16881,6 +16899,14 @@ a:hover {
   .about-assistance-item__title {
     font-size: 32px;
     max-width: 288px;
+  }
+
+  .about-assistance-item__img-wrap {
+    width: 180px;
+    height: 130px;
+    top: 20px;
+    left: 0;
+    right: auto;
   }
 
   .about-assistance-item__img-man {
