@@ -140,6 +140,8 @@
 .magnet {
   position: absolute;
   transition: transform .5s ease-out, opacity .7s ease-out;
+  border-radius: 100%;
+  overflow: hidden;
 
   img {
     width: 100%;
