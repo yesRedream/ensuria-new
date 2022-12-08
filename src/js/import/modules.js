@@ -17,5 +17,4 @@ import "%modules%/modal/modal";
 import "%modules%/about-assistance/about-assistance";
 import "%modules%/benefits-assistance/benefits-assistance";
 import "%modules%/for-who/for-who";
-import "%modules%/unite/unite";
 import "%modules%/companies-insurance/companies-insurance";
