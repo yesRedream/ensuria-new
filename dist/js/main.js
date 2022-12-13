@@ -143,29 +143,25 @@ window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default()); // i
 /*!***********************************************!*\
   !*** ./src/blocks/modules/for-who/for-who.js ***!
   \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./.yarn/__virtual__/slick-carousel-virtual-8eb5f419a2/0/cache/slick-carousel-npm-1.8.1-8382d373c2-acaad391e4.zip/node_modules/slick-carousel/slick/slick.js");
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
-
-window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.for-who__list').slick({
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  arrows: false,
-  infinite: false,
-  responsive: [{
-    breakpoint: 815,
-    settings: {
-      slidesToShow: 1
-    }
-  }]
-});
+// import $ from 'jquery';
+// window.$ = window.jQuery = $;
+// import 'slick-carousel';
+// $('.for-who__list').slick({
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   infinite: false,
+//   responsive: [
+//     {
+//       breakpoint: 815,
+//       settings: {
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
 
 /***/ }),
 
@@ -346,13 +342,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-rating-slider").slick({
   dots: false,
   autoplay: true,
   slidesToShow: 4,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   lazyLoad: 'progressive',
   responsive: [{
     breakpoint: 1224,
     settings: {
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 2
     }
   }, {
     breakpoint: 900,
@@ -1083,6 +1079,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_benefits_assistance_benefits_assistance__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! %modules%/benefits-assistance/benefits-assistance */ "./src/blocks/modules/benefits-assistance/benefits-assistance.js");
 /* harmony import */ var _modules_benefits_assistance_benefits_assistance__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_modules_benefits_assistance_benefits_assistance__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var _modules_for_who_for_who__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! %modules%/for-who/for-who */ "./src/blocks/modules/for-who/for-who.js");
+/* harmony import */ var _modules_for_who_for_who__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_modules_for_who_for_who__WEBPACK_IMPORTED_MODULE_18__);
 /* harmony import */ var _modules_companies_insurance_companies_insurance__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! %modules%/companies-insurance/companies-insurance */ "./src/blocks/modules/companies-insurance/companies-insurance.js");
 /* harmony import */ var _modules_companies_insurance_companies_insurance__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_modules_companies_insurance_companies_insurance__WEBPACK_IMPORTED_MODULE_19__);
 

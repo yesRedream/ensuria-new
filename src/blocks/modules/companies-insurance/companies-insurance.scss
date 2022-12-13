@@ -117,6 +117,7 @@
 }
 
 .companies-insurance__item {
+  display: inline-block;
   &:hover {
     .companies-insurance__ico {
       use {

@@ -10970,7 +10970,7 @@ a:hover {
 }
 
 .modal__content {
-  padding: 106px 20px 50px 20px;
+  padding: 70px 20px 60px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -11333,6 +11333,35 @@ a:hover {
   margin-bottom: 13.056vw;
 }
 
+.for-who-list__content {
+  position: relative;
+  padding-bottom: 34.306vw;
+}
+
+.for-who-list__wrap {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -0.903vw;
+  right: -0.903vw;
+  width: calc(100% + 1.806vw);
+  max-width: calc(100% + 1.806vw);
+}
+
+.for-who__list {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.for-who__list::-webkit-scrollbar {
+  display: none;
+}
+
 .for-who__title {
   text-align: center;
   font-size: 4.444vw;
@@ -11364,8 +11393,22 @@ a:hover {
   margin: 0 6px;
 }
 
+.for-who-item__wrap {
+  display: inline-block;
+  padding: 0 3px;
+}
+
+.for-who-item__wrap:first-child {
+  padding-left: 15px;
+}
+
+.for-who-item__wrap:last-child {
+  padding-right: 15px;
+}
+
 .for-who-item {
   height: 34.306vw;
+  width: 38.333vw;
   box-sizing: border-box;
   padding: 2.778vw 2.083vw;
   display: flex !important;
@@ -11373,6 +11416,7 @@ a:hover {
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  border-radius: 6px;
 }
 
 .for-who-item--grey {
@@ -11415,6 +11459,8 @@ a:hover {
   font-size: 2.778vw;
   max-width: 22.222vw;
   line-height: 1;
+  white-space: initial;
+  text-align: left;
 }
 
 .for-who-item__link {
@@ -11939,6 +11985,10 @@ a:hover {
 
 .companies-insurance__list::-webkit-scrollbar {
   display: none;
+}
+
+.companies-insurance__item {
+  display: inline-block;
 }
 
 .companies-insurance__item:hover .companies-insurance__ico use {
@@ -17177,6 +17227,19 @@ a:hover {
     margin-bottom: 50px;
   }
 
+  .for-who-list__content {
+    padding-bottom: 300px;
+  }
+
+  .for-who-list__wrap {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    right: -10px;
+    width: calc(100% + 20px);
+    max-width: calc(100% + 20px);
+  }
+
   .for-who__title {
     padding: 0 15px;
     font-size: 36px;
@@ -17192,6 +17255,7 @@ a:hover {
 
   .for-who-item {
     height: 300px;
+    width: 336px;
     padding: 26px 24px 30px;
   }
 

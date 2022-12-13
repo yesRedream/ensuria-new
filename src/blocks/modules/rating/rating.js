@@ -11,14 +11,14 @@ $(".page-rating-slider").slick({
   dots: false,
   autoplay: true,
   slidesToShow: 4,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   lazyLoad: 'progressive',
   responsive: [
     {
       breakpoint: 1224,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
       }
     },
     {
