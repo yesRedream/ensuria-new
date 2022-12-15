@@ -9129,7 +9129,7 @@ a:hover {
 
 .page-product-item--2 .page-product-item__bg {
   background-color: var(--color-green);
-  background: url("../img/product-item-bg.jpg");
+  background: url("../img/product-item-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9167,7 +9167,7 @@ a:hover {
 
 .page-product-item--5 .page-product-item__bg {
   background-color: var(--color-green);
-  background: url("../img/product-item-bg-2.png");
+  background: url("../img/product-item-bg-2.webp");
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: top left;
@@ -9209,7 +9209,7 @@ a:hover {
 
 .page-product-item--8 .page-product-item__bg {
   background-color: var(--color-blue);
-  background: url("../img/product-item-bg-3.png");
+  background: url("../img/product-item-bg-3.webp");
   background-repeat: no-repeat;
   background-size: 84vw;
   border-radius: 0 6px 6px 6px;
@@ -10376,7 +10376,7 @@ a:hover {
   top: 0;
   width: 2.5vw;
   height: 3.69vw;
-  background: url("../img/review-tag-bg.png");
+  background: url("../img/review-tag-bg.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
