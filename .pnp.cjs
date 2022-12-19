@@ -94,7 +94,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint-config-standard-scss", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:3.0.0"],\
             ["stylelint-order", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:5.0.0"],\
             ["stylelint-selector-bem-pattern", "npm:2.1.1"],\
-            ["swiper", "npm:8.4.2"],\
+            ["swiper", "npm:8.4.5"],\
             ["webpack", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:5.74.0"],\
             ["webpack-stream", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:7.0.0"],\
             ["yargs", "npm:17.5.1"]\
@@ -9920,7 +9920,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["stylelint-config-standard-scss", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:3.0.0"],\
             ["stylelint-order", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:5.0.0"],\
             ["stylelint-selector-bem-pattern", "npm:2.1.1"],\
-            ["swiper", "npm:8.4.2"],\
+            ["swiper", "npm:8.4.5"],\
             ["webpack", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:5.74.0"],\
             ["webpack-stream", "virtual:186381c180ca650736a44b8c87775381e96c396f54b06b7b470fd3e6b97ba133ec6ed70a4abd65ca57155aa5e6a08a547095c741cfae32b07330800978c660da#npm:7.0.0"],\
             ["yargs", "npm:17.5.1"]\
@@ -17525,10 +17525,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["swiper", [\
-        ["npm:8.4.2", {\
-          "packageLocation": "./.yarn/unplugged/swiper-npm-8.4.2-2afbac7692/node_modules/swiper/",\
+        ["npm:8.4.5", {\
+          "packageLocation": "./.yarn/unplugged/swiper-npm-8.4.5-c5c16f4b35/node_modules/swiper/",\
           "packageDependencies": [\
-            ["swiper", "npm:8.4.2"],\
+            ["swiper", "npm:8.4.5"],\
             ["dom7", "npm:4.0.4"],\
             ["ssr-window", "npm:4.0.2"]\
           ],\

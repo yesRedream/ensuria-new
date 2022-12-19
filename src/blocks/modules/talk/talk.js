@@ -7,21 +7,20 @@ import 'animate.css';
 // import '../../../js/import/slick-animate';
 
  
+if ($(".page__section--talk")[0]){
+    const controller = new ScrollMagic.Controller();
 
 
-const controller = new ScrollMagic.Controller();
-
-
-let talkSlider = $(".page-talk__slider-js").slick({
-  infinite: true,
-  arrows: false,
-  dots: false,
-  autoplay: false,
-  speed: 400,
-  // fade: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
+    let talkSlider = $(".page-talk__slider-js").slick({
+    infinite: true,
+    arrows: false,
+    dots: false,
+    autoplay: false,
+    speed: 400,
+    // fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    });
 
     var percentTime;
     var tick;
@@ -102,3 +101,4 @@ let talkSlider = $(".page-talk__slider-js").slick({
         $('.slick-slide').removeClass('slick-target');
     });
     
+}

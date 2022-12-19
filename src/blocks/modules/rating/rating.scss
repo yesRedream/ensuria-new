@@ -139,9 +139,127 @@
   font-weight: 600;
 }
 
+.page-rating-slider__wrapper {
+  width: 100%;
+
+  &.swiper {
+    height: 100%;
+    // padding: 0 15% 0 0;
+    overflow: visible;
+  }
+  
+  .swiper-slide {
+    height: auto;
+  }
+
+  .swiper-pagination {
+    position: static;
+    width: auto;
+    min-width: 45.903vw;
+    display: flex;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    svg {
+      width: 2.778vw;
+      height: 2.778vw;
+      cursor: pointer;
+    }
+    
+  }
+
+  .swiper-button-next {
+    transform: rotate(180deg);
+  }
+
+  .swiper__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -4vw;
+    left: 0;
+    right: 0;
+
+    @include viewport-tablet {
+      display: none;
+    }
+  }
+
+
+  .swiper-pagination-bullet {
+    display: block;
+    flex: 1;
+    padding: 0;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+    height: 6px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(44, 42, 45, 0.2);
+    opacity: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      // transition: opacity 200ms;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    // background: rgba(#000, 0.2);
+    background-color: rgba(44, 42, 45, 0.2);
+    
+    &::before {
+      background-color: var(--color-dark);
+      animation: slide-progress 8s linear forwards;
+      
+      .swiper-paused & {
+        // opacity: 0;
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  @keyframes slide-progress {
+    0% {
+      transform: translateX(-100%);
+      // width: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      // width: 100%;
+    }
+  }
+
+
+}
+
 .page-rating-slider {
   margin-bottom: 6.042vw;
-  display: block;
+  // display: block;
 
   @include viewport-tablet {
     margin-bottom: 81px;

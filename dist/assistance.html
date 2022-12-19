@@ -13,6 +13,9 @@
         <link rel="manifest" href="img/favicons/site.webmanifest">
         <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#E0D3FF">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
         <link rel="stylesheet" href="styles/main.css">
         <style>
           .loading {
@@ -595,143 +598,158 @@
 
       <div class="for-who-list__content">
         <div class="for-who-list__wrap">
-          <div class="for-who__list">
-            <div class="for-who-item__wrap">
-              <div class="for-who__item for-who-item for-who-item--grey">
-                <h3 class="for-who-item__title">
-                  Туроператорам та турагенціям
-                </h3>
-                <div class="for-who-item__ico-wrap">
-                  <svg class="for-who-item__ico for-who-item__ico--1">
-                    <use xlink:href="img/sprites/sprite.svg#for-who-ico-1"></use>
-                  </svg>
+          <div class="for-who__list swiper">
+            <div class="for-who__box swiper-wrapper">
+              <div class="swiper-slide for-who-item__wrap">
+                <div class="for-who__item for-who-item for-who-item--grey">
+                  <h3 class="for-who-item__title">
+                    Туроператорам та турагенціям
+                  </h3>
+                  <div class="for-who-item__ico-wrap">
+                    <svg class="for-who-item__ico for-who-item__ico--1">
+                      <use xlink:href="img/sprites/sprite.svg#for-who-ico-1"></use>
+                    </svg>
+                  </div>
+                  <button 
+                    class="for-who-item__link btn btn--transparent"
+                    data-toggle="modal" data-target="#modal-company"
+                  >
+                    Зв’язатися
+                </button>
                 </div>
-                <button 
-                  class="for-who-item__link btn btn--transparent"
-                  data-toggle="modal" data-target="#modal-company"
-                >
-                  Зв’язатися
-              </button>
+              </div>
+              <div class="swiper-slide for-who-item__wrap">
+
+                <div class="for-who__item for-who-item for-who-item--yellow">
+                  <h3 class="for-who-item__title">
+                    Страховим компаніям
+                  </h3>
+                  <div class="for-who-item__ico-wrap">
+                    <svg class="for-who-item__ico for-who-item__ico--2">
+                      <use xlink:href="img/sprites/sprite.svg#for-who-ico-2"></use>
+                    </svg>
+                  </div>
+                  <button 
+                    class="for-who-item__link btn btn--transparent"
+                    data-toggle="modal" data-target="#modal-company"
+                  >
+                    Зв’язатися
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide for-who-item__wrap">
+
+                <div class="for-who__item for-who-item for-who-item--peach">
+                  <h3 class="for-who-item__title">
+                    Автомобільним компаніям
+                  </h3>
+                  <div class="for-who-item__ico-wrap">
+                    <svg class="for-who-item__ico for-who-item__ico--3">
+                      <use xlink:href="img/sprites/sprite.svg#for-who-ico-3"></use>
+                    </svg>
+                  </div>
+                  <button 
+                    class="for-who-item__link btn btn--transparent"
+                    data-toggle="modal" data-target="#modal-company"
+                  >
+                    Зв’язатися
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide for-who-item__wrap">
+
+                <div class="for-who__item for-who-item for-who-item--purple">
+                  <h3 class="for-who-item__title">
+                    Корпоративним клієнтам
+                  </h3>
+                  <div class="for-who-item__ico-wrap">
+                    <svg class="for-who-item__ico for-who-item__ico--4">
+                      <use xlink:href="img/sprites/sprite.svg#for-who-ico-4"></use>
+                    </svg>
+                  </div>
+
+                  <button 
+                    class="for-who-item__link btn btn--transparent"
+                    data-toggle="modal" data-target="#modal-company"
+                  >
+                    Зв’язатися
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide for-who-item__wrap">
+
+                <div class="for-who__item for-who-item for-who-item--blue">
+                  <h3 class="for-who-item__title">
+                    Банкам
+                  </h3>
+                  <div class="for-who-item__ico-wrap">
+                    <svg class="for-who-item__ico for-who-item__ico--5">
+                      <use xlink:href="img/sprites/sprite.svg#for-who-ico-5"></use>
+                    </svg>
+                  </div>
+
+                  <button 
+                    class="for-who-item__link btn btn--transparent"
+                    data-toggle="modal" data-target="#modal-company"
+                  >
+                    Зв’язатися
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide for-who-item__wrap">
+
+                <div class="for-who__item for-who-item for-who-item--dark-blue">
+                  <h3 class="for-who-item__title">
+                    Орендодавцям та лізингодавцям автомобілів
+                  </h3>
+                  <div class="for-who-item__ico-wrap">
+                    <svg class="for-who-item__ico for-who-item__ico--6">
+                      <use xlink:href="img/sprites/sprite.svg#for-who-ico-6"></use>
+                    </svg>
+                  </div>
+              
+                  <button 
+                    class="for-who-item__link btn btn--transparent"
+                    data-toggle="modal" data-target="#modal-company"
+                  >
+                    Зв’язатися
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide for-who-item__wrap">
+
+                <div class="for-who__item for-who-item for-who-item--green">
+                  <h3 class="for-who-item__title">
+                    Авіакомпаніям
+                  </h3>
+                  <div class="for-who-item__ico-wrap">
+                    <svg class="for-who-item__ico for-who-item__ico--7">
+                      <use xlink:href="img/sprites/sprite.svg#for-who-ico-7"></use>
+                    </svg>
+                  </div>
+              
+                  <button 
+                    class="for-who-item__link btn btn--transparent"
+                    data-toggle="modal" data-target="#modal-company"
+                  >
+                    Зв’язатися
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="for-who-item__wrap">
-
-            <div class="for-who__item for-who-item for-who-item--yellow">
-              <h3 class="for-who-item__title">
-                Страховим компаніям
-              </h3>
-              <div class="for-who-item__ico-wrap">
-                <svg class="for-who-item__ico for-who-item__ico--2">
-                  <use xlink:href="img/sprites/sprite.svg#for-who-ico-2"></use>
+            <div class="swiper__actions">
+              <div class="swiper-button-prev">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#swiper-arrow"></use>
                 </svg>
               </div>
-              <button 
-                class="for-who-item__link btn btn--transparent"
-                data-toggle="modal" data-target="#modal-company"
-              >
-                Зв’язатися
-              </button>
-            </div>
-          </div>
-            <div class="for-who-item__wrap">
-
-            <div class="for-who__item for-who-item for-who-item--peach">
-              <h3 class="for-who-item__title">
-                Автомобільним компаніям
-              </h3>
-              <div class="for-who-item__ico-wrap">
-                <svg class="for-who-item__ico for-who-item__ico--3">
-                  <use xlink:href="img/sprites/sprite.svg#for-who-ico-3"></use>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#swiper-arrow"></use>
                 </svg>
               </div>
-              <button 
-                class="for-who-item__link btn btn--transparent"
-                data-toggle="modal" data-target="#modal-company"
-              >
-                Зв’язатися
-              </button>
             </div>
-          </div>
-            <div class="for-who-item__wrap">
-
-            <div class="for-who__item for-who-item for-who-item--purple">
-              <h3 class="for-who-item__title">
-                Корпоративним клієнтам
-              </h3>
-              <div class="for-who-item__ico-wrap">
-                <svg class="for-who-item__ico for-who-item__ico--4">
-                  <use xlink:href="img/sprites/sprite.svg#for-who-ico-4"></use>
-                </svg>
-              </div>
-
-              <button 
-                class="for-who-item__link btn btn--transparent"
-                data-toggle="modal" data-target="#modal-company"
-              >
-                Зв’язатися
-              </button>
-            </div>
-          </div>
-            <div class="for-who-item__wrap">
-
-            <div class="for-who__item for-who-item for-who-item--blue">
-              <h3 class="for-who-item__title">
-                Банкам
-              </h3>
-              <div class="for-who-item__ico-wrap">
-                <svg class="for-who-item__ico for-who-item__ico--5">
-                  <use xlink:href="img/sprites/sprite.svg#for-who-ico-5"></use>
-                </svg>
-              </div>
-
-              <button 
-                class="for-who-item__link btn btn--transparent"
-                data-toggle="modal" data-target="#modal-company"
-              >
-                Зв’язатися
-              </button>
-            </div>
-          </div>
-            <div class="for-who-item__wrap">
-
-            <div class="for-who__item for-who-item for-who-item--dark-blue">
-              <h3 class="for-who-item__title">
-                Орендодавцям та лізингодавцям автомобілів
-              </h3>
-              <div class="for-who-item__ico-wrap">
-                <svg class="for-who-item__ico for-who-item__ico--6">
-                  <use xlink:href="img/sprites/sprite.svg#for-who-ico-6"></use>
-                </svg>
-              </div>
-          
-              <button 
-                class="for-who-item__link btn btn--transparent"
-                data-toggle="modal" data-target="#modal-company"
-              >
-                Зв’язатися
-              </button>
-            </div>
-          </div>
-            <div class="for-who-item__wrap">
-
-            <div class="for-who__item for-who-item for-who-item--green">
-              <h3 class="for-who-item__title">
-                Авіакомпаніям
-              </h3>
-              <div class="for-who-item__ico-wrap">
-                <svg class="for-who-item__ico for-who-item__ico--7">
-                  <use xlink:href="img/sprites/sprite.svg#for-who-ico-7"></use>
-                </svg>
-              </div>
-          
-              <button 
-                class="for-who-item__link btn btn--transparent"
-                data-toggle="modal" data-target="#modal-company"
-              >
-                Зв’язатися
-              </button>
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -905,54 +923,67 @@
         Працюємо з 80% страхових компаній України
       </p>
       <div class="companies-insurance__content">
-        <div class="companies-insurance__list-wrap">
-          <div class="companies-insurance__list">
-            <div class="companies-insurance__item">
+        <div class="companies-insurance__list-wrap swiper">
+          <div class="companies-insurance__list swiper-wrapper">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-1"></use>
               </svg>
             </div>
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-2"></use>
               </svg>
             </div>
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-3"></use>
               </svg>
             </div>
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-4"></use>
               </svg>
             </div>
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-5"></use>
               </svg>
             </div>
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-6"></use>
               </svg>
             </div>
 
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-7"></use>
               </svg>
             </div>
 
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-8"></use>
               </svg>
             </div>
 
-            <div class="companies-insurance__item">
+            <div class="swiper-slide companies-insurance__item">
               <svg class="companies-insurance__ico">
                 <use xlink:href="img/sprites/sprite.svg#company-insurance-9"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="swiper__actions">
+            <div class="swiper-button-prev">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#swiper-arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#swiper-arrow"></use>
               </svg>
             </div>
           </div>
@@ -1124,245 +1155,258 @@
           </div> -->
         </div>
       </div>
-
-      <div class="page-rating-slider">
-        
-        <div class="page-rating-slider__item">
-          <div class="page-rating-slider__content">
-            <div class="page-rating-slider__box">
-              <div class="page-rating-slider__ico-wrap">
-                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+      <div class="page-rating-slider__wrapper swiper">
+        <div class="page-rating-slider swiper-wrapper">
+          <div class="swiper-slide page-rating-slider__item">
+            <div class="page-rating-slider__content">
+              <div class="page-rating-slider__box">
+                <div class="page-rating-slider__ico-wrap">
+                  <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+                </div>
+                <h3 class="page-rating-slider__title">
+                  Great and fast service l!
+                </h3>
+                <p class="page-rating-slider__text">
+                  In the middle of our vacation in Turkey we catch some viral disease. We just lost our voices and start coughing. About 13:00 I messaged to our Insurance agent, sent all necessary docs and about 17:00-18:00 we already have doctors in our apartments, despite we live in a rural area of Izmir. Doctors examined us, Wright a prescription for medicines. All of that was free of charge for us. But the strong point is the speed. Everybody react really quick. Doctors speak English. It’s 5 of 5 stars.
+                </p>
+                
               </div>
-              <h3 class="page-rating-slider__title">
-                Great and fast service l!
-              </h3>
-              <p class="page-rating-slider__text">
-                In the middle of our vacation in Turkey we catch some viral disease. We just lost our voices and start coughing. About 13:00 I messaged to our Insurance agent, sent all necessary docs and about 17:00-18:00 we already have doctors in our apartments, despite we live in a rural area of Izmir. Doctors examined us, Wright a prescription for medicines. All of that was free of charge for us. But the strong point is the speed. Everybody react really quick. Doctors speak English. It’s 5 of 5 stars.
-              </p>
-              
+              <div class="page-rating__stars">
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <span class="page-rating-slider__name">
+                Саша Гажала
+              </span>
+              <span class="page-rating-slider__date">
+                August 24, 2022
+              </span>
             </div>
-            <div class="page-rating__stars">
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
+          </div>
+
+          <div class="swiper-slide page-rating-slider__item">
+            <div class="page-rating-slider__content">
+              <div class="page-rating-slider__box">
+                <div class="page-rating-slider__ico-wrap">
+                  <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+                </div>
+                <h3 class="page-rating-slider__title">
+                  I need to make urgent vaccine from…
+                </h3>
+                <p class="page-rating-slider__text">
+                  I need to make urgent vaccine from tetanus, because of stepping on the rusty whistle. I was in other country and insurance company very quickly organised all the help for me, that I need. Thank you.
+                </p>
+                
+              </div>
+              <div class="page-rating__stars">
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <span class="page-rating-slider__name">
+                Ирина Круковская
+              </span>
+              <span class="page-rating-slider__date">
+                August 12, 2022
+              </span>
             </div>
-            <span class="page-rating-slider__name">
-              Саша Гажала
-            </span>
-            <span class="page-rating-slider__date">
-              August 24, 2022
-            </span>
+          </div>
+
+          <div class="swiper-slide page-rating-slider__item">
+            <div class="page-rating-slider__content">
+              <div class="page-rating-slider__box">
+                <div class="page-rating-slider__ico-wrap">
+                  <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+                </div>
+                <h3 class="page-rating-slider__title">
+                  Great service
+                </h3>
+                <p class="page-rating-slider__text">
+                  Hi! I had a medical issue while abroad. The reaction to my message to Ensuria support team followed in less than a minute and within 1.5 hour or so I already had an appointment with the doctor. The visit to the hospital was fully covered. I am satisfied with the service provided.
+                </p>
+                
+              </div>
+              <div class="page-rating__stars">
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <span class="page-rating-slider__name">
+                Olya Kravchuk
+              </span>
+              <span class="page-rating-slider__date">
+                September 23, 2022
+              </span>
+            </div>
+          </div>
+
+          <div class="swiper-slide page-rating-slider__item">
+            <div class="page-rating-slider__content">
+              <div class="page-rating-slider__box">
+                <div class="page-rating-slider__ico-wrap">
+                  <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+                </div>
+                <h3 class="page-rating-slider__title">
+                  Great service
+                </h3>
+                <p class="page-rating-slider__text">
+                  I'm amazed at how quickly I was helped! Within an hour this agency made a local Indonesian clinic get in touch with me, and the clinic these guys work with was wonderful: clean, advanced; the doctor spoke great English and was really caring and gentle and explained me all I needed to know about my symptoms.
+                </p>
+                
+              </div>
+              <div class="page-rating__stars">
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <span class="page-rating-slider__name">
+                Alexandra Liubvina
+              </span>
+              <span class="page-rating-slider__date">
+                August 15, 2022
+              </span>
+            </div>
+          </div>
+
+          <div class="swiper-slide page-rating-slider__item">
+            <div class="page-rating-slider__content">
+              <div class="page-rating-slider__box">
+                <div class="page-rating-slider__ico-wrap">
+                  <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+                </div>
+                <h3 class="page-rating-slider__title">
+                  Звернулась із травмою ноги
+                </h3>
+                <p class="page-rating-slider__text">
+                  Звернулась із травмою ноги, того ж дня надали допомогу у гарній клініці, ніби з американських серіалів, весь персонал знав англійську, був привітний. Зробили рентген, виписали ліки, додатково платити не довелося, рекомендую)
+                </p>
+                
+              </div>
+              <div class="page-rating__stars">
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <span class="page-rating-slider__name">
+                Savva Bogun
+              </span>
+              <span class="page-rating-slider__date">
+                September 14, 2022
+              </span>
+            </div>
+          </div>
+
+          <div class="swiper-slide page-rating-slider__item">
+            <div class="page-rating-slider__content">
+              <div class="page-rating-slider__box">
+                <div class="page-rating-slider__ico-wrap">
+                  <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
+                </div>
+                <h3 class="page-rating-slider__title">
+                  Ми задоволені
+                </h3>
+                <p class="page-rating-slider__text">
+                  Нашій дитині знадобилась медична допомога в Женеві. Компанія Ensuria направила нас в дуже непоганий лікарський заклад и заздалегідь забезпечила нас гарантійним листом від ассистанса. Завдяки цьому нас дуже швидко прийняв лікар. Представник компании був на постійному звʼязку в Телеграм, що було надзвичайно зручно, коли зʼявлялись запитання. Взагалі, ми задоволені роботою компанії.
+                </p>
+              </div>
+              <div class="page-rating__stars">
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+                <svg class="page-rating__star page-rating__star--active">
+                  <use xlink:href="img/sprites/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <span class="page-rating-slider__name">
+                Andrew Hak
+              </span>
+              <span class="page-rating-slider__date">
+                August 21, 2022
+              </span>
+            </div>
           </div>
         </div>
-
-        <div class="page-rating-slider__item">
-          <div class="page-rating-slider__content">
-            <div class="page-rating-slider__box">
-              <div class="page-rating-slider__ico-wrap">
-                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
-              </div>
-              <h3 class="page-rating-slider__title">
-                I need to make urgent vaccine from…
-              </h3>
-              <p class="page-rating-slider__text">
-                I need to make urgent vaccine from tetanus, because of stepping on the rusty whistle. I was in other country and insurance company very quickly organised all the help for me, that I need. Thank you.
-              </p>
-              
-            </div>
-            <div class="page-rating__stars">
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-            </div>
-            <span class="page-rating-slider__name">
-              Ирина Круковская
-            </span>
-            <span class="page-rating-slider__date">
-              August 12, 2022
-            </span>
+        <div class="swiper__actions">
+          <div class="swiper-button-prev">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#swiper-arrow"></use>
+            </svg>
           </div>
-        </div>
-
-        <div class="page-rating-slider__item">
-          <div class="page-rating-slider__content">
-            <div class="page-rating-slider__box">
-              <div class="page-rating-slider__ico-wrap">
-                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
-              </div>
-              <h3 class="page-rating-slider__title">
-                Great service
-              </h3>
-              <p class="page-rating-slider__text">
-                Hi! I had a medical issue while abroad. The reaction to my message to Ensuria support team followed in less than a minute and within 1.5 hour or so I already had an appointment with the doctor. The visit to the hospital was fully covered. I am satisfied with the service provided.
-              </p>
-              
-            </div>
-            <div class="page-rating__stars">
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-            </div>
-            <span class="page-rating-slider__name">
-              Olya Kravchuk
-            </span>
-            <span class="page-rating-slider__date">
-              September 23, 2022
-            </span>
-          </div>
-        </div>
-
-        <div class="page-rating-slider__item">
-          <div class="page-rating-slider__content">
-            <div class="page-rating-slider__box">
-              <div class="page-rating-slider__ico-wrap">
-                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
-              </div>
-              <h3 class="page-rating-slider__title">
-                Great service
-              </h3>
-              <p class="page-rating-slider__text">
-                I'm amazed at how quickly I was helped! Within an hour this agency made a local Indonesian clinic get in touch with me, and the clinic these guys work with was wonderful: clean, advanced; the doctor spoke great English and was really caring and gentle and explained me all I needed to know about my symptoms.
-              </p>
-              
-            </div>
-            <div class="page-rating__stars">
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-            </div>
-            <span class="page-rating-slider__name">
-              Alexandra Liubvina
-            </span>
-            <span class="page-rating-slider__date">
-              August 15, 2022
-            </span>
-          </div>
-        </div>
-
-        <div class="page-rating-slider__item">
-          <div class="page-rating-slider__content">
-            <div class="page-rating-slider__box">
-              <div class="page-rating-slider__ico-wrap">
-                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
-              </div>
-              <h3 class="page-rating-slider__title">
-                Звернулась із травмою ноги
-              </h3>
-              <p class="page-rating-slider__text">
-                Звернулась із травмою ноги, того ж дня надали допомогу у гарній клініці, ніби з американських серіалів, весь персонал знав англійську, був привітний. Зробили рентген, виписали ліки, додатково платити не довелося, рекомендую)
-              </p>
-              
-            </div>
-            <div class="page-rating__stars">
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-            </div>
-            <span class="page-rating-slider__name">
-              Savva Bogun
-            </span>
-            <span class="page-rating-slider__date">
-              September 14, 2022
-            </span>
-          </div>
-        </div>
-
-        <div class="page-rating-slider__item">
-          <div class="page-rating-slider__content">
-            <div class="page-rating-slider__box">
-              <div class="page-rating-slider__ico-wrap">
-                <img src="img/trustpilot.svg" class="page-rating-slider__ico" alt="">
-              </div>
-              <h3 class="page-rating-slider__title">
-                Ми задоволені
-              </h3>
-              <p class="page-rating-slider__text">
-                Нашій дитині знадобилась медична допомога в Женеві. Компанія Ensuria направила нас в дуже непоганий лікарський заклад и заздалегідь забезпечила нас гарантійним листом від ассистанса. Завдяки цьому нас дуже швидко прийняв лікар. Представник компании був на постійному звʼязку в Телеграм, що було надзвичайно зручно, коли зʼявлялись запитання. Взагалі, ми задоволені роботою компанії.
-              </p>
-            </div>
-            <div class="page-rating__stars">
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-              <svg class="page-rating__star page-rating__star--active">
-                <use xlink:href="img/sprites/sprite.svg#star"></use>
-              </svg>
-            </div>
-            <span class="page-rating-slider__name">
-              Andrew Hak
-            </span>
-            <span class="page-rating-slider__date">
-              August 21, 2022
-            </span>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#swiper-arrow"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -2160,8 +2204,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
        
         <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/vendor.js"></script>
         <script src="js/main.js"></script>
+
         <script src="js/assistance.js"></script>
     </body>
 </html>

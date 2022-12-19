@@ -7,6 +7,7 @@
 }
 
 .companies-insurance__wrapper {
+  overflow: hidden;
 
 }
 
@@ -53,8 +54,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  padding-bottom: 100px;
-
 
   @include viewport-tablet {
     padding-bottom: 100px;
@@ -62,18 +61,127 @@
 }
 
 .companies-insurance__list-wrap {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
+  width: 100%;
 
-  position: absolute;
-  top: 0;
-  left: -0.903vw;
-  right: -0.903vw;
-  width: calc(100% + 1.806vw);
-  max-width: calc(100% + 1.806vw);
+  &.swiper {
+    height: 100%;
+    // padding: 0 15% 0 0;
+    overflow: visible;
+  }
+  
+  .swiper-slide {
+    height: auto;
+  }
+
+  .swiper-pagination {
+    position: static;
+    width: auto;
+    min-width: 45.903vw;
+    display: flex;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    svg {
+      width: 2.778vw;
+      height: 2.778vw;
+      cursor: pointer;
+    }
+    
+  }
+
+  .swiper-button-next {
+    transform: rotate(180deg);
+  }
+
+  .swiper__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -4vw;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding-left: 2.778vw;
+    padding-right: 2.778vw;
+
+    @include viewport-tablet {
+      display: none;
+    }
+  }
+
+
+  .swiper-pagination-bullet {
+    display: block;
+    flex: 1;
+    padding: 0;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+    height: 6px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(44, 42, 45, 0.2);
+    opacity: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      // transition: opacity 200ms;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    // background: rgba(#000, 0.2);
+    background-color: rgba(44, 42, 45, 0.2);
+    
+    &::before {
+      background-color: var(--color-dark);
+      animation: slide-progress 8s linear forwards;
+      
+      .swiper-paused & {
+        // opacity: 0;
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  @keyframes slide-progress {
+    0% {
+      transform: translateX(-100%);
+      // width: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      // width: 100%;
+    }
+  }
 
   @include viewport-tablet {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: -10px;
@@ -83,15 +191,12 @@
   }
 }
 
+
+
 .companies-insurance__list {
   width: 100%;
 
-  display: block;
-  white-space: nowrap;
-  overflow-y: auto;
-  text-align: center;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
 
   &::-webkit-scrollbar {
     display: none;
@@ -129,6 +234,7 @@
   @include viewport-tablet {
     display: inline-block;
     vertical-align: middle;
+    width: auto;
   }
 
   // &:nth-child(3) {
@@ -140,6 +246,7 @@
 
 .companies-insurance__ico {
   max-height: 100px;
+  width: 300px;
   // padding-right: 60px;
   use {
     fill: var(--color-dark);
