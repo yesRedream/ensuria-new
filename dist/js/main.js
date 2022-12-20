@@ -227,24 +227,20 @@ aos__WEBPACK_IMPORTED_MODULE_0___default().init({
 /*!*******************************************!*\
   !*** ./src/blocks/modules/modal/modal.js ***!
   \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./.yarn/cache/jquery-npm-3.6.1-6f29087f48-6177d866a7.zip/node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal__form--name').submit(function (e) {
-  e.preventDefault();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal__content--name').removeClass('active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal__success--name').addClass('active');
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal__form--company').submit(function (e) {
-  e.preventDefault();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal__content--company').removeClass('active');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal__success--company').addClass('active');
-});
+// import $ from 'jquery';
+// window.$ = window.jQuery = $;
+// $('.modal__form--name').submit(function(e) {
+//   e.preventDefault();
+//   $('.modal__content--name').removeClass('active');
+//   $('.modal__success--name').addClass('active');
+// });
+// $('.modal__form--company').submit(function(e) {
+//   e.preventDefault();
+//   $('.modal__content--company').removeClass('active');
+//   $('.modal__success--company').addClass('active');
+// });
 
 /***/ }),
 
@@ -1182,6 +1178,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_loading_loading__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/loading/loading */ "./src/blocks/modules/loading/loading.js");
 /* harmony import */ var _modules_loading_loading__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_loading_loading__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! %modules%/modal/modal */ "./src/blocks/modules/modal/modal.js");
+/* harmony import */ var _modules_modal_modal__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_modules_modal_modal__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _modules_about_assistance_about_assistance__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! %modules%/about-assistance/about-assistance */ "./src/blocks/modules/about-assistance/about-assistance.js");
 /* harmony import */ var _modules_benefits_assistance_benefits_assistance__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! %modules%/benefits-assistance/benefits-assistance */ "./src/blocks/modules/benefits-assistance/benefits-assistance.js");
 /* harmony import */ var _modules_benefits_assistance_benefits_assistance__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_modules_benefits_assistance_benefits_assistance__WEBPACK_IMPORTED_MODULE_17__);
@@ -1218,108 +1215,104 @@ __webpack_require__.r(__webpack_exports__);
   \****************************************/
 /***/ (() => {
 
-// Maintain a supported Language List
-var langList = ['en', 'ru', 'ua']; // Get browser Language
-
-var userLang = navigator.language || navigator.userLanguage; // extract Language (en-US => en)
-
-userLang = userLang.substring(0, 2); // Call the function to set language
-// checkLang(userLang);
-// function checkLang(lang) {
-//   if (lang === "en" || lang === "ru" || lang === "ua") {
-//     changeLang(lang);
-//   }
-//   else {
-//     changeLang('en');
-//   }
+// // Maintain a supported Language List
+// var langList = ['en', 'ru', 'ua'];
+// // Get browser Language
+// var userLang = navigator.language || navigator.userLanguage;
+// // extract Language (en-US => en)
+// userLang = userLang.substring(0, 2);
+// // Call the function to set language
+// // checkLang(userLang);
+// // function checkLang(lang) {
+// //   if (lang === "en" || lang === "ru" || lang === "ua") {
+// //     changeLang(lang);
+// //   }
+// //   else {
+// //     changeLang('en');
+// //   }
+// // }
+// changeLang('en');
+// // function to change language
+// function changeLang(lang) {
+//   langList.forEach((langEle) => {
+//     // if language matches, display
+//     if (langEle == lang) {
+//       var langElems = document.querySelectorAll('.' + langEle)
+//       langElems.forEach((elem) => {
+//         elem.style.display = "block"
+//       })
+//     }
+//     // hide the language text
+//     else {
+//       hideLang(langEle)
+//     }
+//   })
 // }
-
-changeLang('en'); // function to change language
-
-function changeLang(lang) {
-  langList.forEach(function (langEle) {
-    // if language matches, display
-    if (langEle == lang) {
-      var langElems = document.querySelectorAll('.' + langEle);
-      langElems.forEach(function (elem) {
-        elem.style.display = "block";
-      });
-    } // hide the language text
-    else {
-      hideLang(langEle);
-    }
-  });
-} // function to hide language
-
-
-function hideLang(lang) {
-  var langElems = document.querySelectorAll('.' + lang);
-  langElems.forEach(function (elem) {
-    elem.style.display = "none";
-  });
-}
-
-$('.header-lang__link--en').click(function () {
-  changeLang('en');
-  $('.header-lang__link--ua').removeClass('header-lang__link--active');
-  $('.header-lang__link--ru').removeClass('header-lang__link--active');
-  $(this).addClass('header-lang__link--active');
-});
-$('.header-lang__link--ua').click(function () {
-  changeLang('ua');
-  $('.header-lang__link--ru').removeClass('header-lang__link--active');
-  $('.header-lang__link--en').removeClass('header-lang__link--active');
-  $(this).addClass('header-lang__link--active');
-});
-$('.header-lang__link--ru').click(function () {
-  changeLang('ru');
-  $('.header-lang__link--ua').removeClass('header-lang__link--active');
-  $('.header-lang__link--en').removeClass('header-lang__link--active');
-  $(this).addClass('header-lang__link--active');
-});
-$('.footer-en-js').each(function (index) {
-  $(this).on("click", function () {
-    changeLang('en');
-  });
-});
-$('.footer-ru-js').each(function (index) {
-  $(this).on("click", function () {
-    changeLang('ru');
-  });
-});
-$('.footer-ua-js').each(function (index) {
-  $(this).on("click", function () {
-    changeLang('ua');
-  });
-});
-var navigationSelect = document.querySelector('.select-wrapper');
-var navigationSelect2 = document.querySelector('.select-wrapper2');
-var navigationSelect3 = document.querySelector('.select-wrapper--header');
-
-function initSelect(elem) {
-  var selectHolder = elem.querySelector('.holder');
-  var selectOptions = elem.querySelectorAll('.dropdownOption li');
-  var dropHolder = elem.querySelector('.dropdown');
-  var selectedOption = selectOptions[0];
-  selectedOption.classList.add('current');
-  selectHolder.addEventListener('click', function () {
-    dropHolder.classList.toggle('active');
-  });
-  selectOptions.forEach(function (currentElement) {
-    currentElement.addEventListener('click', function () {
-      selectedOption.classList.remove('current');
-      selectedOption = currentElement;
-      currentElement.classList.add('current');
-      selectHolder.innerText = currentElement.textContent;
-      dropHolder.classList.toggle('active');
-    });
-  });
-}
-
-;
-initSelect(navigationSelect);
-initSelect(navigationSelect2);
-initSelect(navigationSelect3);
+// // function to hide language
+// function hideLang(lang) {
+//   var langElems = document.querySelectorAll('.' + lang)
+//   langElems.forEach((elem) => {
+//     elem.style.display = "none"
+//   })
+// }
+// $('.header-lang__link--en').click(function(){
+//   changeLang('en');
+//   $('.header-lang__link--ua').removeClass('header-lang__link--active');
+//   $('.header-lang__link--ru').removeClass('header-lang__link--active');
+//   $(this).addClass('header-lang__link--active');
+// });
+// $('.header-lang__link--ua').click(function(){
+//   changeLang('ua');
+//   $('.header-lang__link--ru').removeClass('header-lang__link--active');
+//   $('.header-lang__link--en').removeClass('header-lang__link--active');
+//   $(this).addClass('header-lang__link--active');
+// });
+// $('.header-lang__link--ru').click(function(){
+//   changeLang('ru');
+//   $('.header-lang__link--ua').removeClass('header-lang__link--active');
+//   $('.header-lang__link--en').removeClass('header-lang__link--active');
+//   $(this).addClass('header-lang__link--active');
+// });
+// $('.footer-en-js').each(function(index) {
+//   $(this).on("click", function(){
+//     changeLang('en');
+//   });
+// });
+// $('.footer-ru-js').each(function(index) {
+//   $(this).on("click", function(){
+//     changeLang('ru');
+//   });
+// });
+// $('.footer-ua-js').each(function(index) {
+//   $(this).on("click", function(){
+//     changeLang('ua');
+//   });
+// });
+// var navigationSelect = document.querySelector('.select-wrapper');
+// var navigationSelect2 = document.querySelector('.select-wrapper2');
+// var navigationSelect3 = document.querySelector('.select-wrapper--header');
+// function initSelect(elem){
+//   var selectHolder = elem.querySelector('.holder');
+//   var selectOptions = elem.querySelectorAll('.dropdownOption li');
+//   var dropHolder = elem.querySelector('.dropdown');
+//   var selectedOption = selectOptions[0];
+//   selectedOption.classList.add('current');
+//   selectHolder.addEventListener('click', function () {
+//     dropHolder.classList.toggle('active');
+//    });
+//   selectOptions.forEach(function(currentElement) {
+//     currentElement.addEventListener('click', function(){
+//       selectedOption.classList.remove('current');
+//       selectedOption = currentElement;
+//       currentElement.classList.add('current');
+//       selectHolder.innerText = currentElement.textContent;
+//       dropHolder.classList.toggle('active');
+//     });
+//   });
+// };
+// initSelect(navigationSelect);
+// initSelect(navigationSelect2);
+// initSelect(navigationSelect3);
 
 /***/ }),
 
