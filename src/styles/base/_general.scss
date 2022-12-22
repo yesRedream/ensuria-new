@@ -250,6 +250,21 @@ a {
   }
 }
 
+.btn--black {
+  border: none;
+  background-color: var(--color-dark);
+
+  &:hover {
+    background-color: var(--color-dark-2);
+    border-color: var(--color-dark-2);
+  }
+
+  &:active {
+    background-color: var(--color-dark-2);
+    border-color: var(--color-dark-2);
+  }
+}
+
 .btn--ios,
 .btn--android {
   border: none;

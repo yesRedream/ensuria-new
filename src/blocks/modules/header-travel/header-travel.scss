@@ -1,0 +1,70 @@
+.page__section--hero-travel {
+  .page-usp__bg {
+    background: #DDFFB2;
+  }
+
+  .page-usp {
+    min-height: 49.028vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero-travel {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  @include viewport-tablet {
+    min-height: 530px;
+  }
+}
+
+.hero-travel__logo-wrapper {
+  margin-bottom: 40px;
+}
+
+.hero-travel__logo {
+  max-width: 12.639vw;
+  width: 100%;
+
+  @include viewport-tablet {
+    max-width: 120px;
+  }
+}
+
+.hero-travel__title {
+  text-align: center;
+  font-size: 6.667vw;
+  line-height: 1;
+  margin-bottom: 3vw;
+
+  @include viewport-tablet {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.hero-travel__text {
+  font-size: 1.111vw;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @include viewport-tablet {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero-travel__link {
+  padding-left: 37px;
+  padding-right: 37px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}

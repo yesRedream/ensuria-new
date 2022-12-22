@@ -1,0 +1,142 @@
+.page__section--how-travel {
+  margin-bottom: 0.972vw;
+
+  @include viewport-tablet {
+    margin-bottom: 10px;
+  }
+}
+
+.how-travel__wrapper {}
+
+.how-travel {}
+
+.how-travel-blue {
+  background: var(--color-blue);
+}
+
+.how-travel-green {
+  background: #DDFFB2;
+}
+
+.how-travel-pink {
+  background: #F8DDE7;
+}
+
+.how-travel-peach {
+  background: #F1D2C3;
+}
+
+.how-travel-purple {
+  background: var(--color-purple);
+}
+
+.how-travel-yellow {
+  background: var(--color-yellow);
+}
+
+.how-travel-item__corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.how-travel__content {
+  max-width: 46.397vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.861vw;
+
+  @include viewport-desktop {
+    max-width: 650px;
+  }
+
+  @include viewport-tablet {
+    margin-bottom: 34px;
+  } 
+}
+
+.how-travel__title {
+  font-size: 4.444vw;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 1.597vw;
+  text-align: center;
+
+  @include viewport-desktop {
+    font-size: 48px;
+  }
+
+  @include viewport-tablet {
+    font-size: 36px;
+    margin-bottom: 28px;
+    // max-width: 160px;
+  }
+}
+
+.how-travel__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.972vw;
+
+  @include viewport-tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    
+  }
+}
+
+.how-travel-item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 2.639vw 1.944vw 0 1.944vw;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @include viewport-tablet {
+    width: 100%;
+    padding: 35px 27px 0 27px;
+  } 
+}
+
+.how-travel-item__img-wrap {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.how-travel-item__img--shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 133.44% !important;
+  z-index: -1;
+}
+
+
+
+.how-travel-item__title {
+  font-size: 1.389vw;
+  line-height: 1.2;
+  margin-bottom: 5vw;
+
+  @include viewport-tablet {
+    font-size: 20px;
+    margin-bottom: 75px;
+  } 
+}
