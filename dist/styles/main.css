@@ -12654,6 +12654,10 @@ a:hover {
   margin-bottom: 4.861vw;
 }
 
+.page__section--companies-insurance .companies-insurance__text {
+  font-size: 2.25rem;
+}
+
 .companies-insurance__wrapper {
   overflow: hidden;
 }
@@ -19067,6 +19071,10 @@ a:hover {
 
   .unite-map {
     display: none;
+  }
+
+  .page__section--companies-insurance .companies-insurance__text {
+    font-size: 24px;
   }
 
   .companies-insurance__text {

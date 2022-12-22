@@ -6,6 +6,16 @@
   }
 }
 
+.page__section--companies-insurance {
+  .companies-insurance__text {
+    font-size: 2.25rem;
+
+    @include viewport-tablet {
+      font-size: 24px;
+    }
+  }
+}
+
 .companies-insurance__wrapper {
   overflow: hidden;
 
