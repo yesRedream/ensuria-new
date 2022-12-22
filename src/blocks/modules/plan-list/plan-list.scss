@@ -297,13 +297,20 @@
 
 .plan-table-header__price {
   font-size: 2.500vw;
-  margin-bottom: 0.764vw;
+
+  &:last-child {
+    margin-bottom: 0.764vw;
+  }
 
   @media (max-width: 1000px) {
     display: block;
     margin-bottom: 5px;
     font-size: 21px;
     text-align: left;
+
+    &:last-child {
+      margin-bottom: 5px;
+    }
   }
 }
 

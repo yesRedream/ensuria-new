@@ -8237,11 +8237,51 @@ a:hover {
   justify-content: space-around;
 }
 
+.header-nav__link-wrap {
+  position: relative;
+  display: inherit;
+}
+
+.header-nav__link-wrap:hover .header-nav__dropdown {
+  height: auto;
+  opacity: 1;
+}
+
 .header-nav__link {
   margin: 0 0.833vw;
   font-size: 1.111vw;
   line-height: 1.5;
   white-space: nowrap;
+}
+
+.header-nav__dropdown {
+  position: absolute;
+  padding: 5px;
+  top: 100%;
+  left: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.header-nav-dropdown__content {
+  background: #ffffff;
+  border-radius: 10px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header-nav-dropdown__content a {
+  display: flex;
+  padding: 10px 15px;
+  color: var(--color-dark);
+  font-size: 1.111vw;
+}
+
+.header-nav-dropdown__content a:hover {
+  background-color: #fbfbfb;
 }
 
 .header__box {
@@ -12629,7 +12669,7 @@ a:hover {
 
 .companies-insurance__text {
   font-size: 3.333vw;
-  line-height: 1.4;
+  line-height: 1;
   margin-bottom: 4.167vw;
   text-align: center;
   font-weight: 500;
@@ -12949,6 +12989,9 @@ a:hover {
 
 .plan-table-header__price {
   font-size: 2.5vw;
+}
+
+.plan-table-header__price:last-child {
   margin-bottom: 0.764vw;
 }
 
@@ -13163,7 +13206,7 @@ a:hover {
 
 .how-travel__title {
   font-size: 4.444vw;
-  line-height: 1;
+  line-height: 0.9;
   font-weight: 500;
   margin-bottom: 1.597vw;
   text-align: center;
@@ -17441,6 +17484,10 @@ a:hover {
     margin-bottom: 5px;
     font-size: 21px;
     text-align: left;
+  }
+
+  .plan-table-header__price:last-child {
+    margin-bottom: 5px;
   }
 
   .plan-table__ico {
