@@ -10,7 +10,7 @@ if ($(".page-rating-slider__wrapper")[0]){
   // var swiper = new Swiper(".page-rating-slider__wrapper", {});
   var swiper1 = new Swiper('.page-rating-slider__wrapper', {
     slidesPerView: 1.2,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
@@ -32,6 +32,7 @@ if ($(".page-rating-slider__wrapper")[0]){
       // when window width is >= 480px
       700: {
         slidesPerView: 2.2,
+        slidesPerGroup: 2,
       }
     }
   });

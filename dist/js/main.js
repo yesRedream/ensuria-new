@@ -339,7 +339,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-rating-slider__wrapper"
   // var swiper = new Swiper(".page-rating-slider__wrapper", {});
   var swiper1 = new Swiper('.page-rating-slider__wrapper', {
     slidesPerView: 1.2,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
@@ -360,7 +360,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(".page-rating-slider__wrapper"
       },
       // when window width is >= 480px
       700: {
-        slidesPerView: 2.2
+        slidesPerView: 2.2,
+        slidesPerGroup: 2
       }
     }
   }); // $(".page-rating-slider").slick({
