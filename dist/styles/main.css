@@ -10247,7 +10247,9 @@ a:hover {
 .page-rating-slider__wrapper .swiper-button-next svg,
 .page-rating-slider__wrapper .swiper-button-prev svg {
   width: 2.778vw;
+  min-width: 2.778vw;
   height: 2.778vw;
+  min-height: 2.778vw;
   cursor: pointer;
 }
 
@@ -11797,7 +11799,9 @@ a:hover {
 .for-who__list .swiper-button-next svg,
 .for-who__list .swiper-button-prev svg {
   width: 2.778vw;
+  min-width: 2.778vw;
   height: 2.778vw;
+  min-height: 2.778vw;
   cursor: pointer;
 }
 
@@ -12682,7 +12686,9 @@ a:hover {
 .companies-insurance__list-wrap .swiper-button-next svg,
 .companies-insurance__list-wrap .swiper-button-prev svg {
   width: 2.778vw;
+  min-width: 2.778vw;
   height: 2.778vw;
+  min-height: 2.778vw;
   cursor: pointer;
 }
 
