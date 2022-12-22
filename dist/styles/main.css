@@ -8948,13 +8948,16 @@ a:hover {
   overflow: hidden;
 }
 
-.dropdownOption li {
+.dropdownOption li,
+.dropdownOption a {
+  display: flex;
   padding: 10px 15px;
   color: var(--color-dark);
   list-style: none;
 }
 
-.dropdownOption li:hover:not(.current) {
+.dropdownOption li:hover:not(.current),
+.dropdownOption a:hover:not(.current) {
   opacity: 0.8;
 }
 

@@ -436,7 +436,8 @@
   z-index: 5;
   overflow: hidden;
   
-  li {
+  li, a {
+    display: flex;
     padding: 10px 15px;
     color: var(--color-dark);
     list-style: none;
