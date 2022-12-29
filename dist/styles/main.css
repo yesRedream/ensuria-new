@@ -18666,44 +18666,8 @@ a:hover {
     padding: 5px 0;
   }
 
-  .about-travel-item:nth-child(8) {
-    order: -1;
-  }
-
-  .about-travel-item:nth-child(8) {
-    order: -1;
-  }
-
-  .about-travel-item:nth-child(2) {
-    order: 0;
-  }
-
-  .about-travel-item:nth-child(3) {
-    order: 1;
-  }
-
-  .about-travel-item:nth-child(4) {
-    order: 2;
-  }
-
-  .about-travel-item:nth-child(1) {
-    order: 3;
-  }
-
-  .about-travel-item:nth-child(7) {
-    order: 4;
-  }
-
-  .about-travel-item:nth-child(5) {
-    order: 5;
-  }
-
   .about-travel-item:nth-child(5) .about-travel-item__content {
     background: var(--color-purple);
-  }
-
-  .about-travel-item:nth-child(6) {
-    order: 6;
   }
 
   .about-travel-item--empty {
