@@ -21,6 +21,10 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .header__box {
+    display: flex !important;
+  }
 }
 
 [data-aos="header-chats-logo"] {

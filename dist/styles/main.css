@@ -8767,6 +8767,10 @@ a:hover {
   justify-content: center;
 }
 
+.page__section--hero-chats .header__box {
+  display: flex !important;
+}
+
 [data-aos=header-chats-logo] {
   transform: scale(1.78) translateY(41%);
   transition-property: transform, opacity;
