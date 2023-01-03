@@ -112,6 +112,15 @@ function initSelect(elem){
   });
 };
 
-initSelect(navigationSelect);
-initSelect(navigationSelect2);
-initSelect(navigationSelect3);
+
+if ($(".select-wrapper")[0]) {
+  initSelect(navigationSelect);
+}
+
+if ($(".select-wrapper2")[0]) {
+  initSelect(navigationSelect2);
+}
+
+if ($(".select-wrapper--header")[0]) {
+  initSelect(navigationSelect3);
+}

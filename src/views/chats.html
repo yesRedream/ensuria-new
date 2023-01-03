@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ensuria</title>
+        <meta name="theme-color" content="#E0D3FF">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#E0D3FF">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="styles/main.css">
+        <style>
+          .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            animation: bgchange 1.4s infinite step-end;
+          }
+          .loading.local {
+            display: none !important;
+          }
+          .loading__logo-wrap {
+            transform: scale(1.5);
+            margin-bottom: 30px;
+          }
+          .loading__logo-wrap svg {
+            width: 15vw;
+            height: auto;
+          }
+          @media (max-width: 815px) {
+            .loading__logo-wrap svg {
+              width: 120px;
+            }
+          }
+          @keyframes bgchange {
+            0% {
+              background-color: var(--color-yellow);
+            }
+            33% {
+              background-color: var(--color-blue);
+            }
+            66% {
+              background-color: var(--color-green);
+            }
+            100% {
+              background-color: #f8dde7;
+            }
+          }
+        </style>
+        
+    </head>
+    <body>
+        @@include("../blocks/modules/loading/loading.html")
+        @@include("../blocks/modules/header-chats/header-chats.html")
+
+        <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
