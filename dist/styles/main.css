@@ -11626,6 +11626,11 @@ a:hover {
   z-index: 2;
 }
 
+.about-travel-item__corner svg {
+  width: 34px;
+  height: 34px;
+}
+
 .about-travel__content {
   max-width: 53.397vw;
   margin-left: auto;
@@ -12109,6 +12114,11 @@ a:hover {
   left: 0;
   padding: 4px;
   z-index: 2;
+}
+
+.for-who-travel-item__corner svg {
+  width: 34px;
+  height: 34px;
 }
 
 .for-who-travel__content {
@@ -13068,6 +13078,11 @@ a:hover {
   z-index: 2;
 }
 
+.plan-list-partner__corner svg {
+  width: 31px;
+  height: 31px;
+}
+
 .plan-list-partner__content {
   flex: 1;
   display: flex;
@@ -13126,6 +13141,11 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+.different-travel-item__corner svg {
+  width: 26px;
+  height: 26px;
 }
 
 .different-travel__content {
@@ -13240,6 +13260,11 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+.how-travel-item__corner svg {
+  width: 20px;
+  height: 20px;
 }
 
 .how-travel__content {
@@ -18687,6 +18712,11 @@ a:hover {
     padding: 5px 0;
   }
 
+  .about-travel-item__corner svg {
+    width: 21px;
+    height: 21;
+  }
+
   .about-travel__content {
     margin-bottom: 34px;
   }
@@ -18887,6 +18917,11 @@ a:hover {
 
   .for-who-travel-item__corner {
     padding: 5px 0;
+  }
+
+  .for-who-travel-item__corner svg {
+    width: 21px;
+    height: 21;
   }
 
   .for-who-travel__content {
@@ -19216,12 +19251,22 @@ a:hover {
     margin-top: 6px;
   }
 
+  .plan-list-partner__corner svg {
+    width: 21px;
+    height: 21px;
+  }
+
   .plan-list-partner__content {
     padding: 27px;
   }
 
   .page__section--different-travel {
     margin-bottom: 70px;
+  }
+
+  .different-travel-item__corner svg {
+    width: 21px;
+    height: 21px;
   }
 
   .different-travel__content {

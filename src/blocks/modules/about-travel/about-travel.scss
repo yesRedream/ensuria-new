@@ -44,6 +44,16 @@
   @include viewport-tablet {
     padding: 5px 0;
   }
+
+  svg {
+    width: 34px;
+    height: 34px;
+
+    @include viewport-tablet {
+      width: 21px;
+      height: 21;
+    }
+  }
 }
 
 .about-travel__content {

@@ -361,6 +361,16 @@
   top: 0;
   left: 0;
   z-index: 2;
+
+  svg {
+    width: 31px;
+    height: 31px;
+
+    @include viewport-tablet {
+      width: 21px;
+      height: 21px;
+    }
+  }
 }
 
 .plan-list-partner__content {

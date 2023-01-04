@@ -39,6 +39,16 @@
   top: 0;
   left: 0;
   z-index: 2;
+
+  svg {
+    width: 26px;
+    height: 26px;
+
+    @include viewport-tablet {
+      width: 21px;
+      height: 21px;
+    }
+  }
 }
 
 .different-travel__content {
